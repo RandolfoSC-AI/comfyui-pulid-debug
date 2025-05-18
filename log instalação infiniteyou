@@ -1,0 +1,89 @@
+PS C:\ComfyUI_windows_portable\ComfyUI> pip install -r custom_nodes/infiniteyou/requirements.txt
+Requirement already satisfied: facexlib>=0.3.0 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from -r custom_nodes/infiniteyou/requirements.txt (line 1)) (0.3.0)
+Collecting onnxruntime>=1.19.2
+  Downloading onnxruntime-1.22.0-cp310-cp310-win_amd64.whl (12.7 MB)
+     |████████████████████████████████| 12.7 MB 2.2 MB/s
+Collecting insightface>=0.7.3
+  Using cached insightface-0.7.3.tar.gz (439 kB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+    Preparing wheel metadata ... done
+Requirement already satisfied: opencv-python>=4.11.0.86 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from -r custom_nodes/infiniteyou/requirements.txt (line 4)) (4.11.0.86)
+Requirement already satisfied: huggingface_hub in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from -r custom_nodes/infiniteyou/requirements.txt (line 5)) (0.30.2)
+Requirement already satisfied: numpy in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from facexlib>=0.3.0->-r custom_nodes/infiniteyou/requirements.txt (line 1)) (1.26.4)
+Requirement already satisfied: scipy in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from facexlib>=0.3.0->-r custom_nodes/infiniteyou/requirements.txt (line 1)) (1.15.2)
+Requirement already satisfied: torchvision in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from facexlib>=0.3.0->-r custom_nodes/infiniteyou/requirements.txt (line 1)) (0.22.0)
+Requirement already satisfied: torch in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from facexlib>=0.3.0->-r custom_nodes/infiniteyou/requirements.txt (line 1)) (2.7.0)
+Requirement already satisfied: Pillow in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from facexlib>=0.3.0->-r custom_nodes/infiniteyou/requirements.txt (line 1)) (11.2.1)
+Requirement already satisfied: filterpy in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from facexlib>=0.3.0->-r custom_nodes/infiniteyou/requirements.txt (line 1)) (1.4.5)
+Requirement already satisfied: numba in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from facexlib>=0.3.0->-r custom_nodes/infiniteyou/requirements.txt (line 1)) (0.61.2)
+Requirement already satisfied: tqdm in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from facexlib>=0.3.0->-r custom_nodes/infiniteyou/requirements.txt (line 1)) (4.67.1)
+Requirement already satisfied: sympy in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from onnxruntime>=1.19.2->-r custom_nodes/infiniteyou/requirements.txt (line 2)) (1.14.0)
+Collecting coloredlogs
+  Using cached coloredlogs-15.0.1-py2.py3-none-any.whl (46 kB)
+Requirement already satisfied: flatbuffers in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from onnxruntime>=1.19.2->-r custom_nodes/infiniteyou/requirements.txt (line 2)) (25.2.10)
+Requirement already satisfied: packaging in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from onnxruntime>=1.19.2->-r custom_nodes/infiniteyou/requirements.txt (line 2)) (25.0)
+Requirement already satisfied: protobuf in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from onnxruntime>=1.19.2->-r custom_nodes/infiniteyou/requirements.txt (line 2)) (4.25.7)
+Requirement already satisfied: matplotlib in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (3.10.3)
+Requirement already satisfied: albumentations in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (2.0.6)
+Collecting cython
+  Using cached cython-3.1.0-cp310-cp310-win_amd64.whl (2.7 MB)
+Collecting prettytable
+  Using cached prettytable-3.16.0-py3-none-any.whl (33 kB)
+Requirement already satisfied: requests in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (2.32.3)
+Requirement already satisfied: scikit-learn in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (1.6.1)
+Collecting onnx
+  Downloading onnx-1.18.0-cp310-cp310-win_amd64.whl (15.8 MB)
+     |████████████████████████████████| 15.8 MB ...
+Requirement already satisfied: scikit-image in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (0.25.2)
+Collecting easydict
+  Using cached easydict-1.13-py3-none-any.whl (6.8 kB)
+Requirement already satisfied: fsspec>=2023.5.0 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from huggingface_hub->-r custom_nodes/infiniteyou/requirements.txt (line 5)) (2025.3.2)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from huggingface_hub->-r custom_nodes/infiniteyou/requirements.txt (line 5)) (4.13.2)
+Requirement already satisfied: pyyaml>=5.1 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from huggingface_hub->-r custom_nodes/infiniteyou/requirements.txt (line 5)) (6.0.2)
+Requirement already satisfied: filelock in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from huggingface_hub->-r custom_nodes/infiniteyou/requirements.txt (line 5)) (3.18.0)
+Requirement already satisfied: colorama in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from tqdm->facexlib>=0.3.0->-r custom_nodes/infiniteyou/requirements.txt (line 1)) (0.4.6)
+Requirement already satisfied: albucore==0.0.24 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from albumentations->insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (0.0.24)
+Requirement already satisfied: opencv-python-headless>=4.9.0.80 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from albumentations->insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (4.11.0.86)
+Requirement already satisfied: pydantic>=2.9.2 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from albumentations->insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (2.11.4)
+Requirement already satisfied: stringzilla>=3.10.4 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from albucore==0.0.24->albumentations->insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (3.12.5)
+Requirement already satisfied: simsimd>=5.9.2 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from albucore==0.0.24->albumentations->insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (6.2.1)
+Requirement already satisfied: pydantic-core==2.33.2 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from pydantic>=2.9.2->albumentations->insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (2.33.2)
+Requirement already satisfied: annotated-types>=0.6.0 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from pydantic>=2.9.2->albumentations->insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (0.7.0)
+Requirement already satisfied: typing-inspection>=0.4.0 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from pydantic>=2.9.2->albumentations->insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (0.4.0)
+Collecting humanfriendly>=9.1
+  Using cached humanfriendly-10.0-py2.py3-none-any.whl (86 kB)
+Collecting pyreadline3
+  Using cached pyreadline3-3.5.4-py3-none-any.whl (83 kB)
+Requirement already satisfied: kiwisolver>=1.3.1 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from matplotlib->insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (1.4.8)
+Requirement already satisfied: python-dateutil>=2.7 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from matplotlib->insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (2.9.0.post0)
+Requirement already satisfied: pyparsing>=2.3.1 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from matplotlib->insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (3.2.3)
+Requirement already satisfied: contourpy>=1.0.1 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from matplotlib->insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (1.3.2)
+Requirement already satisfied: fonttools>=4.22.0 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from matplotlib->insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (4.58.0)
+Requirement already satisfied: cycler>=0.10 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from matplotlib->insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (0.12.1)
+Requirement already satisfied: six>=1.5 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from python-dateutil>=2.7->matplotlib->insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (1.17.0)
+Requirement already satisfied: llvmlite<0.45,>=0.44.0dev0 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from numba->facexlib>=0.3.0->-r custom_nodes/infiniteyou/requirements.txt (line 1)) (0.44.0)
+Requirement already satisfied: wcwidth in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from prettytable->insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (0.2.13)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from requests->insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (3.10)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from requests->insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (3.4.2)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from requests->insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (2025.4.26)
+Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from requests->insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (2.4.0)
+Requirement already satisfied: networkx>=3.0 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from scikit-image->insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (3.4.2)
+Requirement already satisfied: imageio!=2.35.0,>=2.33 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from scikit-image->insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (2.37.0)
+Requirement already satisfied: tifffile>=2022.8.12 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from scikit-image->insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (2025.5.10)
+Requirement already satisfied: lazy-loader>=0.4 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from scikit-image->insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (0.4)
+Requirement already satisfied: joblib>=1.2.0 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from scikit-learn->insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (1.5.0)
+Requirement already satisfied: threadpoolctl>=3.1.0 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from scikit-learn->insightface>=0.7.3->-r custom_nodes/infiniteyou/requirements.txt (line 3)) (3.6.0)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from sympy->onnxruntime>=1.19.2->-r custom_nodes/infiniteyou/requirements.txt (line 2)) (1.3.0)
+Requirement already satisfied: jinja2 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from torch->facexlib>=0.3.0->-r custom_nodes/infiniteyou/requirements.txt (line 1)) (3.1.6)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\rando\appdata\local\programs\python\python310\lib\site-packages (from jinja2->torch->facexlib>=0.3.0->-r custom_nodes/infiniteyou/requirements.txt (line 1)) (3.0.2)
+Building wheels for collected packages: insightface
+  Building wheel for insightface (PEP 517) ... done
+  Created wheel for insightface: filename=insightface-0.7.3-cp310-cp310-win_amd64.whl size=879349 sha256=29e145bfc90d72ceb0e297e7c1b943c2610ca8003ceb2345f07f995286321587
+  Stored in directory: c:\users\rando\appdata\local\pip\cache\wheels\e3\d0\80\e3773fb8b6d1cca87ea1d33d9b1f20a223a6493c896da249b5
+Successfully built insightface
+Installing collected packages: pyreadline3, humanfriendly, prettytable, onnx, easydict, cython, coloredlogs, onnxruntime, insightface
+Successfully installed coloredlogs-15.0.1 cython-3.1.0 easydict-1.13 humanfriendly-10.0 insightface-0.7.3 onnx-1.18.0 onnxruntime-1.22.0 prettytable-3.16.0 pyreadline3-3.5.4
+WARNING: You are using pip version 21.2.3; however, version 25.1.1 is available.
+You should consider upgrading via the 'C:\Users\rando\AppData\Local\Programs\Python\Python310\python.exe -m pip install --upgrade pip' command.
+PS C:\ComfyUI_windows_portable\ComfyUI>
