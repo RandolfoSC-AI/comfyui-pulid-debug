@@ -1,0 +1,558 @@
+C:\ComfyUI_windows_portable>.\python_embeded\python.exe -s ComfyUI\main.py --windows-standalone-build
+[START] Security scan
+[DONE] Security scan
+## ComfyUI-Manager: installing dependencies done.
+** ComfyUI startup time: 2025-05-18 07:05:47.462
+** Platform: Windows
+** Python version: 3.12.9 (tags/v3.12.9:fdb8142, Feb  4 2025, 15:27:58) [MSC v.1942 64 bit (AMD64)]
+** Python executable: C:\ComfyUI_windows_portable\python_embeded\python.exe
+** ComfyUI Path: C:\ComfyUI_windows_portable\ComfyUI
+** ComfyUI Base Folder Path: C:\ComfyUI_windows_portable\ComfyUI
+** User directory: C:\ComfyUI_windows_portable\ComfyUI\user
+** ComfyUI-Manager config path: C:\ComfyUI_windows_portable\ComfyUI\user\default\ComfyUI-Manager\config.ini
+** Log path: C:\ComfyUI_windows_portable\ComfyUI\user\comfyui.log
+
+Prestartup times for custom nodes:
+   2.6 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-manager
+
+Checkpoint files will always be loaded safely.
+Total VRAM 8192 MB, total RAM 65437 MB
+pytorch version: 2.7.0+cu128
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 NVIDIA GeForce RTX 2070 : cudaMallocAsync
+Using pytorch attention
+Python version: 3.12.9 (tags/v3.12.9:fdb8142, Feb  4 2025, 15:27:58) [MSC v.1942 64 bit (AMD64)]
+ComfyUI version: 0.3.34
+ComfyUI frontend version: 1.19.9
+[Prompt Server] web root: C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\comfyui_frontend_package\static
+### Loading: ComfyUI-Manager (V3.32.2)
+[ComfyUI-Manager] network_mode: public
+### ComfyUI Version: v0.3.34-22-gf5e4e976 | Released on '2025-05-18'
+Traceback (most recent call last):
+  File "C:\ComfyUI_windows_portable\ComfyUI\nodes.py", line 2131, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-PuLID-Flux\__init__.py", line 1, in <module>
+    from .pulidflux import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+  File "C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-PuLID-Flux\pulidflux.py", line 11, in <module>
+    from insightface.app import FaceAnalysis
+ModuleNotFoundError: No module named 'insightface'
+
+Cannot import C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-PuLID-Flux module for custom nodes: No module named 'insightface'
+Traceback (most recent call last):
+  File "C:\ComfyUI_windows_portable\ComfyUI\nodes.py", line 2131, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_pulid_flux_ll\__init__.py", line 1, in <module>
+    from .pulidflux import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+  File "C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_pulid_flux_ll\pulidflux.py", line 6, in <module>
+    from insightface.utils.download import download_file
+ModuleNotFoundError: No module named 'insightface'
+
+Cannot import C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_pulid_flux_ll module for custom nodes: No module named 'insightface'
+
+Import times for custom nodes:
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\websocket_image_save.py
+   0.0 seconds (IMPORT FAILED): C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-PuLID-Flux
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_patches_ll
+   0.1 seconds (IMPORT FAILED): C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_pulid_flux_ll
+   0.2 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-manager
+
+Starting server
+
+To see the GUI go to: http://127.0.0.1:8188
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+FETCH ComfyRegistry Data: 5/85
+FETCH ComfyRegistry Data: 10/85
+FETCH ComfyRegistry Data: 15/85
+FETCH ComfyRegistry Data: 20/85
+FETCH ComfyRegistry Data: 25/85
+FETCH ComfyRegistry Data: 30/85
+FETCH ComfyRegistry Data: 35/85
+FETCH ComfyRegistry Data: 40/85
+FETCH ComfyRegistry Data: 45/85
+FETCH ComfyRegistry Data: 50/85
+FETCH ComfyRegistry Data: 55/85
+FETCH ComfyRegistry Data: 60/85
+FETCH ComfyRegistry Data: 65/85
+FETCH ComfyRegistry Data: 70/85
+FETCH ComfyRegistry Data: 75/85
+FETCH ComfyRegistry Data: 80/85
+FETCH ComfyRegistry Data: 85/85
+FETCH ComfyRegistry Data [DONE]
+[ComfyUI-Manager] default cache updated: https://api.comfy.org/nodes
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json [DONE]
+[ComfyUI-Manager] All startup tasks have been completed.
+[ComfyUI-Manager] The ComfyRegistry cache update is still in progress, so an outdated cache is being used.
+FETCH DATA from: C:\ComfyUI_windows_portable\ComfyUI\user\default\ComfyUI-Manager\cache\1514988643_custom-node-list.json [DONE]
+[ComfyUI-Manager] The ComfyRegistry cache update is still in progress, so an outdated cache is being used.
+FETCH DATA from: C:\ComfyUI_windows_portable\ComfyUI\user\default\ComfyUI-Manager\cache\1514988643_custom-node-list.json [DONE]
+[ComfyUI-Manager] Updating ComfyUI: nightly -> v0.3.34
+ComfyUI is updated to latest stable version.
+Updating: comfyui_pulid_flux_llPumping 'stderr' of cmd(['git', 'fetch', '-v', '--', 'origin']) failed due to: UnicodeDecodeError('utf-8', b"fatal: detected dubious ownership in repository at 'C:/ComfyUI_windows_portable/ComfyUI/custom_nodes/comfyui_pulid_flux_ll'\n'C:/ComfyUI_windows_portable/ComfyUI/custom_nodes/comfyui_pulid_flux_ll' is owned by:\n\tBUILTIN/Administradores (S-1-5-32-544)\nbut the current user is:\n\tC\xc9REBRO/rando (S-1-5-21-3391626582-854245821-2953379432-1001)\nTo add an exception for this directory, call:\n\n\tgit config --global --add safe.directory C:/ComfyUI_windows_portable/ComfyUI/custom_nodes/comfyui_pulid_flux_ll\n", 277, 278, 'invalid continuation byte')
+Exception in thread Thread-133 (pump_stream):
+Traceback (most recent call last):
+  File "C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\git\cmd.py", line 152, in pump_stream
+    for line in stream:
+                ^^^^^^
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc9 in position 277: invalid continuation byte
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "threading.py", line 1075, in _bootstrap_inner
+  File "threading.py", line 1012, in run
+  File "C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\git\cmd.py", line 165, in pump_stream
+    raise CommandError([f"<{name}-pump>"] + remove_password_if_present(cmdline), ex) from ex
+git.exc.CommandError: Cmd('<stderr-pump>') failed due to: UnicodeDecodeError(''utf-8' codec can't decode byte 0xc9 in position 277: invalid continuation byte')
+  cmdline: <stderr-pump> git fetch -v -- origin
+Traceback (most recent call last):
+  File "C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-manager\glob\manager_server.py", line 436, in do_update
+    res = core.unified_manager.unified_update(node_name, node_ver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-manager\glob\manager_core.py", line 1395, in unified_update
+    return self.repo_update(self.active_nodes[node_id][1], instant_execution=instant_execution, no_deps=no_deps, return_postinstall=return_postinstall).with_target('nightly').with_ver('nightly')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-manager\glob\manager_core.py", line 1358, in repo_update
+    commit_hash = repo.head.commit.hexsha
+                  ^^^^^^^^^^^^^^^^
+  File "C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\git\refs\symbolic.py", line 297, in _get_commit
+    obj = self._get_object()
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\git\refs\symbolic.py", line 288, in _get_object
+    return Object.new_from_sha(self.repo, hex_to_bin(self.dereference_recursive(self.repo, self.path)))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\git\objects\base.py", line 149, in new_from_sha
+    oinfo = repo.odb.info(sha1)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\git\db.py", line 41, in info
+    hexsha, typename, size = self._git.get_object_header(bin_to_hex(binsha))
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\git\cmd.py", line 1679, in get_object_header
+    return self.__get_object_header(cmd, ref)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\git\cmd.py", line 1663, in __get_object_header
+    return self._parse_object_header(cmd.stdout.readline())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\git\cmd.py", line 1622, in _parse_object_header
+    raise ValueError(err_msg)
+ValueError: SHA is empty, possible dubious ownership in the repository at C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_pulid_flux_ll.
+            If this is unintended run:
+
+                      "git config --global --add safe.directory C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_pulid_flux_ll"
+Updating: ComfyUI-PuLID-Flux
+[ComfyUI-Manager] Queued works are completed.
+{'update-comfyui': 1, 'update-main': 4}
+
+After restarting ComfyUI, please refresh the browser.
+FETCH DATA from: C:\ComfyUI_windows_portable\ComfyUI\user\default\ComfyUI-Manager\cache\4245046894_model-list.json [DONE]
+FETCH DATA from: C:\ComfyUI_windows_portable\ComfyUI\user\default\ComfyUI-Manager\cache\4245046894_model-list.json [DONE]
+Install model 'pulid_v1.1.safetensors' from 'https://huggingface.co/guozinan/PuLID/resolve/main/pulid_v1.1.safetensors' into 'C:\ComfyUI_windows_portable\ComfyUI\models\pulid\pulid_v1.1.safetensors'
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 984M/984M [00:13<00:00, 70.7MB/s]
+
+[ComfyUI-Manager] Queued works are completed.
+{'install-model': 1}
+
+After restarting ComfyUI, please refresh the browser.
+[ComfyUI-Manager] The ComfyRegistry cache update is still in progress, so an outdated cache is being used.
+FETCH DATA from: C:\ComfyUI_windows_portable\ComfyUI\user\default\ComfyUI-Manager\cache\1514988643_custom-node-list.json [DONE]
+FETCH DATA from: C:\ComfyUI_windows_portable\ComfyUI\user\default\ComfyUI-Manager\cache\746607195_github-stats.json [DONE]
+FETCH DATA from: C:\ComfyUI_windows_portable\ComfyUI\user\default\ComfyUI-Manager\cache\832903789_extras.json [DONE]
+FETCH DATA from: C:\ComfyUI_windows_portable\ComfyUI\user\default\ComfyUI-Manager\cache\1742899825_extension-node-map.json [DONE]
+Install: pip packages
+
+[ComfyUI-Manager] Queued works are completed.
+{'fix': 1}
+
+After restarting ComfyUI, please refresh the browser.
+
+Restarting... [Legacy Mode]
+
+
+Command: ['"C:\\ComfyUI_windows_portable\\python_embeded\\python.exe"', '"ComfyUI\\main.py"']
+
+C:\ComfyUI_windows_portable>pause
+Pressione qualquer tecla para continuar. . . [START] Security scan
+[DONE] Security scan
+## ComfyUI-Manager: installing dependencies done.
+** ComfyUI startup time: 2025-05-18 07:16:06.942
+** Platform: Windows
+** Python version: 3.12.9 (tags/v3.12.9:fdb8142, Feb  4 2025, 15:27:58) [MSC v.1942 64 bit (AMD64)]
+** Python executable: C:\ComfyUI_windows_portable\python_embeded\python.exe
+** ComfyUI Path: C:\ComfyUI_windows_portable\ComfyUI
+** ComfyUI Base Folder Path: C:\ComfyUI_windows_portable\ComfyUI
+** User directory: C:\ComfyUI_windows_portable\ComfyUI\user
+** ComfyUI-Manager config path: C:\ComfyUI_windows_portable\ComfyUI\user\default\ComfyUI-Manager\config.ini
+** Log path: C:\ComfyUI_windows_portable\ComfyUI\user\comfyui.log
+
+#######################################################################
+[ComfyUI-Manager] Starting dependency installation/(de)activation for the extension
+
+
+## ComfyUI-Manager: EXECUTE => ['C:\\ComfyUI_windows_portable\\python_embeded\\python.exe', '-s', '-m', 'pip', 'install', 'insightface']
+
+## Execute management script for 'C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_pulid_flux_ll'
+ Collecting insightface
+   Using cached insightface-0.7.3.tar.gz (439 kB)
+   Installing build dependencies: started
+   Installing build dependencies: finished with status 'done'
+   Getting requirements to build wheel: started
+   Getting requirements to build wheel: finished with status 'done'
+   Preparing metadata (pyproject.toml): started
+   Preparing metadata (pyproject.toml): finished with status 'done'
+  Collecting onnx (from insightface)
+   Using cached onnx-1.18.0-cp312-cp312-win_amd64.whl.metadata (7.0 kB)
+      Collecting scikit-learn (from insightface)
+   Using cached scikit_learn-1.6.1-cp312-cp312-win_amd64.whl.metadata (15 kB)
+ Collecting scikit-image (from insightface)
+   Using cached scikit_image-0.25.2-cp312-cp312-win_amd64.whl.metadata (14 kB)
+ Collecting easydict (from insightface)
+   Using cached easydict-1.13-py3-none-any.whl.metadata (4.2 kB)
+  Collecting albumentations (from insightface)
+   Using cached albumentations-2.0.7-py3-none-any.whl.metadata (43 kB)
+ Collecting prettytable (from insightface)
+   Using cached prettytable-3.16.0-py3-none-any.whl.metadata (33 kB)
+   Collecting albucore==0.0.24 (from albumentations->insightface)
+   Using cached albucore-0.0.24-py3-none-any.whl.metadata (5.3 kB)
+ Collecting opencv-python-headless>=4.9.0.80 (from albumentations->insightface)
+   Using cached opencv_python_headless-4.11.0.86-cp37-abi3-win_amd64.whl.metadata (20 kB)
+ Collecting stringzilla>=3.10.4 (from albucore==0.0.24->albumentations->insightface)
+   Using cached stringzilla-3.12.5-cp312-cp312-win_amd64.whl.metadata (81 kB)
+ Collecting simsimd>=5.9.2 (from albucore==0.0.24->albumentations->insightface)
+   Using cached simsimd-6.2.1-cp312-cp312-win_amd64.whl.metadata (67 kB)
+                    Collecting imageio!=2.35.0,>=2.33 (from scikit-image->insightface)
+   Using cached imageio-2.37.0-py3-none-any.whl.metadata (5.2 kB)
+ Collecting tifffile>=2022.8.12 (from scikit-image->insightface)
+   Using cached tifffile-2025.5.10-py3-none-any.whl.metadata (31 kB)
+ Collecting lazy-loader>=0.4 (from scikit-image->insightface)
+   Using cached lazy_loader-0.4-py3-none-any.whl.metadata (7.6 kB)
+ Collecting joblib>=1.2.0 (from scikit-learn->insightface)
+   Using cached joblib-1.5.0-py3-none-any.whl.metadata (5.6 kB)
+ Collecting threadpoolctl>=3.1.0 (from scikit-learn->insightface)
+   Using cached threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+  Using cached albumentations-2.0.7-py3-none-any.whl (367 kB)
+ Using cached albucore-0.0.24-py3-none-any.whl (15 kB)
+ Using cached opencv_python_headless-4.11.0.86-cp37-abi3-win_amd64.whl (39.4 MB)
+ Using cached simsimd-6.2.1-cp312-cp312-win_amd64.whl (87 kB)
+ Using cached stringzilla-3.12.5-cp312-cp312-win_amd64.whl (80 kB)
+ Using cached easydict-1.13-py3-none-any.whl (6.8 kB)
+ Using cached onnx-1.18.0-cp312-cp312-win_amd64.whl (15.9 MB)
+ Using cached prettytable-3.16.0-py3-none-any.whl (33 kB)
+ Using cached scikit_image-0.25.2-cp312-cp312-win_amd64.whl (12.9 MB)
+ Using cached imageio-2.37.0-py3-none-any.whl (315 kB)
+ Using cached lazy_loader-0.4-py3-none-any.whl (12 kB)
+ Using cached tifffile-2025.5.10-py3-none-any.whl (226 kB)
+ Using cached scikit_learn-1.6.1-cp312-cp312-win_amd64.whl (11.1 MB)
+ Using cached joblib-1.5.0-py3-none-any.whl (307 kB)
+ Using cached threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+ Building wheels for collected packages: insightface
+   Building wheel for insightface (pyproject.toml): started
+   Building wheel for insightface (pyproject.toml): finished with status 'error'
+[!]   error: subprocess-exited-with-error
+[!]
+[!]   Building wheel for insightface (pyproject.toml) did not run successfully.
+[!]   exit code: 1
+[!]
+[!]   [225 lines of output]
+[!]   WARNING: pandoc not enabled
+[!]   running bdist_wheel
+[!]   running build
+[!]   running build_py
+[!]   creating build\lib.win-amd64-cpython-312\insightface
+[!]   copying insightface\__init__.py -> build\lib.win-amd64-cpython-312\insightface
+[!]   creating build\lib.win-amd64-cpython-312\insightface\app
+[!]   copying insightface\app\common.py -> build\lib.win-amd64-cpython-312\insightface\app
+[!]   copying insightface\app\face_analysis.py -> build\lib.win-amd64-cpython-312\insightface\app
+[!]   copying insightface\app\mask_renderer.py -> build\lib.win-amd64-cpython-312\insightface\app
+[!]   copying insightface\app\__init__.py -> build\lib.win-amd64-cpython-312\insightface\app
+[!]   creating build\lib.win-amd64-cpython-312\insightface\commands
+[!]   copying insightface\commands\insightface_cli.py -> build\lib.win-amd64-cpython-312\insightface\commands
+[!]   copying insightface\commands\model_download.py -> build\lib.win-amd64-cpython-312\insightface\commands
+[!]   copying insightface\commands\rec_add_mask_param.py -> build\lib.win-amd64-cpython-312\insightface\commands
+[!]   copying insightface\commands\__init__.py -> build\lib.win-amd64-cpython-312\insightface\commands
+[!]   creating build\lib.win-amd64-cpython-312\insightface\data
+[!]   copying insightface\data\image.py -> build\lib.win-amd64-cpython-312\insightface\data
+[!]   copying insightface\data\pickle_object.py -> build\lib.win-amd64-cpython-312\insightface\data
+[!]   copying insightface\data\rec_builder.py -> build\lib.win-amd64-cpython-312\insightface\data
+[!]   copying insightface\data\__init__.py -> build\lib.win-amd64-cpython-312\insightface\data
+[!]   creating build\lib.win-amd64-cpython-312\insightface\model_zoo
+[!]   copying insightface\model_zoo\arcface_onnx.py -> build\lib.win-amd64-cpython-312\insightface\model_zoo
+[!]   copying insightface\model_zoo\attribute.py -> build\lib.win-amd64-cpython-312\insightface\model_zoo
+[!]   copying insightface\model_zoo\inswapper.py -> build\lib.win-amd64-cpython-312\insightface\model_zoo
+[!]   copying insightface\model_zoo\landmark.py -> build\lib.win-amd64-cpython-312\insightface\model_zoo
+[!]   copying insightface\model_zoo\model_store.py -> build\lib.win-amd64-cpython-312\insightface\model_zoo
+[!]   copying insightface\model_zoo\model_zoo.py -> build\lib.win-amd64-cpython-312\insightface\model_zoo
+[!]   copying insightface\model_zoo\retinaface.py -> build\lib.win-amd64-cpython-312\insightface\model_zoo
+[!]   copying insightface\model_zoo\scrfd.py -> build\lib.win-amd64-cpython-312\insightface\model_zoo
+[!]   copying insightface\model_zoo\__init__.py -> build\lib.win-amd64-cpython-312\insightface\model_zoo
+[!]   creating build\lib.win-amd64-cpython-312\insightface\thirdparty
+[!]   copying insightface\thirdparty\__init__.py -> build\lib.win-amd64-cpython-312\insightface\thirdparty
+[!]   creating build\lib.win-amd64-cpython-312\insightface\utils
+[!]   copying insightface\utils\constant.py -> build\lib.win-amd64-cpython-312\insightface\utils
+[!]   copying insightface\utils\download.py -> build\lib.win-amd64-cpython-312\insightface\utils
+[!]   copying insightface\utils\face_align.py -> build\lib.win-amd64-cpython-312\insightface\utils
+[!]   copying insightface\utils\filesystem.py -> build\lib.win-amd64-cpython-312\insightface\utils
+[!]   copying insightface\utils\storage.py -> build\lib.win-amd64-cpython-312\insightface\utils
+[!]   copying insightface\utils\transform.py -> build\lib.win-amd64-cpython-312\insightface\utils
+[!]   copying insightface\utils\__init__.py -> build\lib.win-amd64-cpython-312\insightface\utils
+[!]   creating build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d
+[!]   copying insightface\thirdparty\face3d\__init__.py -> build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d
+[!]   creating build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\mesh
+[!]   copying insightface\thirdparty\face3d\mesh\io.py -> build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\mesh
+[!]   copying insightface\thirdparty\face3d\mesh\light.py -> build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\mesh
+[!]   copying insightface\thirdparty\face3d\mesh\render.py -> build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\mesh
+[!]   copying insightface\thirdparty\face3d\mesh\transform.py -> build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\mesh
+[!]   copying insightface\thirdparty\face3d\mesh\vis.py -> build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\mesh
+[!]   copying insightface\thirdparty\face3d\mesh\__init__.py -> build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\mesh
+[!]   creating build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\mesh_numpy
+[!]   copying insightface\thirdparty\face3d\mesh_numpy\io.py -> build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\mesh_numpy
+[!]   copying insightface\thirdparty\face3d\mesh_numpy\light.py -> build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\mesh_numpy
+[!]   copying insightface\thirdparty\face3d\mesh_numpy\render.py -> build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\mesh_numpy
+[!]   copying insightface\thirdparty\face3d\mesh_numpy\transform.py -> build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\mesh_numpy
+[!]   copying insightface\thirdparty\face3d\mesh_numpy\vis.py -> build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\mesh_numpy
+[!]   copying insightface\thirdparty\face3d\mesh_numpy\__init__.py -> build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\mesh_numpy
+[!]   creating build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\morphable_model
+[!]   copying insightface\thirdparty\face3d\morphable_model\fit.py -> build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\morphable_model
+[!]   copying insightface\thirdparty\face3d\morphable_model\load.py -> build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\morphable_model
+[!]   copying insightface\thirdparty\face3d\morphable_model\morphabel_model.py -> build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\morphable_model
+[!]   copying insightface\thirdparty\face3d\morphable_model\__init__.py -> build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\morphable_model
+[!]   running egg_info
+[!]   writing insightface.egg-info\PKG-INFO
+[!]   writing dependency_links to insightface.egg-info\dependency_links.txt
+[!]   writing entry points to insightface.egg-info\entry_points.txt
+[!]   writing requirements to insightface.egg-info\requires.txt
+[!]   writing top-level names to insightface.egg-info\top_level.txt
+[!]   reading manifest file 'insightface.egg-info\SOURCES.txt'
+[!]   writing manifest file 'insightface.egg-info\SOURCES.txt'
+[!]   C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\setuptools\command\build_py.py:212: _Warning: Package 'insightface.thirdparty.face3d.mesh.cython' is absent from the `packages` configuration.
+[!]   !!
+[!]
+[!]           ********************************************************************************
+[!]           ############################
+[!]           # Package would be ignored #
+[!]           ############################
+[!]           Python recognizes 'insightface.thirdparty.face3d.mesh.cython' as an importable package[^1],
+[!]           but it is absent from setuptools' `packages` configuration.
+[!]
+[!]           This leads to an ambiguous overall configuration. If you want to distribute this
+[!]           package, please make sure that 'insightface.thirdparty.face3d.mesh.cython' is explicitly added
+[!]           to the `packages` configuration field.
+[!]
+[!]           Alternatively, you can also rely on setuptools' discovery methods
+[!]           (for example by using `find_namespace_packages(...)`/`find_namespace:`
+[!]           instead of `find_packages(...)`/`find:`).
+[!]
+[!]           You can read more about "package discovery" on setuptools documentation page:
+[!]
+[!]           - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+[!]
+[!]           If you don't want 'insightface.thirdparty.face3d.mesh.cython' to be distributed and are
+[!]           already explicitly excluding 'insightface.thirdparty.face3d.mesh.cython' via
+[!]           `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+[!]           you can try to use `exclude_package_data`, or `include-package-data=False` in
+[!]           combination with a more fine grained `package-data` configuration.
+[!]
+[!]           You can read more about "package data files" on setuptools documentation page:
+[!]
+[!]           - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+[!]
+[!]
+[!]           [^1]: For Python, any directory (with suitable naming) can be imported,
+[!]                 even if it does not contain any `.py` files.
+[!]                 On the other hand, currently there is no concept of package data
+[!]                 directory, all directories are treated like packages.
+[!]           ********************************************************************************
+[!]
+[!]   !!
+[!]     check.warn(importable)
+[!]   C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\setuptools\command\build_py.py:212: _Warning: Package 'insightface.data.images' is absent from the `packages` configuration.
+[!]   !!
+[!]
+[!]           ********************************************************************************
+[!]           ############################
+[!]           # Package would be ignored #
+[!]           ############################
+[!]           Python recognizes 'insightface.data.images' as an importable package[^1],
+[!]           but it is absent from setuptools' `packages` configuration.
+[!]
+[!]           This leads to an ambiguous overall configuration. If you want to distribute this
+[!]           package, please make sure that 'insightface.data.images' is explicitly added
+[!]           to the `packages` configuration field.
+[!]
+[!]           Alternatively, you can also rely on setuptools' discovery methods
+[!]           (for example by using `find_namespace_packages(...)`/`find_namespace:`
+[!]           instead of `find_packages(...)`/`find:`).
+[!]
+[!]           You can read more about "package discovery" on setuptools documentation page:
+[!]
+[!]           - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+[!]
+[!]           If you don't want 'insightface.data.images' to be distributed and are
+[!]           already explicitly excluding 'insightface.data.images' via
+[!]           `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+[!]           you can try to use `exclude_package_data`, or `include-package-data=False` in
+[!]           combination with a more fine grained `package-data` configuration.
+[!]
+[!]           You can read more about "package data files" on setuptools documentation page:
+[!]
+[!]           - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+[!]
+[!]
+[!]           [^1]: For Python, any directory (with suitable naming) can be imported,
+[!]                 even if it does not contain any `.py` files.
+[!]                 On the other hand, currently there is no concept of package data
+[!]                 directory, all directories are treated like packages.
+[!]           ********************************************************************************
+[!]
+[!]   !!
+[!]     check.warn(importable)
+[!]   C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\setuptools\command\build_py.py:212: _Warning: Package 'insightface.data.objects' is absent from the `packages` configuration.
+[!]   !!
+[!]
+[!]           ********************************************************************************
+[!]           ############################
+[!]           # Package would be ignored #
+[!]           ############################
+[!]           Python recognizes 'insightface.data.objects' as an importable package[^1],
+[!]           but it is absent from setuptools' `packages` configuration.
+[!]
+[!]           This leads to an ambiguous overall configuration. If you want to distribute this
+[!]           package, please make sure that 'insightface.data.objects' is explicitly added
+[!]           to the `packages` configuration field.
+[!]
+[!]           Alternatively, you can also rely on setuptools' discovery methods
+[!]           (for example by using `find_namespace_packages(...)`/`find_namespace:`
+[!]           instead of `find_packages(...)`/`find:`).
+[!]
+[!]           You can read more about "package discovery" on setuptools documentation page:
+[!]
+[!]           - https://setuptools.pypa.io/en/latest/userguide/package_discovery.html
+[!]
+[!] Failed to build insightface
+           If you don't want 'insightface.data.objects' to be distributed and are
+[!]           already explicitly excluding 'insightface.data.objects' via
+[!]           `find_namespace_packages(...)/find_namespace` or `find_packages(...)/find`,
+[!]           you can try to use `exclude_package_data`, or `include-package-data=False` in
+[!]           combination with a more fine grained `package-data` configuration.
+[!]
+[!]           You can read more about "package data files" on setuptools documentation page:
+[!]
+[!]           - https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+[!]
+[!]
+[!]           [^1]: For Python, any directory (with suitable naming) can be imported,
+[!]                 even if it does not contain any `.py` files.
+[!]                 On the other hand, currently there is no concept of package data
+[!]                 directory, all directories are treated like packages.
+[!]           ********************************************************************************
+[!]
+[!]   !!
+[!]     check.warn(importable)
+[!]   creating build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\mesh\cython
+[!]   copying insightface\thirdparty\face3d\mesh\cython\mesh_core.cpp -> build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\mesh\cython
+[!]   copying insightface\thirdparty\face3d\mesh\cython\mesh_core.h -> build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\mesh\cython
+[!]   copying insightface\thirdparty\face3d\mesh\cython\mesh_core_cython.cpp -> build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\mesh\cython
+[!]   creating build\lib.win-amd64-cpython-312\insightface\data\images
+[!]   copying insightface\data\images\Tom_Hanks_54745.png -> build\lib.win-amd64-cpython-312\insightface\data\images
+[!]   copying insightface\data\images\mask_black.jpg -> build\lib.win-amd64-cpython-312\insightface\data\images
+[!]   copying insightface\data\images\mask_blue.jpg -> build\lib.win-amd64-cpython-312\insightface\data\images
+[!]   copying insightface\data\images\mask_green.jpg -> build\lib.win-amd64-cpython-312\insightface\data\images
+[!]   copying insightface\data\images\mask_white.jpg -> build\lib.win-amd64-cpython-312\insightface\data\images
+[!]   copying insightface\data\images\t1.jpg -> build\lib.win-amd64-cpython-312\insightface\data\images
+[!]   creating build\lib.win-amd64-cpython-312\insightface\data\objects
+[!]   copying insightface\data\objects\meanshape_68.pkl -> build\lib.win-amd64-cpython-312\insightface\data\objects
+[!]   copying insightface\thirdparty\face3d\mesh\cython\mesh_core_cython.c -> build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\mesh\cython
+[!]   copying insightface\thirdparty\face3d\mesh\cython\mesh_core_cython.cpp -> build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\mesh\cython
+[!]   copying insightface\thirdparty\face3d\mesh\cython\mesh_core_cython.pyx -> build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\mesh\cython
+[!]   copying insightface\thirdparty\face3d\mesh\cython\setup.py -> build\lib.win-amd64-cpython-312\insightface\thirdparty\face3d\mesh\cython
+[!]   running build_ext
+[!]   building 'insightface.thirdparty.face3d.mesh.cython.mesh_core_cython' extension
+[!]   creating build\temp.win-amd64-cpython-312\Release\insightface\thirdparty\face3d\mesh\cython
+[!]   "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\HostX86\x64\cl.exe" /c /nologo /O2 /W3 /GL /DNDEBUG /MD -Iinsightface/thirdparty/face3d/mesh/cython -IC:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\numpy\core\include -IC:\ComfyUI_windows_portable\python_embeded\include -IC:\ComfyUI_windows_portable\python_embeded\Include "-IC:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include" "-IC:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\VS\include" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.26100.0\\um" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.26100.0\\shared" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.26100.0\\winrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.26100.0\\cppwinrt" /EHsc /Tpinsightface/thirdparty/face3d/mesh/cython/mesh_core.cpp /Fobuild\temp.win-amd64-cpython-312\Release\insightface\thirdparty\face3d\mesh\cython\mesh_core.obj
+[!]   mesh_core.cpp
+[!]   insightface/thirdparty/face3d/mesh/cython/mesh_core.cpp(147): warning C4244: '=': conversÆo de 'int' para 'float', poss¡vel perda de dados
+[!]   insightface/thirdparty/face3d/mesh/cython/mesh_core.cpp(147): warning C4244: '=': conversÆo de 'int' para 'float', poss¡vel perda de dados
+[!]   insightface/thirdparty/face3d/mesh/cython/mesh_core.cpp(210): warning C4244: '=': conversÆo de 'int' para 'float', poss¡vel perda de dados
+[!]   insightface/thirdparty/face3d/mesh/cython/mesh_core.cpp(210): warning C4244: '=': conversÆo de 'int' para 'float', poss¡vel perda de dados
+[!]   insightface/thirdparty/face3d/mesh/cython/mesh_core.cpp(294): warning C4244: '=': conversÆo de 'int' para 'float', poss¡vel perda de dados
+[!]   insightface/thirdparty/face3d/mesh/cython/mesh_core.cpp(294): warning C4244: '=': conversÆo de 'int' para 'float', poss¡vel perda de dados
+[!]   "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\HostX86\x64\cl.exe" /c /nologo /O2 /W3 /GL /DNDEBUG /MD -Iinsightface/thirdparty/face3d/mesh/cython -IC:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\numpy\core\include -IC:\ComfyUI_windows_portable\python_embeded\include -IC:\ComfyUI_windows_portable\python_embeded\Include "-IC:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include" "-IC:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\VS\include" "-IC:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.26100.0\\um" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.26100.0\\shared" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.26100.0\\winrt" "-IC:\Program Files (x86)\Windows Kits\10\\include\10.0.26100.0\\cppwinrt" /EHsc /Tpinsightface/thirdparty/face3d/mesh/cython/mesh_core_cython.cpp /Fobuild\temp.win-amd64-cpython-312\Release\insightface\thirdparty\face3d\mesh\cython\mesh_core_cython.obj
+[!]   mesh_core_cython.cpp
+[!]   insightface/thirdparty/face3d/mesh/cython/mesh_core_cython.cpp(31): fatal error C1083: NÆo ‚ poss¡vel abrir arquivo incluir: 'Python.h': No such file or directory
+[!]   error: command 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX86\\x64\\cl.exe' failed with exit code 2
+[!]   [end of output]
+[!]
+[!]   note: This error originates from a subprocess, and is likely not a problem with pip.
+[!]   ERROR: Failed building wheel for insightface
+[!] ERROR: Failed to build installable wheels for some pyproject.toml based projects (insightface)
+management script failed: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_pulid_flux_ll
+
+## ComfyUI-Manager: EXECUTE => ['C:\\ComfyUI_windows_portable\\python_embeded\\python.exe', '-s', '-m', 'pip', 'install', "onnxruntime-gpu; sys_platform != 'darwin' and (platform_machine == 'x86_64' or platform_machine == 'AMD64')"]
+
+## Execute management script for 'C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_pulid_flux_ll'
+
+[ComfyUI-Manager] Startup script completed.
+#######################################################################
+
+[ComfyUI-Manager] Restarting to reapply dependency installation.
+Command: ['"C:\\ComfyUI_windows_portable\\python_embeded\\python.exe"', '"ComfyUI\\main.py"']
+--------------------------------------------------------------------------
+
+[START] Security scan
+[DONE] Security scan
+## ComfyUI-Manager: installing dependencies done.
+** ComfyUI startup time: 2025-05-18 07:16:24.248
+** Platform: Windows
+** Python version: 3.12.9 (tags/v3.12.9:fdb8142, Feb  4 2025, 15:27:58) [MSC v.1942 64 bit (AMD64)]
+** Python executable: C:\ComfyUI_windows_portable\python_embeded\python.exe
+** ComfyUI Path: C:\ComfyUI_windows_portable\ComfyUI
+** ComfyUI Base Folder Path: C:\ComfyUI_windows_portable\ComfyUI
+** User directory: C:\ComfyUI_windows_portable\ComfyUI\user
+** ComfyUI-Manager config path: C:\ComfyUI_windows_portable\ComfyUI\user\default\ComfyUI-Manager\config.ini
+** Log path: C:\ComfyUI_windows_portable\ComfyUI\user\comfyui.log
+
+Prestartup times for custom nodes:
+   2.4 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-manager
+
+Checkpoint files will always be loaded safely.
+Total VRAM 8192 MB, total RAM 65437 MB
+pytorch version: 2.7.0+cu128
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 NVIDIA GeForce RTX 2070 : cudaMallocAsync
+Using pytorch attention
+Python version: 3.12.9 (tags/v3.12.9:fdb8142, Feb  4 2025, 15:27:58) [MSC v.1942 64 bit (AMD64)]
+ComfyUI version: 0.3.34
+ComfyUI frontend version: 1.19.9
+[Prompt Server] web root: C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\comfyui_frontend_package\static
+### Loading: ComfyUI-Manager (V3.32.2)
+[ComfyUI-Manager] network_mode: public
+### ComfyUI Revision: 235 [158419f3] *DETACHED | Released on '2025-05-12'
+Traceback (most recent call last):
+  File "C:\ComfyUI_windows_portable\ComfyUI\nodes.py", line 2131, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-PuLID-Flux\__init__.py", line 1, in <module>
+    from .pulidflux import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+  File "C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-PuLID-Flux\pulidflux.py", line 11, in <module>
+    from insightface.app import FaceAnalysis
+ModuleNotFoundError: No module named 'insightface'
+
+Cannot import C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-PuLID-Flux module for custom nodes: No module named 'insightface'
+Traceback (most recent call last):
+  File "C:\ComfyUI_windows_portable\ComfyUI\nodes.py", line 2131, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_pulid_flux_ll\__init__.py", line 1, in <module>
+    from .pulidflux import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+  File "C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_pulid_flux_ll\pulidflux.py", line 6, in <module>
+    from insightface.utils.download import download_file
+ModuleNotFoundError: No module named 'insightface'
