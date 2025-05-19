@@ -1,0 +1,53 @@
+(base) C:\Users\rando>python --version
+Python 3.13.2
+
+(base) C:\Users\rando>conda activate comfyui
+
+(comfyui) C:\Users\rando>cd..
+
+(comfyui) C:\Users>cd..
+
+(comfyui) C:\>cd comfyui
+
+(comfyui) C:\ComfyUI>python main.py
+[START] Security scan
+[DONE] Security scan
+## ComfyUI-Manager: installing dependencies done.
+** ComfyUI startup time: 2025-05-19 17:59:45.524
+** Platform: Windows
+** Python version: 3.10.16 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 16:19:12) [MSC v.1929 64 bit (AMD64)]
+** Python executable: C:\Users\rando\miniconda3\envs\comfyui\python.exe
+** ComfyUI Path: C:\ComfyUI
+** ComfyUI Base Folder Path: C:\ComfyUI
+** User directory: C:\ComfyUI\user
+** ComfyUI-Manager config path: C:\ComfyUI\user\default\ComfyUI-Manager\config.ini
+** Log path: C:\ComfyUI\user\comfyui.log
+
+Prestartup times for custom nodes:
+   0.0 seconds: C:\ComfyUI\custom_nodes\ComfyUI-Easy-Use
+   0.0 seconds: C:\ComfyUI\custom_nodes\rgthree-comfy
+   5.9 seconds: C:\ComfyUI\custom_nodes\ComfyUI-Manager
+
+Warning, you are using an old pytorch version and some ckpt/pt files might be loaded unsafely. Upgrading to 2.4 or above is recommended.
+Traceback (most recent call last):
+  File "C:\ComfyUI\main.py", line 130, in <module>
+    import execution
+  File "C:\ComfyUI\execution.py", line 13, in <module>
+    import nodes
+  File "C:\ComfyUI\nodes.py", line 22, in <module>
+    import comfy.diffusers_load
+  File "C:\ComfyUI\comfy\diffusers_load.py", line 3, in <module>
+    import comfy.sd
+  File "C:\ComfyUI\comfy\sd.py", line 7, in <module>
+    from comfy import model_management
+  File "C:\ComfyUI\comfy\model_management.py", line 221, in <module>
+    total_vram = get_total_memory(get_torch_device()) / (1024 * 1024)
+  File "C:\ComfyUI\comfy\model_management.py", line 172, in get_torch_device
+    return torch.device(torch.cuda.current_device())
+  File "C:\Users\rando\miniconda3\envs\comfyui\lib\site-packages\torch\cuda\__init__.py", line 787, in current_device
+    _lazy_init()
+  File "C:\Users\rando\miniconda3\envs\comfyui\lib\site-packages\torch\cuda\__init__.py", line 293, in _lazy_init
+    raise AssertionError("Torch not compiled with CUDA enabled")
+AssertionError: Torch not compiled with CUDA enabled
+
+(comfyui) C:\ComfyUI>
