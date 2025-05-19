@@ -1,0 +1,185 @@
+C:\ComfyUI_windows_portable>.\python_embeded\python.exe -s ComfyUI\main.py --windows-standalone-build
+[START] Security scan
+[DONE] Security scan
+## ComfyUI-Manager: installing dependencies done.
+** ComfyUI startup time: 2025-05-18 21:50:41.749
+** Platform: Windows
+** Python version: 3.12.9 (tags/v3.12.9:fdb8142, Feb  4 2025, 15:27:58) [MSC v.1942 64 bit (AMD64)]
+** Python executable: C:\ComfyUI_windows_portable\python_embeded\python.exe
+** ComfyUI Path: C:\ComfyUI_windows_portable\ComfyUI
+** ComfyUI Base Folder Path: C:\ComfyUI_windows_portable\ComfyUI
+** User directory: C:\ComfyUI_windows_portable\ComfyUI\user
+** ComfyUI-Manager config path: C:\ComfyUI_windows_portable\ComfyUI\user\default\ComfyUI-Manager\config.ini
+** Log path: C:\ComfyUI_windows_portable\ComfyUI\user\comfyui.log
+
+Prestartup times for custom nodes:
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\rgthree-comfy
+   2.5 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-manager
+
+Checkpoint files will always be loaded safely.
+Total VRAM 8192 MB, total RAM 65437 MB
+pytorch version: 2.7.0+cu128
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 NVIDIA GeForce RTX 2070 : cudaMallocAsync
+Using pytorch attention
+Python version: 3.12.9 (tags/v3.12.9:fdb8142, Feb  4 2025, 15:27:58) [MSC v.1942 64 bit (AMD64)]
+ComfyUI version: 0.3.34
+ComfyUI frontend version: 1.19.9
+[Prompt Server] web root: C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\comfyui_frontend_package\static
+[ComfyUI-Llama] - WARNING - Unable to find llama-cpp-python, attempting to fix.
+[ComfyUI-Llama] - ERROR - Nope.  Actually unable to find llama-cpp-python.
+Traceback (most recent call last):
+  File "C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-Llama\Llama.py", line 18, in <module>
+    from llama_cpp import Llama
+ModuleNotFoundError: No module named 'llama_cpp'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-Llama\Llama.py", line 30, in <module>
+    from llama_cpp import Llama
+ModuleNotFoundError: No module named 'llama_cpp'
+Traceback (most recent call last):
+  File "C:\ComfyUI_windows_portable\ComfyUI\nodes.py", line 2131, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-Llama\__init__.py", line 5, in <module>
+    from .Llama import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+  File "C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-Llama\Llama.py", line 246, in <module>
+    class LLM_Tokenize:
+  File "C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-Llama\Llama.py", line 271, in LLM_Tokenize
+    def execute(self, LLM:Llama, text:str, add_bos:bool, special:bool):
+                          ^^^^^
+NameError: name 'Llama' is not defined
+
+Cannot import C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-Llama module for custom nodes: name 'Llama' is not defined
+### Loading: ComfyUI-Manager (V3.32.2)
+[ComfyUI-Manager] network_mode: public
+### ComfyUI Revision: 235 [158419f3] *DETACHED | Released on '2025-05-12'
+Traceback (most recent call last):
+  File "C:\ComfyUI_windows_portable\ComfyUI\nodes.py", line 2131, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-PuLID-Flux\__init__.py", line 1, in <module>
+    from .pulidflux import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+  File "C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-PuLID-Flux\pulidflux.py", line 11, in <module>
+    from insightface.app import FaceAnalysis
+ModuleNotFoundError: No module named 'insightface'
+
+Cannot import C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-PuLID-Flux module for custom nodes: No module named 'insightface'
+Traceback (most recent call last):
+  File "C:\ComfyUI_windows_portable\ComfyUI\nodes.py", line 2131, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI_InfiniteYou\__init__.py", line 15, in <module>
+    from .nodes import *
+  File "C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI_InfiniteYou\nodes.py", line 27, in <module>
+    from insightface.app import FaceAnalysis
+ModuleNotFoundError: No module named 'insightface'
+
+Cannot import C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI_InfiniteYou module for custom nodes: No module named 'insightface'
+Traceback (most recent call last):
+  File "C:\ComfyUI_windows_portable\ComfyUI\nodes.py", line 2131, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_pulid_flux_ll\__init__.py", line 1, in <module>
+    from .pulidflux import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+  File "C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_pulid_flux_ll\pulidflux.py", line 6, in <module>
+    from insightface.utils.download import download_file
+ModuleNotFoundError: No module named 'insightface'
+
+Cannot import C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_pulid_flux_ll module for custom nodes: No module named 'insightface'
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+Unable to import DatasetWordcloud. This node will not be available.
+Unable to import CombineAudio. This node will not be available.
+Unable to import NoiseFactory. This node will not be available.
+Unable to import NoiseFactoryV2. This node will not be available.
+Unable to import NoiseFactoryV3. This node will not be available.
+Unable to import VideoNoiseFactory. This node will not be available.
+Unable to import GSL_Filter_V1. This node will not be available.
+Unable to import VoiceEffects. This node will not be available.
+Unable to import VoiceEffects2. This node will not be available.
+Skip C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\facexlib module for custom nodes due to the lack of NODE_CLASS_MAPPINGS.
+Traceback (most recent call last):
+  File "C:\ComfyUI_windows_portable\ComfyUI\nodes.py", line 2131, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1132, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1190, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\ComfyUI_windows_portable\\ComfyUI\\custom_nodes\\facexlib-0.3.0.dist-info\\__init__.py'
+
+Cannot import C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\facexlib-0.3.0.dist-info module for custom nodes: [Errno 2] No such file or directory: 'C:\\ComfyUI_windows_portable\\ComfyUI\\custom_nodes\\facexlib-0.3.0.dist-info\\__init__.py'
+Skip C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\filterpy module for custom nodes due to the lack of NODE_CLASS_MAPPINGS.
+Traceback (most recent call last):
+  File "C:\ComfyUI_windows_portable\ComfyUI\nodes.py", line 2131, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1132, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1190, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\ComfyUI_windows_portable\\ComfyUI\\custom_nodes\\filterpy-1.4.5.dist-info\\__init__.py'
+
+Cannot import C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\filterpy-1.4.5.dist-info module for custom nodes: [Errno 2] No such file or directory: 'C:\\ComfyUI_windows_portable\\ComfyUI\\custom_nodes\\filterpy-1.4.5.dist-info\\__init__.py'
+Traceback (most recent call last):
+  File "C:\ComfyUI_windows_portable\ComfyUI\nodes.py", line 2131, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\infiniteyou\__init__.py", line 15, in <module>
+    from .nodes import *
+  File "C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\infiniteyou\nodes.py", line 26, in <module>
+    from insightface.app import FaceAnalysis
+ModuleNotFoundError: No module named 'insightface'
+
+Cannot import C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\infiniteyou module for custom nodes: No module named 'insightface'
+
+[rgthree-comfy] Loaded 42 epic nodes. 🎉
+
+
+Import times for custom nodes:
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\websocket_image_save.py
+   0.0 seconds (IMPORT FAILED): C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\facexlib-0.3.0.dist-info
+   0.0 seconds (IMPORT FAILED): C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\filterpy-1.4.5.dist-info
+   0.0 seconds (IMPORT FAILED): C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\infiniteyou
+   0.0 seconds (IMPORT FAILED): C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_pulid_flux_ll
+   0.0 seconds (IMPORT FAILED): C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-PuLID-Flux
+   0.0 seconds (IMPORT FAILED): C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-Llama
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_patches_ll
+   0.0 seconds (IMPORT FAILED): C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\facexlib
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\rgthree-comfy
+   0.0 seconds (IMPORT FAILED): C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\filterpy
+   0.0 seconds (IMPORT FAILED): C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI_InfiniteYou
+   0.2 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-manager
+   0.9 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\DJZ-Nodes
+
+Starting server
+
+To see the GUI go to: http://127.0.0.1:8188
+FETCH ComfyRegistry Data: 5/85
+FETCH ComfyRegistry Data: 10/85
+FETCH ComfyRegistry Data: 15/85
+FETCH ComfyRegistry Data: 20/85
+FETCH ComfyRegistry Data: 25/85
+FETCH ComfyRegistry Data: 30/85
+FETCH ComfyRegistry Data: 35/85
+FETCH ComfyRegistry Data: 40/85
+FETCH ComfyRegistry Data: 45/85
+FETCH ComfyRegistry Data: 50/85
+FETCH ComfyRegistry Data: 55/85
+FETCH ComfyRegistry Data: 60/85
+FETCH ComfyRegistry Data: 65/85
+FETCH ComfyRegistry Data: 70/85
+FETCH ComfyRegistry Data: 75/85
+FETCH ComfyRegistry Data: 80/85
+FETCH ComfyRegistry Data: 85/85
+FETCH ComfyRegistry Data [DONE]
+[ComfyUI-Manager] default cache updated: https://api.comfy.org/nodes
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json [DONE]
+[ComfyUI-Manager] All startup tasks have been completed.
