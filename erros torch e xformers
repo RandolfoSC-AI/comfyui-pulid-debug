@@ -1,0 +1,176 @@
+xFormers
+xformers é uma biblioteca complementar criada pelo Facebook/Meta especialmente para acelerar e otimizar o uso de “transformers” — um tipo de arquitetura de rede neural que revolucionou áreas como tradução automática, geração de texto (ex: ChatGPT), geração de imagens, etc.
+Fornece implementações muito rápidas e otimizadas de partes-chave dos transformers, usando técnicas modernas para consumir menos memória e rodar mais rápido.
+Ajuda a rodar modelos grandes com menos uso de VRAM, permitindo usar modelos mais complexos em placas de vídeo comuns.
+Exemplo de uso:
+
+Usado em projetos que dependem de transformers, como geradores de imagem (Stable Diffusion, ComfyUI), acelerando o processamento e permitindo resultados melhores ou mais rápidos.
+Resumindo
+torch (PyTorch): é a base para IA, manipula dados e redes neurais.
+xformers: turbina e otimiza o desempenho de modelos do tipo transformer, usados em muitos projetos modernos de IA.
+Se quiser exemplos práticos de código ou saber como eles trabalham juntos, é só pedir!
+
+You said: veja ERROR: pip's dependency resolver does not
+veja ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+torchaudio 2.5.1+cu121 requires torch==2.5.1+cu121, but you have torch 2.2.0 which is incompatible.
+torchvision 0.20.1+cu121 requires torch==2.5.1+cu121, but you have torch 2.2.0 which is incompatible.
+Successfully installed torch-2.2.0 xformers-0.0.24
+Copilot said: Esse erro mostra que o pip **instalou
+Esse erro mostra que o pip instalou o torch 2.2.0 (versão errada) e não o torch 2.5.1+cu121 (versão certa).
+Por isso, torchaudio e torchvision ficaram incompatíveis.
+
+Por quê isso acontece?
+O pip está ignorando o índice da PyTorch (--index-url https://download.pytorch.org/whl/cu121) e instalando do PyPI (repositório padrão), onde só tem até torch 2.2.0 com suporte CUDA.
+
+COMO RESOLVER
+1. Desinstale tudo:
+bash
+pip uninstall torch torchvision torchaudio xformers -y
+2. Baixe os arquivos corretos manualmente (para Python 3.10 + Windows 64 bits):
+Clique e baixe estes arquivos na mesma pasta:
+
+torch-2.5.1+cu121-cp310-cp310-win_amd64.whl
+torchvision-0.20.1+cu121-cp310-cp310-win_amd64.whl
+torchaudio-2.5.1+cu121-cp310-cp310-win_amd64.whl
+3. Instale manualmente, um de cada vez, na PASTA onde baixou:
+bash
+pip install torch-2.5.1+cu121-cp310-cp310-win_amd64.whl
+pip install torchvision-0.20.1+cu121-cp310-cp310-win_amd64.whl
+pip install torchaudio-2.5.1+cu121-cp310-cp310-win_amd64.whl
+4. Depois, instale o xformers normalmente:
+bash
+pip install xformers==0.0.24
+5. Verifique a versão instalada:
+bash
+python -c "import torch; print(torch.__version__)"
+O resultado TEM QUE ser 2.5.1+cu121.
+
+Se aparecer qualquer erro ao instalar os .whl, cole aqui a mensagem completa que te ajudo!
+IMPORTANTE: Sempre instale primeiro o torch, depois torchvision e torchaudio, e só então o xformers.
+
+You said: em qeu pasta devo instalar os pip
+em qeu pasta devo instalar os pip install torch-2.5.1+cu121-cp310-cp310-win_amd64.whl
+pip install torchvision-0.20.1+cu121-cp310-cp310-win_amd64.whl
+pip install torchaudio-2.5.1+cu121-cp310-cp310-win_amd64.whl
+Copilot said: Você pode instalar esses pacotes **de qualquer
+Você pode instalar esses pacotes de qualquer pasta, desde que:
+
+O ambiente Anaconda correto esteja ativado (por exemplo, comfyui ou o ambiente onde você quer usar o ComfyUI).
+Os arquivos .whl estejam na mesma pasta onde você está rodando o comando ou você informe o caminho completo para o arquivo.
+Passos recomendados
+1. Coloque os arquivos .whl baixados em uma pasta fácil, por exemplo:
+Code
+C:\comfyui_wheels\
+2. Abra o Anaconda Prompt, ative seu ambiente:
+bash
+conda activate comfyui
+3. Vá até a pasta onde estão os arquivos:
+bash
+cd C:\comfyui_wheels\
+4. Instale cada pacote:
+bash
+pip install torch-2.5.1+cu121-cp310-cp310-win_amd64.whl
+pip install torchvision-0.20.1+cu121-cp310-cp310-win_amd64.whl
+pip install torchaudio-2.5.1+cu121-cp310-cp310-win_amd64.whl
+Resumo:
+A instalação é no ambiente, não em uma pasta específica do projeto.
+O importante é estar com o ambiente correto ativado e os arquivos .whl acessíveis (na mesma pasta ou usando o caminho completo).
+
+Se quiser instalar de outra pasta, basta fornecer o caminho completo, exemplo:
+
+bash
+pip install C:\comfyui_wheels\torch-2.5.1+cu121-cp310-cp310-win_amd64.whl
+Se precisar de mais detalhes, só pedir!
+
+You said: eu não tenho essa pasta C:\comfyui_wheels\
+eu não tenho essa pasta C:\comfyui_wheels\
+Copilot said: Não tem problema! Você pode criar uma
+Não tem problema! Você pode criar uma pasta com qualquer nome e em qualquer lugar do seu computador para guardar os arquivos .whl.
+Aqui está um passo a passo simples:
+
+1. Crie uma pasta para os arquivos .whl
+Por exemplo, você pode criar na sua área de trabalho:
+
+Abra o Explorador de Arquivos
+Vá até a Área de Trabalho
+Clique com o botão direito, selecione Novo > Pasta
+Dê o nome que quiser, por exemplo: wheels_comfyui
+2. Baixe os arquivos .whl e salve dentro dessa pasta
+Baixe estes arquivos e coloque dentro dessa pasta recém criada:
+
+torch-2.5.1+cu121-cp310-cp310-win_amd64.whl
+torchvision-0.20.1+cu121-cp310-cp310-win_amd64.whl
+torchaudio-2.5.1+cu121-cp310-cp310-win_amd64.whl
+3. No Anaconda Prompt
+Ative seu ambiente (conda activate comfyui ou o nome que você usou)
+Navegue até a pasta onde você salvou os arquivos.
+Exemplo, se salvou na área de trabalho, digite:
+bash
+cd %USERPROFILE%\Desktop\wheels_comfyui
+4. Instale os pacotes, um de cada vez:
+bash
+pip install torch-2.5.1+cu121-cp310-cp310-win_amd64.whl
+pip install torchvision-0.20.1+cu121-cp310-cp310-win_amd64.whl
+pip install torchaudio-2.5.1+cu121-cp310-cp310-win_amd64.whl
+Se tiver dúvidas em algum passo, me diga onde parou ou mande o comando/erro!
+
+Uploaded image: image.png
+You said: meu comfiwui está aqui C:\ComfyUI e dentro
+meu comfiwui está aqui C:\ComfyUI e dentro desse diretório tem essas pastas e alguns arquivos 
+Copilot said: Ótimo, você mostrou que seu ComfyUI está
+Ótimo, você mostrou que seu ComfyUI está em C:\ComfyUI e exibiu o conteúdo da pasta principal.
+Isso é apenas o diretório do ComfyUI — os pacotes Python (torch, torchvision, etc.) não dependem de onde está o ComfyUI, mas sim do seu ambiente Python/Anaconda.
+
+O que fazer para instalar os .whl?
+Você pode criar uma pasta nova dentro do C:\ComfyUI para organizar seus arquivos .whl.
+
+Por exemplo, crie: C:\ComfyUI\wheels
+Coloque os 3 arquivos .whl baixados lá.
+No prompt do Anaconda, faça:
+
+bash
+conda activate comfyui
+cd C:\ComfyUI\wheels
+pip install torch-2.5.1+cu121-cp310-cp310-win_amd64.whl
+pip install torchvision-0.20.1+cu121-cp310-cp310-win_amd64.whl
+pip install torchaudio-2.5.1+cu121-cp310-cp310-win_amd64.whl
+Depois instale o xformers normalmente:
+bash
+pip install xformers==0.0.24
+Resumo:
+A pasta onde está o ComfyUI não interfere na instalação dos pacotes Python.
+Você só precisa estar no ambiente Python certo e rodar o comando dentro da pasta onde estão os arquivos .whl — pode ser dentro de C:\ComfyUI, na área de trabalho, ou em qualquer lugar acessível para você!
+
+Se precisar de ajuda para baixar os .whl ou para criar a pasta, posso explicar passo a passo também.
+
+You said: posso isntalr os 3 de uma vez
+posso isntalr os 3 de uma vez ou um por um pip install torch-2.5.1+cu121-cp310-cp310-win_amd64.whl
+pip install torchvision-0.20.1+cu121-cp310-cp310-win_amd64.whl
+pip install torchaudio-2.5.1+cu121-cp310-cp310-win_amd64.whl
+Copilot said: O recomendado é instalar **um por um**,
+O recomendado é instalar um por um, assim:
+
+bash
+pip install torch-2.5.1+cu121-cp310-cp310-win_amd64.whl
+pip install torchvision-0.20.1+cu121-cp310-cp310-win_amd64.whl
+pip install torchaudio-2.5.1+cu121-cp310-cp310-win_amd64.whl
+Por quê instalar um por um?
+Se der erro em algum pacote, fica mais fácil identificar qual foi.
+As dependências são resolvidas em ordem, o que evita conflitos.
+Pode instalar todos de uma vez?
+Tecnicamente, você até pode fazer assim:
+
+bash
+pip install torch-2.5.1+cu121-cp310-cp310-win_amd64.whl torchvision-0.20.1+cu121-cp310-cp310-win_amd64.whl torchaudio-2.5.1+cu121-cp310-cp310-win_amd64.whl
+Mas se aparecer erro de dependência, volte e tente um por um.
+
+Resumo:
+O jeito mais seguro é instalar um por vez!
+
+You said: veja: (comfyui) C:\ComfyUI\wheels>pip install torch-2.5.1+cu121-cp310-cp310-win_amd64.whl WARNING: Requirement 'torch-2.5.1+cu121-cp310-cp310-win_amd64.whl'
+veja: (comfyui) C:\ComfyUI\wheels>pip install torch-2.5.1+cu121-cp310-cp310-win_amd64.whl
+WARNING: Requirement 'torch-2.5.1+cu121-cp310-cp310-win_amd64.whl' looks like a filename, but the file does not exist
+Processing c:\comfyui\wheels\torch-2.5.1+cu121-cp310-cp310-win_amd64.whl
+ERROR: Could not install packages due to an OSError: [Errno 2] No such file or directory: 'C:\\ComfyUI\\wheels\\torch-2.5.1+cu121-cp310-cp310-win_amd64.whl'
+Error
+GitHub API rate limit exceeded. Please wait and try again.
