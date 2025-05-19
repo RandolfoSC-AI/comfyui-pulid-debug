@@ -1,0 +1,123 @@
+(base) C:\Users\rando>conda activate comfyui
+
+(comfyui) C:\Users\rando>cd..
+
+(comfyui) C:\Users>cd..
+
+(comfyui) C:\>cd comfyui
+
+(comfyui) C:\ComfyUI>pythom main.py
+'pythom' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+(comfyui) C:\ComfyUI>python main.py
+[START] Security scan
+[DONE] Security scan
+[ComfyUI-Manager] Logging failed: [WinError 32] O arquivo já está sendo usado por outro processo: 'C:\\ComfyUI\\user\\comfyui.log' -> 'C:\\ComfyUI\\user\\comfyui.prev.log'
+## ComfyUI-Manager: installing dependencies done.
+** ComfyUI startup time: 2025-05-19 05:20:26.739
+** Platform: Windows
+** Python version: 3.10.16 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 16:19:12) [MSC v.1929 64 bit (AMD64)]
+** Python executable: C:\Users\rando\miniconda3\envs\comfyui\python.exe
+** ComfyUI Path: C:\ComfyUI
+** ComfyUI Base Folder Path: C:\ComfyUI
+** User directory: C:\ComfyUI\user
+** ComfyUI-Manager config path: C:\ComfyUI\user\default\ComfyUI-Manager\config.ini
+** Log path: C:\ComfyUI\user\comfyui.log
+
+Prestartup times for custom nodes:
+   0.0 seconds: C:\ComfyUI\custom_nodes\rgthree-comfy
+   0.0 seconds: C:\ComfyUI\custom_nodes\ComfyUI-Easy-Use
+   6.1 seconds: C:\ComfyUI\custom_nodes\ComfyUI-Manager
+
+Checkpoint files will always be loaded safely.
+Total VRAM 8192 MB, total RAM 65437 MB
+pytorch version: 2.5.1
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 NVIDIA GeForce RTX 2070 : cudaMallocAsync
+Using pytorch attention
+Python version: 3.10.16 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 16:19:12) [MSC v.1929 64 bit (AMD64)]
+ComfyUI version: 0.3.34
+ComfyUI frontend version: 1.19.9
+[Prompt Server] web root: C:\Users\rando\miniconda3\envs\comfyui\lib\site-packages\comfyui_frontend_package\static
+Package diffusers installed successfully
+install lark...
+Package lark installed successfully
+Module 'diffusers' load failed. If you don't have it installed, do it:
+pip install diffusers
+[ComfyUI-Easy-Use] server: v1.3.1 Loaded
+[ComfyUI-Easy-Use] web root: C:\ComfyUI\custom_nodes\ComfyUI-Easy-Use\web_version/v2 Loaded
+ComfyUI-FaceCropping node loaded: Crops images to a 2:3 aspect ratio.
+ComfyUI-GGUF: Partial torch compile only, consider updating pytorch
+### Loading: ComfyUI-Impact-Pack (V8.15.1)
+[Impact Pack] Failed to import due to several dependencies are missing!!!!
+Traceback (most recent call last):
+  File "C:\ComfyUI\nodes.py", line 2131, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\ComfyUI\custom_nodes\comfyui-impact-pack\__init__.py", line 46, in <module>
+    raise e
+  File "C:\ComfyUI\custom_nodes\comfyui-impact-pack\__init__.py", line 37, in <module>
+    import piexif
+ModuleNotFoundError: No module named 'piexif'
+
+Cannot import C:\ComfyUI\custom_nodes\comfyui-impact-pack module for custom nodes: No module named 'piexif'
+### Loading: ComfyUI-Manager (V3.32.3)
+[ComfyUI-Manager] network_mode: public
+### ComfyUI Revision: UNKNOWN (The currently installed ComfyUI is not a Git repository)
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+C:\Users\rando\miniconda3\envs\comfyui\lib\site-packages\timm\models\layers\__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Please 'pip install xformers'
+Nvidia APEX normalization not installed, using PyTorch LayerNorm
+
+[rgthree-comfy] Loaded 47 extraordinary nodes. 🎉
+
+
+Import times for custom nodes:
+   0.0 seconds: C:\ComfyUI\custom_nodes\websocket_image_save.py
+   0.0 seconds: C:\ComfyUI\custom_nodes\ComfyUI-d2-size-selector
+   0.0 seconds: C:\ComfyUI\custom_nodes\florence_dw
+   0.0 seconds: C:\ComfyUI\custom_nodes\ComfyUI_StableCascadeLatentRatio
+   0.0 seconds: C:\ComfyUI\custom_nodes\optimal-crop-resolution
+   0.0 seconds: C:\ComfyUI\custom_nodes\ComfyUI-FaceCropper
+   0.0 seconds: C:\ComfyUI\custom_nodes\ComfyUI-Custom-Scripts
+   0.0 seconds: C:\ComfyUI\custom_nodes\ComfyUI-GGUF
+   0.1 seconds: C:\ComfyUI\custom_nodes\comfyui-tooling-nodes
+   0.2 seconds: C:\ComfyUI\custom_nodes\rgthree-comfy
+   0.2 seconds: C:\ComfyUI\custom_nodes\comfyui-florence2
+   0.3 seconds: C:\ComfyUI\custom_nodes\ComfyUI-Manager
+   0.9 seconds (IMPORT FAILED): C:\ComfyUI\custom_nodes\comfyui-impact-pack
+   1.4 seconds: C:\ComfyUI\custom_nodes\ComfyUI-Florence-2
+   3.2 seconds: C:\ComfyUI\custom_nodes\ComfyUI-PuLID-Flux
+   8.4 seconds: C:\ComfyUI\custom_nodes\ComfyUI-Easy-Use
+
+Starting server
+
+Traceback (most recent call last):
+  File "C:\ComfyUI\main.py", line 308, in <module>
+    event_loop.run_until_complete(x)
+  File "C:\Users\rando\miniconda3\envs\comfyui\lib\asyncio\base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "C:\ComfyUI\main.py", line 293, in start_all
+    await run(prompt_server, address=args.listen, port=args.port, verbose=not args.dont_print_server, call_on_start=call_on_start)
+  File "C:\ComfyUI\main.py", line 218, in run
+    await asyncio.gather(
+  File "C:\ComfyUI\server.py", line 853, in start_multi_address
+    await site.start()
+  File "C:\Users\rando\miniconda3\envs\comfyui\lib\site-packages\aiohttp\web_runner.py", line 121, in start
+    self._server = await loop.create_server(
+  File "C:\Users\rando\miniconda3\envs\comfyui\lib\asyncio\base_events.py", line 1519, in create_server
+    raise OSError(err.errno, 'error while attempting '
+OSError: [Errno 10048] error while attempting to bind on address ('127.0.0.1', 8188): normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta)
+Cannot connect to comfyregistry.
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json[ComfyUI-Manager] Due to a network error, switching to local mode.
+=> custom-node-list.json
+=> cannot schedule new futures after shutdown
+FETCH DATA from: C:\ComfyUI\custom_nodes\ComfyUI-Manager\custom-node-list.json [DONE]
+[ComfyUI-Manager] All startup tasks have been completed.
