@@ -1,0 +1,1352 @@
+
+(base) C:\Users\rando>cd..
+
+(base) C:\Users>cd..
+
+(base) C:\>conda activate cf-gu
+
+EnvironmentNameNotFound: Could not find conda environment: cf-gu
+You can list all discoverable environments with `conda info --envs`.
+
+
+Failed to run 'conda activate cf-gu'.
+
+(base) C:\>conda activate cf-gpu
+
+(cf-gpu) C:\>cd comfyui
+
+(cf-gpu) C:\ComfyUI>python main.py
+Total VRAM 8192 MB, total RAM 65437 MB
+pytorch version: 2.7.0+cu118
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 NVIDIA GeForce RTX 2070 : native
+Checkpoint files will always be loaded safely.
+Using pytorch attention
+[START] Security scan
+[DONE] Security scan
+## ComfyUI-Manager: installing dependencies done.
+** ComfyUI startup time: 2025-05-22 03:20:43.267
+** Platform: Windows
+** Python version: 3.10.16 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 16:19:12) [MSC v.1929 64 bit (AMD64)]
+** Python executable: C:\Users\rando\miniconda3\envs\cf-gpu\python.exe
+** ComfyUI Path: C:\ComfyUI
+** ComfyUI Base Folder Path: C:\ComfyUI
+** User directory: C:\ComfyUI\user
+** ComfyUI-Manager config path: C:\ComfyUI\user\default\ComfyUI-Manager\config.ini
+** Log path: C:\ComfyUI\user\comfyui.log
+
+Prestartup times for custom nodes:
+   0.0 seconds: C:\ComfyUI\custom_nodes\comfyui-easy-use
+   0.0 seconds: C:\ComfyUI\custom_nodes\rgthree-comfy
+   4.4 seconds: C:\ComfyUI\custom_nodes\ComfyUI-Manager
+  10.6 seconds: C:\ComfyUI\custom_nodes\agilly1989_motorway
+
+Python version: 3.10.16 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 16:19:12) [MSC v.1929 64 bit (AMD64)]
+ComfyUI version: 0.3.34
+ComfyUI frontend version: 1.19.9
+[Prompt Server] web root: C:\Users\rando\miniconda3\envs\cf-gpu\lib\site-packages\comfyui_frontend_package\static
+ComfyUI-GGUF: Partial torch compile only, consider updating pytorch
+### Loading: ComfyUI-Manager (V3.32.3)
+[ComfyUI-Manager] network_mode: public
+### ComfyUI Revision: UNKNOWN (The currently installed ComfyUI is not a Git repository)
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+C:\Users\rando\miniconda3\envs\cf-gpu\lib\site-packages\timm\models\layers\__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Please 'pip install xformers'
+Nvidia APEX normalization not installed, using PyTorch LayerNorm
+------------------------------------------
+Comfyroll Studio v1.76 :  175 Nodes Loaded
+------------------------------------------
+** For changes, please see patch notes at https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/blob/main/Patch_Notes.md
+** For help, please see the wiki at https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/wiki
+------------------------------------------
+Adding C:\ComfyUI\custom_nodes to sys.path
+Could not find efficiency nodes
+[comfyui_controlnet_aux] | INFO -> Using ckpts path: C:\ComfyUI\custom_nodes\comfyui_controlnet_aux\ckpts
+[comfyui_controlnet_aux] | INFO -> Using symlinks: False
+[comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider', 'CoreMLExecutionProvider']
+DWPose: Onnxruntime with acceleration providers detected
+Loaded ControlNetPreprocessors nodes from C:\ComfyUI\custom_nodes\comfyui_controlnet_aux
+Could not find AdvancedControlNet nodes
+Could not find AnimateDiff nodes
+Could not find IPAdapter nodes
+Could not find VideoHelperSuite nodes
+Could not load ImpactPack nodes Could not find ImpactPack nodes
+Module 'diffusers' load failed. If you don't have it installed, do it:
+pip install diffusers
+[ComfyUI-Easy-Use] server: v1.3.0 Loaded
+[ComfyUI-Easy-Use] web root: C:\ComfyUI\custom_nodes\comfyui-easy-use\web_version/v2 Loaded
+### Loading: ComfyUI-Impact-Pack (V8.15.1)
+### Loading: ComfyUI-Impact-Subpack (V1.3.2)
+[Impact Pack] Wildcards loading done.
+[Impact Pack/Subpack] Using folder_paths to determine whitelist path: C:\ComfyUI\user\default\ComfyUI-Impact-Subpack\model-whitelist.txt
+[Impact Pack/Subpack] Ensured whitelist directory exists: C:\ComfyUI\user\default\ComfyUI-Impact-Subpack
+[Impact Pack/Subpack] Loaded 0 model(s) from whitelist: C:\ComfyUI\user\default\ComfyUI-Impact-Subpack\model-whitelist.txt
+[Impact Subpack] ultralytics_bbox: C:\ComfyUI\models\ultralytics\bbox
+[Impact Subpack] ultralytics_segm: C:\ComfyUI\models\ultralytics\segm
+Traceback (most recent call last):
+  File "C:\ComfyUI\nodes.py", line 2131, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\ComfyUI\custom_nodes\comfyui-jakeupgrade\__init__.py", line 4, in <module>
+    from .nodes.jake_upgrade import *
+  File "C:\ComfyUI\custom_nodes\comfyui-jakeupgrade\nodes\jake_upgrade.py", line 5795, in <module>
+    import simpleeval
+ModuleNotFoundError: No module named 'simpleeval'
+
+Cannot import C:\ComfyUI\custom_nodes\comfyui-jakeupgrade module for custom nodes: No module named 'simpleeval'
+Total VRAM 8192 MB, total RAM 65437 MB
+pytorch version: 2.7.0+cu118
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 NVIDIA GeForce RTX 2070 : native
+[C:\ComfyUI\custom_nodes\comfyui_controlnet_aux] | INFO -> Using ckpts path: C:\ComfyUI\custom_nodes\comfyui_controlnet_aux\ckpts
+[C:\ComfyUI\custom_nodes\comfyui_controlnet_aux] | INFO -> Using symlinks: False
+[C:\ComfyUI\custom_nodes\comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider', 'CoreMLExecutionProvider']
+Please 'pip install xformers'
+Nvidia APEX normalization not installed, using PyTorch LayerNorm
+
+[rgthree-comfy] Loaded 47 extraordinary nodes. 🎉
+
+FETCH ComfyRegistry Data: 5/86
+WAS Node Suite: OpenCV Python FFMPEG support is enabled
+WAS Node Suite Warning: `ffmpeg_bin_path` is not set in `C:\ComfyUI\custom_nodes\was-node-suite-comfyui\was_suite_config.json` config file. Will attempt to use system ffmpeg binaries if available.
+WAS Node Suite: Finished. Loaded 220 nodes successfully.
+
+        "Your time is limited, don't waste it living someone else's life." - Steve Jobs
+
+
+Import times for custom nodes:
+   0.0 seconds: C:\ComfyUI\custom_nodes\websocket_image_save.py
+   0.0 seconds: C:\ComfyUI\custom_nodes\florence_dw
+   0.0 seconds: C:\ComfyUI\custom_nodes\cg-use-everywhere
+   0.0 seconds: C:\ComfyUI\custom_nodes\masquerade-nodes-comfyui
+   0.0 seconds: C:\ComfyUI\custom_nodes\comfyui_ipadapter_plus
+   0.0 seconds: C:\ComfyUI\custom_nodes\comfyui-florence2
+   0.0 seconds: C:\ComfyUI\custom_nodes\comfyui_essentials
+   0.0 seconds: C:\ComfyUI\custom_nodes\comfy-image-saver
+   0.0 seconds: C:\ComfyUI\custom_nodes\comfyui-image-saver
+   0.0 seconds: C:\ComfyUI\custom_nodes\comfyui_ultimatesdupscale
+   0.0 seconds: C:\ComfyUI\custom_nodes\comfyui-impact-subpack
+   0.0 seconds: C:\ComfyUI\custom_nodes\comfyui-custom-scripts
+   0.0 seconds: C:\ComfyUI\custom_nodes\comfyui-tooling-nodes
+   0.0 seconds: C:\ComfyUI\custom_nodes\ComfyUI-GGUF
+   0.0 seconds: C:\ComfyUI\custom_nodes\comfyui_controlnet_aux
+   0.0 seconds: C:\ComfyUI\custom_nodes\comfyui-kjnodes
+   0.1 seconds (IMPORT FAILED): C:\ComfyUI\custom_nodes\comfyui-jakeupgrade
+   0.1 seconds: C:\ComfyUI\custom_nodes\ComfyUI_Comfyroll_CustomNodes
+   0.1 seconds: C:\ComfyUI\custom_nodes\comfyui-impact-pack
+   0.1 seconds: C:\ComfyUI\custom_nodes\agilly1989_motorway
+   0.1 seconds: C:\ComfyUI\custom_nodes\comfyui_pulid_flux_ll
+   0.2 seconds: C:\ComfyUI\custom_nodes\rgthree-comfy
+   0.2 seconds: C:\ComfyUI\custom_nodes\comfyui-advancedliveportrait
+   0.2 seconds: C:\ComfyUI\custom_nodes\comfyui-easy-use
+   0.3 seconds: C:\ComfyUI\custom_nodes\ComfyUI-Manager
+   0.4 seconds: C:\ComfyUI\custom_nodes\comfyui-art-venture
+   1.1 seconds: C:\ComfyUI\custom_nodes\ComfyUI_LayerStyle_Advance
+   1.4 seconds: C:\ComfyUI\custom_nodes\ComfyUI-Florence-2
+   1.7 seconds: C:\ComfyUI\custom_nodes\ComfyUI-PuLID-Flux-Enhanced
+   2.2 seconds: C:\ComfyUI\custom_nodes\was-node-suite-comfyui
+
+********** ERROR ***********
+
+comfyui-workflow-templates is not installed.
+
+Please install the updated requirements.txt file by running:
+C:\Users\rando\miniconda3\envs\cf-gpu\python.exe -m pip install -r C:\ComfyUI\requirements.txt
+
+This error is happening because the ComfyUI frontend is no longer shipped as part of the main repo but as a pip package instead.
+
+If you are on the portable package you can run: update\update_comfyui.bat to solve this problem
+
+********** ERROR ***********
+Starting server
+
+To see the GUI go to: http://127.0.0.1:8188
+FETCH ComfyRegistry Data: 10/86
+FETCH ComfyRegistry Data: 15/86
+FETCH ComfyRegistry Data: 20/86
+FETCH ComfyRegistry Data: 25/86
+FETCH ComfyRegistry Data: 30/86
+FETCH ComfyRegistry Data: 35/86
+FETCH ComfyRegistry Data: 40/86
+FETCH ComfyRegistry Data: 45/86
+FETCH ComfyRegistry Data: 50/86
+FETCH ComfyRegistry Data: 55/86
+FETCH ComfyRegistry Data: 60/86
+FETCH ComfyRegistry Data: 65/86
+FETCH ComfyRegistry Data: 70/86
+FETCH ComfyRegistry Data: 75/86
+FETCH ComfyRegistry Data: 80/86
+FETCH ComfyRegistry Data: 85/86
+FETCH ComfyRegistry Data [DONE]
+[ComfyUI-Manager] default cache updated: https://api.comfy.org/nodes
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json [DONE]
+[ComfyUI-Manager] All startup tasks have been completed.
+got prompt
+model weight dtype torch.float16, manual cast: None
+model_type EPS
+Using pytorch attention in VAE
+Using pytorch attention in VAE
+VAE load device: cuda:0, offload device: cpu, dtype: torch.float32
+CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+Using pytorch attention in VAE
+Using pytorch attention in VAE
+VAE load device: cuda:0, offload device: cpu, dtype: torch.float32
+Florence2 using eager for attention
+SELECTED: input2
+gguf qtypes: Q6_K (169), F32 (50)
+CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+clip missing: ['text_projection.weight']
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: C:\ComfyUI\models\insightface\models\antelopev2\1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: C:\ComfyUI\models\insightface\models\antelopev2\2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: C:\ComfyUI\models\insightface\models\antelopev2\genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: C:\ComfyUI\models\insightface\models\antelopev2\glintr100.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: C:\ComfyUI\models\insightface\models\antelopev2\scrfd_10g_bnkps.onnx detection [1, 3, '?', '?'] 127.5 128.0
+set det-size: (640, 640)
+Loaded EVA02-CLIP-L-14-336 model config.
+Shape of rope freq: torch.Size([576, 64])
+Loading pretrained EVA02-CLIP-L-14-336 weights (eva_clip).
+incompatible_keys.missing_keys: ['visual.rope.freqs_cos', 'visual.rope.freqs_sin', 'visual.blocks.0.attn.rope.freqs_cos', 'visual.blocks.0.attn.rope.freqs_sin', 'visual.blocks.1.attn.rope.freqs_cos', 'visual.blocks.1.attn.rope.freqs_sin', 'visual.blocks.2.attn.rope.freqs_cos', 'visual.blocks.2.attn.rope.freqs_sin', 'visual.blocks.3.attn.rope.freqs_cos', 'visual.blocks.3.attn.rope.freqs_sin', 'visual.blocks.4.attn.rope.freqs_cos', 'visual.blocks.4.attn.rope.freqs_sin', 'visual.blocks.5.attn.rope.freqs_cos', 'visual.blocks.5.attn.rope.freqs_sin', 'visual.blocks.6.attn.rope.freqs_cos', 'visual.blocks.6.attn.rope.freqs_sin', 'visual.blocks.7.attn.rope.freqs_cos', 'visual.blocks.7.attn.rope.freqs_sin', 'visual.blocks.8.attn.rope.freqs_cos', 'visual.blocks.8.attn.rope.freqs_sin', 'visual.blocks.9.attn.rope.freqs_cos', 'visual.blocks.9.attn.rope.freqs_sin', 'visual.blocks.10.attn.rope.freqs_cos', 'visual.blocks.10.attn.rope.freqs_sin', 'visual.blocks.11.attn.rope.freqs_cos', 'visual.blocks.11.attn.rope.freqs_sin', 'visual.blocks.12.attn.rope.freqs_cos', 'visual.blocks.12.attn.rope.freqs_sin', 'visual.blocks.13.attn.rope.freqs_cos', 'visual.blocks.13.attn.rope.freqs_sin', 'visual.blocks.14.attn.rope.freqs_cos', 'visual.blocks.14.attn.rope.freqs_sin', 'visual.blocks.15.attn.rope.freqs_cos', 'visual.blocks.15.attn.rope.freqs_sin', 'visual.blocks.16.attn.rope.freqs_cos', 'visual.blocks.16.attn.rope.freqs_sin', 'visual.blocks.17.attn.rope.freqs_cos', 'visual.blocks.17.attn.rope.freqs_sin', 'visual.blocks.18.attn.rope.freqs_cos', 'visual.blocks.18.attn.rope.freqs_sin', 'visual.blocks.19.attn.rope.freqs_cos', 'visual.blocks.19.attn.rope.freqs_sin', 'visual.blocks.20.attn.rope.freqs_cos', 'visual.blocks.20.attn.rope.freqs_sin', 'visual.blocks.21.attn.rope.freqs_cos', 'visual.blocks.21.attn.rope.freqs_sin', 'visual.blocks.22.attn.rope.freqs_cos', 'visual.blocks.22.attn.rope.freqs_sin', 'visual.blocks.23.attn.rope.freqs_cos', 'visual.blocks.23.attn.rope.freqs_sin']
+Loading PuLID-Flux model.
+gguf qtypes: F32 (471), Q4_K (304), F16 (5)
+model weight dtype torch.float16, manual cast: None
+model_type FLUX
+Requested to load PulidFluxModel
+loaded completely 9.5367431640625e+25 1085.09765625 True
+C:\Users\rando\miniconda3\envs\cf-gpu\lib\site-packages\insightface\utils\transform.py:68: FutureWarning: `rcond` parameter will change to the default of machine precision times ``max(M, N)`` where M and N are the input matrix dimensions.
+To use the future default and silence this warning we advise to pass `rcond=None`, to keep using the old, explicitly pass `rcond=-1`.
+  P = np.linalg.lstsq(X_homo, Y)[0].T # Affine matrix. 3 x 4
+lora key not loaded: double_blocks.0.img_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.0.img_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.0.img_attn.proj.bias
+lora key not loaded: double_blocks.0.img_attn.proj.weight
+lora key not loaded: double_blocks.0.img_attn.qkv.bias
+lora key not loaded: double_blocks.0.img_attn.qkv.weight
+lora key not loaded: double_blocks.0.img_mlp.0.bias
+lora key not loaded: double_blocks.0.img_mlp.0.weight
+lora key not loaded: double_blocks.0.img_mlp.2.bias
+lora key not loaded: double_blocks.0.img_mlp.2.weight
+lora key not loaded: double_blocks.0.img_mod.lin.bias
+lora key not loaded: double_blocks.0.img_mod.lin.weight
+lora key not loaded: double_blocks.0.txt_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.0.txt_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.0.txt_attn.proj.bias
+lora key not loaded: double_blocks.0.txt_attn.proj.weight
+lora key not loaded: double_blocks.0.txt_attn.qkv.bias
+lora key not loaded: double_blocks.0.txt_attn.qkv.weight
+lora key not loaded: double_blocks.0.txt_mlp.0.bias
+lora key not loaded: double_blocks.0.txt_mlp.0.weight
+lora key not loaded: double_blocks.0.txt_mlp.2.bias
+lora key not loaded: double_blocks.0.txt_mlp.2.weight
+lora key not loaded: double_blocks.0.txt_mod.lin.bias
+lora key not loaded: double_blocks.0.txt_mod.lin.weight
+lora key not loaded: double_blocks.1.img_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.1.img_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.1.img_attn.proj.bias
+lora key not loaded: double_blocks.1.img_attn.proj.weight
+lora key not loaded: double_blocks.1.img_attn.qkv.bias
+lora key not loaded: double_blocks.1.img_attn.qkv.weight
+lora key not loaded: double_blocks.1.img_mlp.0.bias
+lora key not loaded: double_blocks.1.img_mlp.0.weight
+lora key not loaded: double_blocks.1.img_mlp.2.bias
+lora key not loaded: double_blocks.1.img_mlp.2.weight
+lora key not loaded: double_blocks.1.img_mod.lin.bias
+lora key not loaded: double_blocks.1.img_mod.lin.weight
+lora key not loaded: double_blocks.1.txt_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.1.txt_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.1.txt_attn.proj.bias
+lora key not loaded: double_blocks.1.txt_attn.proj.weight
+lora key not loaded: double_blocks.1.txt_attn.qkv.bias
+lora key not loaded: double_blocks.1.txt_attn.qkv.weight
+lora key not loaded: double_blocks.1.txt_mlp.0.bias
+lora key not loaded: double_blocks.1.txt_mlp.0.weight
+lora key not loaded: double_blocks.1.txt_mlp.2.bias
+lora key not loaded: double_blocks.1.txt_mlp.2.weight
+lora key not loaded: double_blocks.1.txt_mod.lin.bias
+lora key not loaded: double_blocks.1.txt_mod.lin.weight
+lora key not loaded: double_blocks.10.img_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.10.img_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.10.img_attn.proj.bias
+lora key not loaded: double_blocks.10.img_attn.proj.weight
+lora key not loaded: double_blocks.10.img_attn.qkv.bias
+lora key not loaded: double_blocks.10.img_attn.qkv.weight
+lora key not loaded: double_blocks.10.img_mlp.0.bias
+lora key not loaded: double_blocks.10.img_mlp.0.weight
+lora key not loaded: double_blocks.10.img_mlp.2.bias
+lora key not loaded: double_blocks.10.img_mlp.2.weight
+lora key not loaded: double_blocks.10.img_mod.lin.bias
+lora key not loaded: double_blocks.10.img_mod.lin.weight
+lora key not loaded: double_blocks.10.txt_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.10.txt_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.10.txt_attn.proj.bias
+lora key not loaded: double_blocks.10.txt_attn.proj.weight
+lora key not loaded: double_blocks.10.txt_attn.qkv.bias
+lora key not loaded: double_blocks.10.txt_attn.qkv.weight
+lora key not loaded: double_blocks.10.txt_mlp.0.bias
+lora key not loaded: double_blocks.10.txt_mlp.0.weight
+lora key not loaded: double_blocks.10.txt_mlp.2.bias
+lora key not loaded: double_blocks.10.txt_mlp.2.weight
+lora key not loaded: double_blocks.10.txt_mod.lin.bias
+lora key not loaded: double_blocks.10.txt_mod.lin.weight
+lora key not loaded: double_blocks.11.img_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.11.img_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.11.img_attn.proj.bias
+lora key not loaded: double_blocks.11.img_attn.proj.weight
+lora key not loaded: double_blocks.11.img_attn.qkv.bias
+lora key not loaded: double_blocks.11.img_attn.qkv.weight
+lora key not loaded: double_blocks.11.img_mlp.0.bias
+lora key not loaded: double_blocks.11.img_mlp.0.weight
+lora key not loaded: double_blocks.11.img_mlp.2.bias
+lora key not loaded: double_blocks.11.img_mlp.2.weight
+lora key not loaded: double_blocks.11.img_mod.lin.bias
+lora key not loaded: double_blocks.11.img_mod.lin.weight
+lora key not loaded: double_blocks.11.txt_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.11.txt_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.11.txt_attn.proj.bias
+lora key not loaded: double_blocks.11.txt_attn.proj.weight
+lora key not loaded: double_blocks.11.txt_attn.qkv.bias
+lora key not loaded: double_blocks.11.txt_attn.qkv.weight
+lora key not loaded: double_blocks.11.txt_mlp.0.bias
+lora key not loaded: double_blocks.11.txt_mlp.0.weight
+lora key not loaded: double_blocks.11.txt_mlp.2.bias
+lora key not loaded: double_blocks.11.txt_mlp.2.weight
+lora key not loaded: double_blocks.11.txt_mod.lin.bias
+lora key not loaded: double_blocks.11.txt_mod.lin.weight
+lora key not loaded: double_blocks.12.img_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.12.img_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.12.img_attn.proj.bias
+lora key not loaded: double_blocks.12.img_attn.proj.weight
+lora key not loaded: double_blocks.12.img_attn.qkv.bias
+lora key not loaded: double_blocks.12.img_attn.qkv.weight
+lora key not loaded: double_blocks.12.img_mlp.0.bias
+lora key not loaded: double_blocks.12.img_mlp.0.weight
+lora key not loaded: double_blocks.12.img_mlp.2.bias
+lora key not loaded: double_blocks.12.img_mlp.2.weight
+lora key not loaded: double_blocks.12.img_mod.lin.bias
+lora key not loaded: double_blocks.12.img_mod.lin.weight
+lora key not loaded: double_blocks.12.txt_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.12.txt_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.12.txt_attn.proj.bias
+lora key not loaded: double_blocks.12.txt_attn.proj.weight
+lora key not loaded: double_blocks.12.txt_attn.qkv.bias
+lora key not loaded: double_blocks.12.txt_attn.qkv.weight
+lora key not loaded: double_blocks.12.txt_mlp.0.bias
+lora key not loaded: double_blocks.12.txt_mlp.0.weight
+lora key not loaded: double_blocks.12.txt_mlp.2.bias
+lora key not loaded: double_blocks.12.txt_mlp.2.weight
+lora key not loaded: double_blocks.12.txt_mod.lin.bias
+lora key not loaded: double_blocks.12.txt_mod.lin.weight
+lora key not loaded: double_blocks.13.img_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.13.img_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.13.img_attn.proj.bias
+lora key not loaded: double_blocks.13.img_attn.proj.weight
+lora key not loaded: double_blocks.13.img_attn.qkv.bias
+lora key not loaded: double_blocks.13.img_attn.qkv.weight
+lora key not loaded: double_blocks.13.img_mlp.0.bias
+lora key not loaded: double_blocks.13.img_mlp.0.weight
+lora key not loaded: double_blocks.13.img_mlp.2.bias
+lora key not loaded: double_blocks.13.img_mlp.2.weight
+lora key not loaded: double_blocks.13.img_mod.lin.bias
+lora key not loaded: double_blocks.13.img_mod.lin.weight
+lora key not loaded: double_blocks.13.txt_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.13.txt_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.13.txt_attn.proj.bias
+lora key not loaded: double_blocks.13.txt_attn.proj.weight
+lora key not loaded: double_blocks.13.txt_attn.qkv.bias
+lora key not loaded: double_blocks.13.txt_attn.qkv.weight
+lora key not loaded: double_blocks.13.txt_mlp.0.bias
+lora key not loaded: double_blocks.13.txt_mlp.0.weight
+lora key not loaded: double_blocks.13.txt_mlp.2.bias
+lora key not loaded: double_blocks.13.txt_mlp.2.weight
+lora key not loaded: double_blocks.13.txt_mod.lin.bias
+lora key not loaded: double_blocks.13.txt_mod.lin.weight
+lora key not loaded: double_blocks.14.img_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.14.img_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.14.img_attn.proj.bias
+lora key not loaded: double_blocks.14.img_attn.proj.weight
+lora key not loaded: double_blocks.14.img_attn.qkv.bias
+lora key not loaded: double_blocks.14.img_attn.qkv.weight
+lora key not loaded: double_blocks.14.img_mlp.0.bias
+lora key not loaded: double_blocks.14.img_mlp.0.weight
+lora key not loaded: double_blocks.14.img_mlp.2.bias
+lora key not loaded: double_blocks.14.img_mlp.2.weight
+lora key not loaded: double_blocks.14.img_mod.lin.bias
+lora key not loaded: double_blocks.14.img_mod.lin.weight
+lora key not loaded: double_blocks.14.txt_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.14.txt_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.14.txt_attn.proj.bias
+lora key not loaded: double_blocks.14.txt_attn.proj.weight
+lora key not loaded: double_blocks.14.txt_attn.qkv.bias
+lora key not loaded: double_blocks.14.txt_attn.qkv.weight
+lora key not loaded: double_blocks.14.txt_mlp.0.bias
+lora key not loaded: double_blocks.14.txt_mlp.0.weight
+lora key not loaded: double_blocks.14.txt_mlp.2.bias
+lora key not loaded: double_blocks.14.txt_mlp.2.weight
+lora key not loaded: double_blocks.14.txt_mod.lin.bias
+lora key not loaded: double_blocks.14.txt_mod.lin.weight
+lora key not loaded: double_blocks.15.img_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.15.img_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.15.img_attn.proj.bias
+lora key not loaded: double_blocks.15.img_attn.proj.weight
+lora key not loaded: double_blocks.15.img_attn.qkv.bias
+lora key not loaded: double_blocks.15.img_attn.qkv.weight
+lora key not loaded: double_blocks.15.img_mlp.0.bias
+lora key not loaded: double_blocks.15.img_mlp.0.weight
+lora key not loaded: double_blocks.15.img_mlp.2.bias
+lora key not loaded: double_blocks.15.img_mlp.2.weight
+lora key not loaded: double_blocks.15.img_mod.lin.bias
+lora key not loaded: double_blocks.15.img_mod.lin.weight
+lora key not loaded: double_blocks.15.txt_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.15.txt_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.15.txt_attn.proj.bias
+lora key not loaded: double_blocks.15.txt_attn.proj.weight
+lora key not loaded: double_blocks.15.txt_attn.qkv.bias
+lora key not loaded: double_blocks.15.txt_attn.qkv.weight
+lora key not loaded: double_blocks.15.txt_mlp.0.bias
+lora key not loaded: double_blocks.15.txt_mlp.0.weight
+lora key not loaded: double_blocks.15.txt_mlp.2.bias
+lora key not loaded: double_blocks.15.txt_mlp.2.weight
+lora key not loaded: double_blocks.15.txt_mod.lin.bias
+lora key not loaded: double_blocks.15.txt_mod.lin.weight
+lora key not loaded: double_blocks.16.img_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.16.img_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.16.img_attn.proj.bias
+lora key not loaded: double_blocks.16.img_attn.proj.weight
+lora key not loaded: double_blocks.16.img_attn.qkv.bias
+lora key not loaded: double_blocks.16.img_attn.qkv.weight
+lora key not loaded: double_blocks.16.img_mlp.0.bias
+lora key not loaded: double_blocks.16.img_mlp.0.weight
+lora key not loaded: double_blocks.16.img_mlp.2.bias
+lora key not loaded: double_blocks.16.img_mlp.2.weight
+lora key not loaded: double_blocks.16.img_mod.lin.bias
+lora key not loaded: double_blocks.16.img_mod.lin.weight
+lora key not loaded: double_blocks.16.txt_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.16.txt_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.16.txt_attn.proj.bias
+lora key not loaded: double_blocks.16.txt_attn.proj.weight
+lora key not loaded: double_blocks.16.txt_attn.qkv.bias
+lora key not loaded: double_blocks.16.txt_attn.qkv.weight
+lora key not loaded: double_blocks.16.txt_mlp.0.bias
+lora key not loaded: double_blocks.16.txt_mlp.0.weight
+lora key not loaded: double_blocks.16.txt_mlp.2.bias
+lora key not loaded: double_blocks.16.txt_mlp.2.weight
+lora key not loaded: double_blocks.16.txt_mod.lin.bias
+lora key not loaded: double_blocks.16.txt_mod.lin.weight
+lora key not loaded: double_blocks.17.img_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.17.img_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.17.img_attn.proj.bias
+lora key not loaded: double_blocks.17.img_attn.proj.weight
+lora key not loaded: double_blocks.17.img_attn.qkv.bias
+lora key not loaded: double_blocks.17.img_attn.qkv.weight
+lora key not loaded: double_blocks.17.img_mlp.0.bias
+lora key not loaded: double_blocks.17.img_mlp.0.weight
+lora key not loaded: double_blocks.17.img_mlp.2.bias
+lora key not loaded: double_blocks.17.img_mlp.2.weight
+lora key not loaded: double_blocks.17.img_mod.lin.bias
+lora key not loaded: double_blocks.17.img_mod.lin.weight
+lora key not loaded: double_blocks.17.txt_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.17.txt_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.17.txt_attn.proj.bias
+lora key not loaded: double_blocks.17.txt_attn.proj.weight
+lora key not loaded: double_blocks.17.txt_attn.qkv.bias
+lora key not loaded: double_blocks.17.txt_attn.qkv.weight
+lora key not loaded: double_blocks.17.txt_mlp.0.bias
+lora key not loaded: double_blocks.17.txt_mlp.0.weight
+lora key not loaded: double_blocks.17.txt_mlp.2.bias
+lora key not loaded: double_blocks.17.txt_mlp.2.weight
+lora key not loaded: double_blocks.17.txt_mod.lin.bias
+lora key not loaded: double_blocks.17.txt_mod.lin.weight
+lora key not loaded: double_blocks.18.img_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.18.img_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.18.img_attn.proj.bias
+lora key not loaded: double_blocks.18.img_attn.proj.weight
+lora key not loaded: double_blocks.18.img_attn.qkv.bias
+lora key not loaded: double_blocks.18.img_attn.qkv.weight
+lora key not loaded: double_blocks.18.img_mlp.0.bias
+lora key not loaded: double_blocks.18.img_mlp.0.weight
+lora key not loaded: double_blocks.18.img_mlp.2.bias
+lora key not loaded: double_blocks.18.img_mlp.2.weight
+lora key not loaded: double_blocks.18.img_mod.lin.bias
+lora key not loaded: double_blocks.18.img_mod.lin.weight
+lora key not loaded: double_blocks.18.txt_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.18.txt_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.18.txt_attn.proj.bias
+lora key not loaded: double_blocks.18.txt_attn.proj.weight
+lora key not loaded: double_blocks.18.txt_attn.qkv.bias
+lora key not loaded: double_blocks.18.txt_attn.qkv.weight
+lora key not loaded: double_blocks.18.txt_mlp.0.bias
+lora key not loaded: double_blocks.18.txt_mlp.0.weight
+lora key not loaded: double_blocks.18.txt_mlp.2.bias
+lora key not loaded: double_blocks.18.txt_mlp.2.weight
+lora key not loaded: double_blocks.18.txt_mod.lin.bias
+lora key not loaded: double_blocks.18.txt_mod.lin.weight
+lora key not loaded: double_blocks.2.img_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.2.img_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.2.img_attn.proj.bias
+lora key not loaded: double_blocks.2.img_attn.proj.weight
+lora key not loaded: double_blocks.2.img_attn.qkv.bias
+lora key not loaded: double_blocks.2.img_attn.qkv.weight
+lora key not loaded: double_blocks.2.img_mlp.0.bias
+lora key not loaded: double_blocks.2.img_mlp.0.weight
+lora key not loaded: double_blocks.2.img_mlp.2.bias
+lora key not loaded: double_blocks.2.img_mlp.2.weight
+lora key not loaded: double_blocks.2.img_mod.lin.bias
+lora key not loaded: double_blocks.2.img_mod.lin.weight
+lora key not loaded: double_blocks.2.txt_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.2.txt_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.2.txt_attn.proj.bias
+lora key not loaded: double_blocks.2.txt_attn.proj.weight
+lora key not loaded: double_blocks.2.txt_attn.qkv.bias
+lora key not loaded: double_blocks.2.txt_attn.qkv.weight
+lora key not loaded: double_blocks.2.txt_mlp.0.bias
+lora key not loaded: double_blocks.2.txt_mlp.0.weight
+lora key not loaded: double_blocks.2.txt_mlp.2.bias
+lora key not loaded: double_blocks.2.txt_mlp.2.weight
+lora key not loaded: double_blocks.2.txt_mod.lin.bias
+lora key not loaded: double_blocks.2.txt_mod.lin.weight
+lora key not loaded: double_blocks.3.img_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.3.img_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.3.img_attn.proj.bias
+lora key not loaded: double_blocks.3.img_attn.proj.weight
+lora key not loaded: double_blocks.3.img_attn.qkv.bias
+lora key not loaded: double_blocks.3.img_attn.qkv.weight
+lora key not loaded: double_blocks.3.img_mlp.0.bias
+lora key not loaded: double_blocks.3.img_mlp.0.weight
+lora key not loaded: double_blocks.3.img_mlp.2.bias
+lora key not loaded: double_blocks.3.img_mlp.2.weight
+lora key not loaded: double_blocks.3.img_mod.lin.bias
+lora key not loaded: double_blocks.3.img_mod.lin.weight
+lora key not loaded: double_blocks.3.txt_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.3.txt_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.3.txt_attn.proj.bias
+lora key not loaded: double_blocks.3.txt_attn.proj.weight
+lora key not loaded: double_blocks.3.txt_attn.qkv.bias
+lora key not loaded: double_blocks.3.txt_attn.qkv.weight
+lora key not loaded: double_blocks.3.txt_mlp.0.bias
+lora key not loaded: double_blocks.3.txt_mlp.0.weight
+lora key not loaded: double_blocks.3.txt_mlp.2.bias
+lora key not loaded: double_blocks.3.txt_mlp.2.weight
+lora key not loaded: double_blocks.3.txt_mod.lin.bias
+lora key not loaded: double_blocks.3.txt_mod.lin.weight
+lora key not loaded: double_blocks.4.img_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.4.img_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.4.img_attn.proj.bias
+lora key not loaded: double_blocks.4.img_attn.proj.weight
+lora key not loaded: double_blocks.4.img_attn.qkv.bias
+lora key not loaded: double_blocks.4.img_attn.qkv.weight
+lora key not loaded: double_blocks.4.img_mlp.0.bias
+lora key not loaded: double_blocks.4.img_mlp.0.weight
+lora key not loaded: double_blocks.4.img_mlp.2.bias
+lora key not loaded: double_blocks.4.img_mlp.2.weight
+lora key not loaded: double_blocks.4.img_mod.lin.bias
+lora key not loaded: double_blocks.4.img_mod.lin.weight
+lora key not loaded: double_blocks.4.txt_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.4.txt_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.4.txt_attn.proj.bias
+lora key not loaded: double_blocks.4.txt_attn.proj.weight
+lora key not loaded: double_blocks.4.txt_attn.qkv.bias
+lora key not loaded: double_blocks.4.txt_attn.qkv.weight
+lora key not loaded: double_blocks.4.txt_mlp.0.bias
+lora key not loaded: double_blocks.4.txt_mlp.0.weight
+lora key not loaded: double_blocks.4.txt_mlp.2.bias
+lora key not loaded: double_blocks.4.txt_mlp.2.weight
+lora key not loaded: double_blocks.4.txt_mod.lin.bias
+lora key not loaded: double_blocks.4.txt_mod.lin.weight
+lora key not loaded: double_blocks.5.img_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.5.img_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.5.img_attn.proj.bias
+lora key not loaded: double_blocks.5.img_attn.proj.weight
+lora key not loaded: double_blocks.5.img_attn.qkv.bias
+lora key not loaded: double_blocks.5.img_attn.qkv.weight
+lora key not loaded: double_blocks.5.img_mlp.0.bias
+lora key not loaded: double_blocks.5.img_mlp.0.weight
+lora key not loaded: double_blocks.5.img_mlp.2.bias
+lora key not loaded: double_blocks.5.img_mlp.2.weight
+lora key not loaded: double_blocks.5.img_mod.lin.bias
+lora key not loaded: double_blocks.5.img_mod.lin.weight
+lora key not loaded: double_blocks.5.txt_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.5.txt_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.5.txt_attn.proj.bias
+lora key not loaded: double_blocks.5.txt_attn.proj.weight
+lora key not loaded: double_blocks.5.txt_attn.qkv.bias
+lora key not loaded: double_blocks.5.txt_attn.qkv.weight
+lora key not loaded: double_blocks.5.txt_mlp.0.bias
+lora key not loaded: double_blocks.5.txt_mlp.0.weight
+lora key not loaded: double_blocks.5.txt_mlp.2.bias
+lora key not loaded: double_blocks.5.txt_mlp.2.weight
+lora key not loaded: double_blocks.5.txt_mod.lin.bias
+lora key not loaded: double_blocks.5.txt_mod.lin.weight
+lora key not loaded: double_blocks.6.img_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.6.img_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.6.img_attn.proj.bias
+lora key not loaded: double_blocks.6.img_attn.proj.weight
+lora key not loaded: double_blocks.6.img_attn.qkv.bias
+lora key not loaded: double_blocks.6.img_attn.qkv.weight
+lora key not loaded: double_blocks.6.img_mlp.0.bias
+lora key not loaded: double_blocks.6.img_mlp.0.weight
+lora key not loaded: double_blocks.6.img_mlp.2.bias
+lora key not loaded: double_blocks.6.img_mlp.2.weight
+lora key not loaded: double_blocks.6.img_mod.lin.bias
+lora key not loaded: double_blocks.6.img_mod.lin.weight
+lora key not loaded: double_blocks.6.txt_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.6.txt_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.6.txt_attn.proj.bias
+lora key not loaded: double_blocks.6.txt_attn.proj.weight
+lora key not loaded: double_blocks.6.txt_attn.qkv.bias
+lora key not loaded: double_blocks.6.txt_attn.qkv.weight
+lora key not loaded: double_blocks.6.txt_mlp.0.bias
+lora key not loaded: double_blocks.6.txt_mlp.0.weight
+lora key not loaded: double_blocks.6.txt_mlp.2.bias
+lora key not loaded: double_blocks.6.txt_mlp.2.weight
+lora key not loaded: double_blocks.6.txt_mod.lin.bias
+lora key not loaded: double_blocks.6.txt_mod.lin.weight
+lora key not loaded: double_blocks.7.img_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.7.img_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.7.img_attn.proj.bias
+lora key not loaded: double_blocks.7.img_attn.proj.weight
+lora key not loaded: double_blocks.7.img_attn.qkv.bias
+lora key not loaded: double_blocks.7.img_attn.qkv.weight
+lora key not loaded: double_blocks.7.img_mlp.0.bias
+lora key not loaded: double_blocks.7.img_mlp.0.weight
+lora key not loaded: double_blocks.7.img_mlp.2.bias
+lora key not loaded: double_blocks.7.img_mlp.2.weight
+lora key not loaded: double_blocks.7.img_mod.lin.bias
+lora key not loaded: double_blocks.7.img_mod.lin.weight
+lora key not loaded: double_blocks.7.txt_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.7.txt_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.7.txt_attn.proj.bias
+lora key not loaded: double_blocks.7.txt_attn.proj.weight
+lora key not loaded: double_blocks.7.txt_attn.qkv.bias
+lora key not loaded: double_blocks.7.txt_attn.qkv.weight
+lora key not loaded: double_blocks.7.txt_mlp.0.bias
+lora key not loaded: double_blocks.7.txt_mlp.0.weight
+lora key not loaded: double_blocks.7.txt_mlp.2.bias
+lora key not loaded: double_blocks.7.txt_mlp.2.weight
+lora key not loaded: double_blocks.7.txt_mod.lin.bias
+lora key not loaded: double_blocks.7.txt_mod.lin.weight
+lora key not loaded: double_blocks.8.img_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.8.img_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.8.img_attn.proj.bias
+lora key not loaded: double_blocks.8.img_attn.proj.weight
+lora key not loaded: double_blocks.8.img_attn.qkv.bias
+lora key not loaded: double_blocks.8.img_attn.qkv.weight
+lora key not loaded: double_blocks.8.img_mlp.0.bias
+lora key not loaded: double_blocks.8.img_mlp.0.weight
+lora key not loaded: double_blocks.8.img_mlp.2.bias
+lora key not loaded: double_blocks.8.img_mlp.2.weight
+lora key not loaded: double_blocks.8.img_mod.lin.bias
+lora key not loaded: double_blocks.8.img_mod.lin.weight
+lora key not loaded: double_blocks.8.txt_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.8.txt_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.8.txt_attn.proj.bias
+lora key not loaded: double_blocks.8.txt_attn.proj.weight
+lora key not loaded: double_blocks.8.txt_attn.qkv.bias
+lora key not loaded: double_blocks.8.txt_attn.qkv.weight
+lora key not loaded: double_blocks.8.txt_mlp.0.bias
+lora key not loaded: double_blocks.8.txt_mlp.0.weight
+lora key not loaded: double_blocks.8.txt_mlp.2.bias
+lora key not loaded: double_blocks.8.txt_mlp.2.weight
+lora key not loaded: double_blocks.8.txt_mod.lin.bias
+lora key not loaded: double_blocks.8.txt_mod.lin.weight
+lora key not loaded: double_blocks.9.img_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.9.img_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.9.img_attn.proj.bias
+lora key not loaded: double_blocks.9.img_attn.proj.weight
+lora key not loaded: double_blocks.9.img_attn.qkv.bias
+lora key not loaded: double_blocks.9.img_attn.qkv.weight
+lora key not loaded: double_blocks.9.img_mlp.0.bias
+lora key not loaded: double_blocks.9.img_mlp.0.weight
+lora key not loaded: double_blocks.9.img_mlp.2.bias
+lora key not loaded: double_blocks.9.img_mlp.2.weight
+lora key not loaded: double_blocks.9.img_mod.lin.bias
+lora key not loaded: double_blocks.9.img_mod.lin.weight
+lora key not loaded: double_blocks.9.txt_attn.norm.key_norm.scale
+lora key not loaded: double_blocks.9.txt_attn.norm.query_norm.scale
+lora key not loaded: double_blocks.9.txt_attn.proj.bias
+lora key not loaded: double_blocks.9.txt_attn.proj.weight
+lora key not loaded: double_blocks.9.txt_attn.qkv.bias
+lora key not loaded: double_blocks.9.txt_attn.qkv.weight
+lora key not loaded: double_blocks.9.txt_mlp.0.bias
+lora key not loaded: double_blocks.9.txt_mlp.0.weight
+lora key not loaded: double_blocks.9.txt_mlp.2.bias
+lora key not loaded: double_blocks.9.txt_mlp.2.weight
+lora key not loaded: double_blocks.9.txt_mod.lin.bias
+lora key not loaded: double_blocks.9.txt_mod.lin.weight
+lora key not loaded: final_layer.adaLN_modulation.1.bias
+lora key not loaded: final_layer.adaLN_modulation.1.weight
+lora key not loaded: final_layer.linear.bias
+lora key not loaded: final_layer.linear.weight
+lora key not loaded: guidance_in.in_layer.bias
+lora key not loaded: guidance_in.in_layer.weight
+lora key not loaded: guidance_in.out_layer.bias
+lora key not loaded: guidance_in.out_layer.weight
+lora key not loaded: img_in.bias
+lora key not loaded: img_in.weight
+lora key not loaded: single_blocks.0.linear1.bias
+lora key not loaded: single_blocks.0.linear1.weight
+lora key not loaded: single_blocks.0.linear2.bias
+lora key not loaded: single_blocks.0.linear2.weight
+lora key not loaded: single_blocks.0.modulation.lin.bias
+lora key not loaded: single_blocks.0.modulation.lin.weight
+lora key not loaded: single_blocks.0.norm.key_norm.scale
+lora key not loaded: single_blocks.0.norm.query_norm.scale
+lora key not loaded: single_blocks.1.linear1.bias
+lora key not loaded: single_blocks.1.linear1.weight
+lora key not loaded: single_blocks.1.linear2.bias
+lora key not loaded: single_blocks.1.linear2.weight
+lora key not loaded: single_blocks.1.modulation.lin.bias
+lora key not loaded: single_blocks.1.modulation.lin.weight
+lora key not loaded: single_blocks.1.norm.key_norm.scale
+lora key not loaded: single_blocks.1.norm.query_norm.scale
+lora key not loaded: single_blocks.10.linear1.bias
+lora key not loaded: single_blocks.10.linear1.weight
+lora key not loaded: single_blocks.10.linear2.bias
+lora key not loaded: single_blocks.10.linear2.weight
+lora key not loaded: single_blocks.10.modulation.lin.bias
+lora key not loaded: single_blocks.10.modulation.lin.weight
+lora key not loaded: single_blocks.10.norm.key_norm.scale
+lora key not loaded: single_blocks.10.norm.query_norm.scale
+lora key not loaded: single_blocks.11.linear1.bias
+lora key not loaded: single_blocks.11.linear1.weight
+lora key not loaded: single_blocks.11.linear2.bias
+lora key not loaded: single_blocks.11.linear2.weight
+lora key not loaded: single_blocks.11.modulation.lin.bias
+lora key not loaded: single_blocks.11.modulation.lin.weight
+lora key not loaded: single_blocks.11.norm.key_norm.scale
+lora key not loaded: single_blocks.11.norm.query_norm.scale
+lora key not loaded: single_blocks.12.linear1.bias
+lora key not loaded: single_blocks.12.linear1.weight
+lora key not loaded: single_blocks.12.linear2.bias
+lora key not loaded: single_blocks.12.linear2.weight
+lora key not loaded: single_blocks.12.modulation.lin.bias
+lora key not loaded: single_blocks.12.modulation.lin.weight
+lora key not loaded: single_blocks.12.norm.key_norm.scale
+lora key not loaded: single_blocks.12.norm.query_norm.scale
+lora key not loaded: single_blocks.13.linear1.bias
+lora key not loaded: single_blocks.13.linear1.weight
+lora key not loaded: single_blocks.13.linear2.bias
+lora key not loaded: single_blocks.13.linear2.weight
+lora key not loaded: single_blocks.13.modulation.lin.bias
+lora key not loaded: single_blocks.13.modulation.lin.weight
+lora key not loaded: single_blocks.13.norm.key_norm.scale
+lora key not loaded: single_blocks.13.norm.query_norm.scale
+lora key not loaded: single_blocks.14.linear1.bias
+lora key not loaded: single_blocks.14.linear1.weight
+lora key not loaded: single_blocks.14.linear2.bias
+lora key not loaded: single_blocks.14.linear2.weight
+lora key not loaded: single_blocks.14.modulation.lin.bias
+lora key not loaded: single_blocks.14.modulation.lin.weight
+lora key not loaded: single_blocks.14.norm.key_norm.scale
+lora key not loaded: single_blocks.14.norm.query_norm.scale
+lora key not loaded: single_blocks.15.linear1.bias
+lora key not loaded: single_blocks.15.linear1.weight
+lora key not loaded: single_blocks.15.linear2.bias
+lora key not loaded: single_blocks.15.linear2.weight
+lora key not loaded: single_blocks.15.modulation.lin.bias
+lora key not loaded: single_blocks.15.modulation.lin.weight
+lora key not loaded: single_blocks.15.norm.key_norm.scale
+lora key not loaded: single_blocks.15.norm.query_norm.scale
+lora key not loaded: single_blocks.16.linear1.bias
+lora key not loaded: single_blocks.16.linear1.weight
+lora key not loaded: single_blocks.16.linear2.bias
+lora key not loaded: single_blocks.16.linear2.weight
+lora key not loaded: single_blocks.16.modulation.lin.bias
+lora key not loaded: single_blocks.16.modulation.lin.weight
+lora key not loaded: single_blocks.16.norm.key_norm.scale
+lora key not loaded: single_blocks.16.norm.query_norm.scale
+lora key not loaded: single_blocks.17.linear1.bias
+lora key not loaded: single_blocks.17.linear1.weight
+lora key not loaded: single_blocks.17.linear2.bias
+lora key not loaded: single_blocks.17.linear2.weight
+lora key not loaded: single_blocks.17.modulation.lin.bias
+lora key not loaded: single_blocks.17.modulation.lin.weight
+lora key not loaded: single_blocks.17.norm.key_norm.scale
+lora key not loaded: single_blocks.17.norm.query_norm.scale
+lora key not loaded: single_blocks.18.linear1.bias
+lora key not loaded: single_blocks.18.linear1.weight
+lora key not loaded: single_blocks.18.linear2.bias
+lora key not loaded: single_blocks.18.linear2.weight
+lora key not loaded: single_blocks.18.modulation.lin.bias
+lora key not loaded: single_blocks.18.modulation.lin.weight
+lora key not loaded: single_blocks.18.norm.key_norm.scale
+lora key not loaded: single_blocks.18.norm.query_norm.scale
+lora key not loaded: single_blocks.19.linear1.bias
+lora key not loaded: single_blocks.19.linear1.weight
+lora key not loaded: single_blocks.19.linear2.bias
+lora key not loaded: single_blocks.19.linear2.weight
+lora key not loaded: single_blocks.19.modulation.lin.bias
+lora key not loaded: single_blocks.19.modulation.lin.weight
+lora key not loaded: single_blocks.19.norm.key_norm.scale
+lora key not loaded: single_blocks.19.norm.query_norm.scale
+lora key not loaded: single_blocks.2.linear1.bias
+lora key not loaded: single_blocks.2.linear1.weight
+lora key not loaded: single_blocks.2.linear2.bias
+lora key not loaded: single_blocks.2.linear2.weight
+lora key not loaded: single_blocks.2.modulation.lin.bias
+lora key not loaded: single_blocks.2.modulation.lin.weight
+lora key not loaded: single_blocks.2.norm.key_norm.scale
+lora key not loaded: single_blocks.2.norm.query_norm.scale
+lora key not loaded: single_blocks.20.linear1.bias
+lora key not loaded: single_blocks.20.linear1.weight
+lora key not loaded: single_blocks.20.linear2.bias
+lora key not loaded: single_blocks.20.linear2.weight
+lora key not loaded: single_blocks.20.modulation.lin.bias
+lora key not loaded: single_blocks.20.modulation.lin.weight
+lora key not loaded: single_blocks.20.norm.key_norm.scale
+lora key not loaded: single_blocks.20.norm.query_norm.scale
+lora key not loaded: single_blocks.21.linear1.bias
+lora key not loaded: single_blocks.21.linear1.weight
+lora key not loaded: single_blocks.21.linear2.bias
+lora key not loaded: single_blocks.21.linear2.weight
+lora key not loaded: single_blocks.21.modulation.lin.bias
+lora key not loaded: single_blocks.21.modulation.lin.weight
+lora key not loaded: single_blocks.21.norm.key_norm.scale
+lora key not loaded: single_blocks.21.norm.query_norm.scale
+lora key not loaded: single_blocks.22.linear1.bias
+lora key not loaded: single_blocks.22.linear1.weight
+lora key not loaded: single_blocks.22.linear2.bias
+lora key not loaded: single_blocks.22.linear2.weight
+lora key not loaded: single_blocks.22.modulation.lin.bias
+lora key not loaded: single_blocks.22.modulation.lin.weight
+lora key not loaded: single_blocks.22.norm.key_norm.scale
+lora key not loaded: single_blocks.22.norm.query_norm.scale
+lora key not loaded: single_blocks.23.linear1.bias
+lora key not loaded: single_blocks.23.linear1.weight
+lora key not loaded: single_blocks.23.linear2.bias
+lora key not loaded: single_blocks.23.linear2.weight
+lora key not loaded: single_blocks.23.modulation.lin.bias
+lora key not loaded: single_blocks.23.modulation.lin.weight
+lora key not loaded: single_blocks.23.norm.key_norm.scale
+lora key not loaded: single_blocks.23.norm.query_norm.scale
+lora key not loaded: single_blocks.24.linear1.bias
+lora key not loaded: single_blocks.24.linear1.weight
+lora key not loaded: single_blocks.24.linear2.bias
+lora key not loaded: single_blocks.24.linear2.weight
+lora key not loaded: single_blocks.24.modulation.lin.bias
+lora key not loaded: single_blocks.24.modulation.lin.weight
+lora key not loaded: single_blocks.24.norm.key_norm.scale
+lora key not loaded: single_blocks.24.norm.query_norm.scale
+lora key not loaded: single_blocks.25.linear1.bias
+lora key not loaded: single_blocks.25.linear1.weight
+lora key not loaded: single_blocks.25.linear2.bias
+lora key not loaded: single_blocks.25.linear2.weight
+lora key not loaded: single_blocks.25.modulation.lin.bias
+lora key not loaded: single_blocks.25.modulation.lin.weight
+lora key not loaded: single_blocks.25.norm.key_norm.scale
+lora key not loaded: single_blocks.25.norm.query_norm.scale
+lora key not loaded: single_blocks.26.linear1.bias
+lora key not loaded: single_blocks.26.linear1.weight
+lora key not loaded: single_blocks.26.linear2.bias
+lora key not loaded: single_blocks.26.linear2.weight
+lora key not loaded: single_blocks.26.modulation.lin.bias
+lora key not loaded: single_blocks.26.modulation.lin.weight
+lora key not loaded: single_blocks.26.norm.key_norm.scale
+lora key not loaded: single_blocks.26.norm.query_norm.scale
+lora key not loaded: single_blocks.27.linear1.bias
+lora key not loaded: single_blocks.27.linear1.weight
+lora key not loaded: single_blocks.27.linear2.bias
+lora key not loaded: single_blocks.27.linear2.weight
+lora key not loaded: single_blocks.27.modulation.lin.bias
+lora key not loaded: single_blocks.27.modulation.lin.weight
+lora key not loaded: single_blocks.27.norm.key_norm.scale
+lora key not loaded: single_blocks.27.norm.query_norm.scale
+lora key not loaded: single_blocks.28.linear1.bias
+lora key not loaded: single_blocks.28.linear1.weight
+lora key not loaded: single_blocks.28.linear2.bias
+lora key not loaded: single_blocks.28.linear2.weight
+lora key not loaded: single_blocks.28.modulation.lin.bias
+lora key not loaded: single_blocks.28.modulation.lin.weight
+lora key not loaded: single_blocks.28.norm.key_norm.scale
+lora key not loaded: single_blocks.28.norm.query_norm.scale
+lora key not loaded: single_blocks.29.linear1.bias
+lora key not loaded: single_blocks.29.linear1.weight
+lora key not loaded: single_blocks.29.linear2.bias
+lora key not loaded: single_blocks.29.linear2.weight
+lora key not loaded: single_blocks.29.modulation.lin.bias
+lora key not loaded: single_blocks.29.modulation.lin.weight
+lora key not loaded: single_blocks.29.norm.key_norm.scale
+lora key not loaded: single_blocks.29.norm.query_norm.scale
+lora key not loaded: single_blocks.3.linear1.bias
+lora key not loaded: single_blocks.3.linear1.weight
+lora key not loaded: single_blocks.3.linear2.bias
+lora key not loaded: single_blocks.3.linear2.weight
+lora key not loaded: single_blocks.3.modulation.lin.bias
+lora key not loaded: single_blocks.3.modulation.lin.weight
+lora key not loaded: single_blocks.3.norm.key_norm.scale
+lora key not loaded: single_blocks.3.norm.query_norm.scale
+lora key not loaded: single_blocks.30.linear1.bias
+lora key not loaded: single_blocks.30.linear1.weight
+lora key not loaded: single_blocks.30.linear2.bias
+lora key not loaded: single_blocks.30.linear2.weight
+lora key not loaded: single_blocks.30.modulation.lin.bias
+lora key not loaded: single_blocks.30.modulation.lin.weight
+lora key not loaded: single_blocks.30.norm.key_norm.scale
+lora key not loaded: single_blocks.30.norm.query_norm.scale
+lora key not loaded: single_blocks.31.linear1.bias
+lora key not loaded: single_blocks.31.linear1.weight
+lora key not loaded: single_blocks.31.linear2.bias
+lora key not loaded: single_blocks.31.linear2.weight
+lora key not loaded: single_blocks.31.modulation.lin.bias
+lora key not loaded: single_blocks.31.modulation.lin.weight
+lora key not loaded: single_blocks.31.norm.key_norm.scale
+lora key not loaded: single_blocks.31.norm.query_norm.scale
+lora key not loaded: single_blocks.32.linear1.bias
+lora key not loaded: single_blocks.32.linear1.weight
+lora key not loaded: single_blocks.32.linear2.bias
+lora key not loaded: single_blocks.32.linear2.weight
+lora key not loaded: single_blocks.32.modulation.lin.bias
+lora key not loaded: single_blocks.32.modulation.lin.weight
+lora key not loaded: single_blocks.32.norm.key_norm.scale
+lora key not loaded: single_blocks.32.norm.query_norm.scale
+lora key not loaded: single_blocks.33.linear1.bias
+lora key not loaded: single_blocks.33.linear1.weight
+lora key not loaded: single_blocks.33.linear2.bias
+lora key not loaded: single_blocks.33.linear2.weight
+lora key not loaded: single_blocks.33.modulation.lin.bias
+lora key not loaded: single_blocks.33.modulation.lin.weight
+lora key not loaded: single_blocks.33.norm.key_norm.scale
+lora key not loaded: single_blocks.33.norm.query_norm.scale
+lora key not loaded: single_blocks.34.linear1.bias
+lora key not loaded: single_blocks.34.linear1.weight
+lora key not loaded: single_blocks.34.linear2.bias
+lora key not loaded: single_blocks.34.linear2.weight
+lora key not loaded: single_blocks.34.modulation.lin.bias
+lora key not loaded: single_blocks.34.modulation.lin.weight
+lora key not loaded: single_blocks.34.norm.key_norm.scale
+lora key not loaded: single_blocks.34.norm.query_norm.scale
+lora key not loaded: single_blocks.35.linear1.bias
+lora key not loaded: single_blocks.35.linear1.weight
+lora key not loaded: single_blocks.35.linear2.bias
+lora key not loaded: single_blocks.35.linear2.weight
+lora key not loaded: single_blocks.35.modulation.lin.bias
+lora key not loaded: single_blocks.35.modulation.lin.weight
+lora key not loaded: single_blocks.35.norm.key_norm.scale
+lora key not loaded: single_blocks.35.norm.query_norm.scale
+lora key not loaded: single_blocks.36.linear1.bias
+lora key not loaded: single_blocks.36.linear1.weight
+lora key not loaded: single_blocks.36.linear2.bias
+lora key not loaded: single_blocks.36.linear2.weight
+lora key not loaded: single_blocks.36.modulation.lin.bias
+lora key not loaded: single_blocks.36.modulation.lin.weight
+lora key not loaded: single_blocks.36.norm.key_norm.scale
+lora key not loaded: single_blocks.36.norm.query_norm.scale
+lora key not loaded: single_blocks.37.linear1.bias
+lora key not loaded: single_blocks.37.linear1.weight
+lora key not loaded: single_blocks.37.linear2.bias
+lora key not loaded: single_blocks.37.linear2.weight
+lora key not loaded: single_blocks.37.modulation.lin.bias
+lora key not loaded: single_blocks.37.modulation.lin.weight
+lora key not loaded: single_blocks.37.norm.key_norm.scale
+lora key not loaded: single_blocks.37.norm.query_norm.scale
+lora key not loaded: single_blocks.4.linear1.bias
+lora key not loaded: single_blocks.4.linear1.weight
+lora key not loaded: single_blocks.4.linear2.bias
+lora key not loaded: single_blocks.4.linear2.weight
+lora key not loaded: single_blocks.4.modulation.lin.bias
+lora key not loaded: single_blocks.4.modulation.lin.weight
+lora key not loaded: single_blocks.4.norm.key_norm.scale
+lora key not loaded: single_blocks.4.norm.query_norm.scale
+lora key not loaded: single_blocks.5.linear1.bias
+lora key not loaded: single_blocks.5.linear1.weight
+lora key not loaded: single_blocks.5.linear2.bias
+lora key not loaded: single_blocks.5.linear2.weight
+lora key not loaded: single_blocks.5.modulation.lin.bias
+lora key not loaded: single_blocks.5.modulation.lin.weight
+lora key not loaded: single_blocks.5.norm.key_norm.scale
+lora key not loaded: single_blocks.5.norm.query_norm.scale
+lora key not loaded: single_blocks.6.linear1.bias
+lora key not loaded: single_blocks.6.linear1.weight
+lora key not loaded: single_blocks.6.linear2.bias
+lora key not loaded: single_blocks.6.linear2.weight
+lora key not loaded: single_blocks.6.modulation.lin.bias
+lora key not loaded: single_blocks.6.modulation.lin.weight
+lora key not loaded: single_blocks.6.norm.key_norm.scale
+lora key not loaded: single_blocks.6.norm.query_norm.scale
+lora key not loaded: single_blocks.7.linear1.bias
+lora key not loaded: single_blocks.7.linear1.weight
+lora key not loaded: single_blocks.7.linear2.bias
+lora key not loaded: single_blocks.7.linear2.weight
+lora key not loaded: single_blocks.7.modulation.lin.bias
+lora key not loaded: single_blocks.7.modulation.lin.weight
+lora key not loaded: single_blocks.7.norm.key_norm.scale
+lora key not loaded: single_blocks.7.norm.query_norm.scale
+lora key not loaded: single_blocks.8.linear1.bias
+lora key not loaded: single_blocks.8.linear1.weight
+lora key not loaded: single_blocks.8.linear2.bias
+lora key not loaded: single_blocks.8.linear2.weight
+lora key not loaded: single_blocks.8.modulation.lin.bias
+lora key not loaded: single_blocks.8.modulation.lin.weight
+lora key not loaded: single_blocks.8.norm.key_norm.scale
+lora key not loaded: single_blocks.8.norm.query_norm.scale
+lora key not loaded: single_blocks.9.linear1.bias
+lora key not loaded: single_blocks.9.linear1.weight
+lora key not loaded: single_blocks.9.linear2.bias
+lora key not loaded: single_blocks.9.linear2.weight
+lora key not loaded: single_blocks.9.modulation.lin.bias
+lora key not loaded: single_blocks.9.modulation.lin.weight
+lora key not loaded: single_blocks.9.norm.key_norm.scale
+lora key not loaded: single_blocks.9.norm.query_norm.scale
+lora key not loaded: time_in.in_layer.bias
+lora key not loaded: time_in.in_layer.weight
+lora key not loaded: time_in.out_layer.bias
+lora key not loaded: time_in.out_layer.weight
+lora key not loaded: txt_in.bias
+lora key not loaded: txt_in.weight
+lora key not loaded: vector_in.in_layer.bias
+lora key not loaded: vector_in.in_layer.weight
+lora key not loaded: vector_in.out_layer.bias
+lora key not loaded: vector_in.out_layer.weight
+Token indices sequence length is longer than the specified maximum sequence length for this model (212 > 77). Running this sequence through the model will result in indexing errors
+Requested to load FluxClipModel_
+loaded partially 1333.409375 1333.4091796875 0
+Attempting to release mmap (281)
+Token indices sequence length is longer than the specified maximum sequence length for this model (90 > 77). Running this sequence through the model will result in indexing errors
+Token indices sequence length is longer than the specified maximum sequence length for this model (90 > 77). Running this sequence through the model will result in indexing errors
+Requested to load SDXLClipModel
+loaded partially 1333.409375 1333.408203125 103
+0 models unloaded.
+loaded partially 1333.4082032203673 1333.408203125 0
+SELECTED: input2
+Requested to load Flux
+Requested to load PulidFluxModel
+loaded partially 1333.409375 1332.904296875 0
+Attempting to release mmap (278)
+loaded completely 128.0 127.056640625 False
+100%|████████████████████████████████████████████████████████████████████████████████████| 8/8 [00:30<00:00,  3.77s/it]
+Requested to load AutoencodingEngine
+0 models unloaded.
+loaded partially 128.0 127.99951171875 0
+# 😺dzNodes: LayerStyle -> Downloading 'selfie_multiclass_256x256.tflite' model
+100% [........................................................................] 16371837 / 16371837INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1747897984.458538   29536 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+C:\Users\rando\miniconda3\envs\cf-gpu\lib\site-packages\mediapipe\tasks\python\vision\image_segmenter.py:158: UserWarning: MessageFactory class is deprecated. Please use GetMessageClass() instead of MessageFactory.GetPrototype. MessageFactory class will be removed after 2024.
+  graph_config = self._runner.get_graph_config()
+Downloading hustvl/vitmatte-small-composition-1k model...
+Fetching 5 files: 100%|██████████████████████████████████████████████████████████████████| 5/5 [00:02<00:00,  1.70it/s]
+# 😺dzNodes: LayerStyle -> PersonMaskUltra V2 Processed 1 image(s).
+Requested to load AutoencoderKL
+loaded completely 356.603515625 319.11416244506836 True
+Requested to load SDXL
+loaded partially 1331.40888671875 1331.408088684082 687
+100%|████████████████████████████████████████████████████████████████████████████████████| 8/8 [00:06<00:00,  1.32it/s]
+Requested to load AutoencoderKL
+0 models unloaded.
+loaded partially 128.0 127.99989318847656 0
+W0000 00:00:1747897996.185997   30268 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+# 😺dzNodes: LayerStyle -> PersonMaskUltra V2 Processed 1 image(s).
+</s><s><s><s><loc_170><loc_36><loc_175><loc_25><loc_186><loc_22><loc_195><loc_28><loc_200><loc_40><loc_196><loc_59><loc_189><loc_65><loc_180><loc_65><loc_174><loc_61><loc_170><loc_54></s>
+Offloading model...
+</s><s><s><s><loc_170><loc_39><loc_173><loc_30><loc_179><loc_24><loc_187><loc_23><loc_195><loc_28><loc_200><loc_40><loc_198><loc_52><loc_193><loc_60><loc_188><loc_65><loc_182><loc_65><loc_175><loc_62><loc_171><loc_56><loc_170><loc_50><loc_170><loc_44></s>
+Offloading model...
+ Collecting trimesh[easy]
+   Downloading trimesh-4.6.10-py3-none-any.whl.metadata (18 kB)
+  Collecting colorlog (from trimesh[easy])
+   Downloading colorlog-6.9.0-py3-none-any.whl.metadata (10 kB)
+ Collecting manifold3d>=2.3.0 (from trimesh[easy])
+   Downloading manifold3d-3.1.0-cp310-cp310-win_amd64.whl.metadata (18 kB)
+  Collecting lxml (from trimesh[easy])
+   Downloading lxml-5.4.0-cp310-cp310-win_amd64.whl.metadata (3.6 kB)
+   Collecting svg.path (from trimesh[easy])
+   Downloading svg.path-6.3-py2.py3-none-any.whl.metadata (13 kB)
+ Collecting pycollada (from trimesh[easy])
+   Downloading pycollada-0.9.tar.gz (109 kB)
+   Installing build dependencies: started
+   Installing build dependencies: finished with status 'done'
+   Getting requirements to build wheel: started
+   Getting requirements to build wheel: finished with status 'done'
+   Preparing metadata (pyproject.toml): started
+   Preparing metadata (pyproject.toml): finished with status 'done'
+ Collecting shapely (from trimesh[easy])
+   Downloading shapely-2.1.1-cp310-cp310-win_amd64.whl.metadata (7.0 kB)
+ Collecting xxhash (from trimesh[easy])
+   Downloading xxhash-3.5.0-cp310-cp310-win_amd64.whl.metadata (13 kB)
+ Collecting rtree (from trimesh[easy])
+   Downloading rtree-1.4.0-py3-none-win_amd64.whl.metadata (2.1 kB)
+    Collecting vhacdx (from trimesh[easy])
+   Downloading vhacdx-0.0.8.post2-cp310-cp310-win_amd64.whl.metadata (1.1 kB)
+ Collecting mapbox_earcut>=1.0.2 (from trimesh[easy])
+   Downloading mapbox_earcut-1.0.3-cp310-cp310-win_amd64.whl.metadata (2.2 kB)
+                Downloading trimesh-4.6.10-py3-none-any.whl (711 kB)
+    --------------------------------------- 711.2/711.2 kB 14.0 MB/s eta 0:00:00
+ Downloading manifold3d-3.1.0-cp310-cp310-win_amd64.whl (924 kB)
+    --------------------------------------- 924.7/924.7 kB 21.4 MB/s eta 0:00:00
+ Downloading mapbox_earcut-1.0.3-cp310-cp310-win_amd64.whl (71 kB)
+ Downloading colorlog-6.9.0-py3-none-any.whl (11 kB)
+ Downloading lxml-5.4.0-cp310-cp310-win_amd64.whl (3.8 MB)
+    ---------------------------------------- 3.8/3.8 MB 75.4 MB/s eta 0:00:00
+ Downloading rtree-1.4.0-py3-none-win_amd64.whl (385 kB)
+ Downloading shapely-2.1.1-cp310-cp310-win_amd64.whl (1.7 MB)
+    ---------------------------------------- 1.7/1.7 MB 96.1 MB/s eta 0:00:00
+ Downloading svg.path-6.3-py2.py3-none-any.whl (16 kB)
+ Downloading vhacdx-0.0.8.post2-cp310-cp310-win_amd64.whl (182 kB)
+ Downloading xxhash-3.5.0-cp310-cp310-win_amd64.whl (30 kB)
+ Building wheels for collected packages: pycollada
+   Building wheel for pycollada (pyproject.toml): started
+   Building wheel for pycollada (pyproject.toml): finished with status 'done'
+   Created wheel for pycollada: filename=pycollada-0.9-py3-none-any.whl size=128539 sha256=a1633aee088f8373b602e80744406bda50bd570861c56bf122fe43b65b9e0377
+   Stored in directory: c:\users\rando\appdata\local\pip\cache\wheels\c1\2a\e7\b991db5997fb4d7d0fb47bacd291651c380c22e47062bcf64c
+ Successfully built pycollada
+ Installing collected packages: xxhash, vhacdx, trimesh, svg.path, shapely, rtree, mapbox_earcut, manifold3d, lxml, colorlog, pycollada
+
+ Successfully installed colorlog-6.9.0 lxml-5.4.0 manifold3d-3.1.0 mapbox_earcut-1.0.3 pycollada-0.9 rtree-1.4.0 shapely-2.1.1 svg.path-6.3 trimesh-4.6.10 vhacdx-0.0.8.post2 xxhash-3.5.0
+!!! Exception during processing !!! No module named 'yacs'
+Traceback (most recent call last):
+  File "C:\ComfyUI\execution.py", line 349, in execute
+    output_data, output_ui, has_subgraph = get_output_data(obj, input_data_all, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb)
+  File "C:\ComfyUI\execution.py", line 224, in get_output_data
+    return_values = _map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb)
+  File "C:\ComfyUI\execution.py", line 196, in _map_node_over_list
+    process_inputs(input_dict, i)
+  File "C:\ComfyUI\execution.py", line 185, in process_inputs
+    results.append(getattr(obj, func)(**inputs))
+  File "C:\ComfyUI\custom_nodes\comfyui_controlnet_aux\node_wrappers\mesh_graphormer.py", line 64, in execute
+    from custom_controlnet_aux.mesh_graphormer import MeshGraphormerDetector
+  File "C:\ComfyUI\custom_nodes\comfyui_controlnet_aux\src\custom_controlnet_aux\mesh_graphormer\__init__.py", line 5, in <module>
+    from custom_controlnet_aux.mesh_graphormer.pipeline import MeshGraphormerMediapipe, args
+  File "C:\ComfyUI\custom_nodes\comfyui_controlnet_aux\src\custom_controlnet_aux\mesh_graphormer\pipeline.py", line 12, in <module>
+    from custom_mesh_graphormer.modeling.hrnet.config import config as hrnet_config
+  File "C:\ComfyUI\custom_nodes\comfyui_controlnet_aux\src\custom_mesh_graphormer\modeling\hrnet\config\__init__.py", line 7, in <module>
+    from .default import _C as config
+  File "C:\ComfyUI\custom_nodes\comfyui_controlnet_aux\src\custom_mesh_graphormer\modeling\hrnet\config\default.py", line 15, in <module>
+    from yacs.config import CfgNode as CN
+ModuleNotFoundError: No module named 'yacs'
+
+Prompt executed in 226.40 seconds
+got prompt
+Requested to load Flux
+Requested to load PulidFluxModel
+loaded partially 1329.4083984375 1329.130859375 0
+loaded completely 128.0 127.056640625 False
+100%|████████████████████████████████████████████████████████████████████████████████████| 8/8 [00:28<00:00,  3.51s/it]
+Requested to load AutoencodingEngine
+0 models unloaded.
+loaded partially 128.0 127.99951171875 0
+W0000 00:00:1747898134.132011   30404 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+C:\Users\rando\miniconda3\envs\cf-gpu\lib\site-packages\mediapipe\tasks\python\vision\image_segmenter.py:158: UserWarning: MessageFactory class is deprecated. Please use GetMessageClass() instead of MessageFactory.GetPrototype. MessageFactory class will be removed after 2024.
+  graph_config = self._runner.get_graph_config()
+# 😺dzNodes: LayerStyle -> PersonMaskUltra V2 Processed 1 image(s).
+Requested to load AutoencoderKL
+loaded completely 354.6025390625 319.11416244506836 True
+Requested to load SDXL
+loaded partially 1329.40791015625 1329.407356262207 688
+100%|████████████████████████████████████████████████████████████████████████████████████| 8/8 [00:05<00:00,  1.43it/s]
+Requested to load AutoencoderKL
+0 models unloaded.
+loaded partially 128.0 127.99989318847656 0
+W0000 00:00:1747898141.576005   30520 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+# 😺dzNodes: LayerStyle -> PersonMaskUltra V2 Processed 1 image(s).
+</s><s><s><s><loc_157><loc_63><loc_162><loc_57><loc_166><loc_57><loc_172><loc_57><loc_175><loc_57><loc_177><loc_57><loc_179><loc_59><loc_179><loc_61><loc_179><loc_63><loc_179><loc_65><loc_179><loc_66><loc_179><loc_69><loc_179><loc_71><loc_179><loc_72><loc_179><loc_73><loc_179><loc_74><loc_179><loc_75><loc_179><loc_76><loc_178><loc_77><loc_178><loc_77><loc_177><loc_77><loc_176><loc_76><loc_176><loc_75><loc_176><loc_73><loc_176><loc_72><loc_176><loc_71><loc_175><loc_70><loc_175><loc_69><loc_175><loc_68><loc_175><loc_67><loc_175><loc_66><loc_175><loc_65><loc_175><loc_64><loc_174><loc_63><loc_173><loc_62><loc_172><loc_62><loc_171><loc_62><loc_169><loc_62><loc_168><loc_62><loc_166><loc_62><loc_164><loc_62><loc_163><loc_62><loc_162><loc_62><loc_161><loc_62><loc_160><loc_62><loc_159><loc_62><loc_158><loc_62><loc_157><loc_62><loc_156><loc_62><loc_156><loc_61><loc_156><loc_60><loc_156><loc_59><loc_156><loc_58><loc_157><loc_57><loc_158><loc_56><loc_159><loc_55><loc_160><loc_54><loc_161><loc_54><loc_162><loc_54><loc_163><loc_54><loc_164><loc_54><loc_165><loc_54><loc_166><loc_54><loc_167><loc_54><loc_168><loc_54><loc_169><loc_54><loc_170><loc_54><loc_171><loc_54><loc_172><loc_54><loc_173><loc_54><loc_174><loc_54><loc_175><loc_54><loc_176><loc_54><loc_177><loc_54><loc_178><loc_54><loc_179><loc_54><loc_180><loc_54><loc_181><loc_54><loc_182><loc_54><loc_183><loc_54><loc_184><loc_54><loc_185><loc_54><loc_186><loc_54><loc_187><loc_54><loc_188><loc_54><loc_189><loc_54><loc_190><loc_54><loc_191><loc_54><loc_192><loc_54><loc_194><loc_54><loc_195><loc_54><loc_196><loc_54><loc_197><loc_54><loc_198><loc_54><loc_199><loc_54><loc_200><loc_54><loc_201><loc_54><loc_202><loc_54><loc_203><loc_54><loc_204><loc_54><loc_205><loc_54><loc_206><loc_55><loc_206><loc_56><loc_206><loc_57><loc_206><loc_58><loc_206><loc_59><loc_206><loc_60><loc_206><loc_61><loc_206><loc_62><loc_206><loc_63><loc_206><loc_64><loc_206><loc_65><loc_206><loc_65><loc_207><loc_66><loc_207><loc_67><loc_207><loc_68><loc_207><loc_69><loc_207><loc_70><loc_206><loc_71><loc_206><loc_72><loc_206><loc_73><loc_206><loc_74><loc_206><loc_75><loc_206><loc_76><loc_206><loc_77><loc_206><loc_78><loc_206><loc_79><loc_206><loc_80><loc_206><loc_81><loc_206><loc_82><loc_206><loc_83><loc_206><loc_84><loc_206><loc_86><loc_206><loc_87><loc_206><loc_88><loc_206><loc_89><loc_206><loc_90><loc_206><loc_91><loc_206><loc_92><loc_206><loc_93><loc_206><loc_94><loc_206><loc_95><loc_206><loc_96><loc_206><loc_97><loc_206><loc_98><loc_206><loc_99><loc_206><loc_100><loc_206><loc_101><loc_205><loc_102><loc_205><loc_103><loc_205><loc_104><loc_205><loc_105><loc_205><loc_106><loc_205><loc_107><loc_205><loc_107><loc_204><loc_108><loc_204><loc_109><loc_204><loc_110><loc_204><loc_111><loc_204><loc_112><loc_204><loc_112><loc_203><loc_113><loc_203><loc_114><loc_203><loc_114><loc_202><loc_114><loc_201><loc_114><loc_200><loc_115><loc_199><loc_115><loc_198><loc_115><loc_197><loc_115><loc_196><loc_115><loc_195><loc_115><loc_194><loc_115><loc_193><loc_115><loc_192><loc_115><loc_191><loc_115><loc_190><loc_115><loc_189><loc_115><loc_188><loc_115><loc_187><loc_115><loc_186><loc_115><loc_185><loc_115><loc_184><loc_115><loc_183><loc_115><loc_182><loc_115><loc_181><loc_115><loc_180><loc_115><loc_179><loc_115><loc_178><loc_115><loc_177><loc_115><loc_176><loc_115><loc_175><loc_115><loc_174><loc_115><loc_173><loc_115><loc_172><loc_115><loc_171><loc_115><loc_170><loc_115><loc_169><loc_115><loc_168><loc_115><loc_167><loc_115><loc_166><loc_115><loc_165><loc_115><loc_164><loc_115><loc_163><loc_115><loc_162><loc_115><loc_161><loc_115><loc_160><loc_115><loc_159><loc_115><loc_159><loc_114><loc_159><loc_114><loc_158><loc_113><loc_157><loc_113><loc_156><loc_113><loc_156><loc_112><loc_156><loc_112><loc_155><loc_112><loc_155><loc_111><loc_155><loc_111><loc_154><loc_111><loc_154><loc_110><loc_154><loc_109><loc_154><loc_108><loc_154><loc_107><loc_154><loc_106><loc_154><loc_105><loc_154><loc_104><loc_154><loc_103><loc_154><loc_102><loc_154><loc_101><loc_154><loc_100><loc_154><loc_99><loc_154><loc_98><loc_154><loc_97><loc_154><loc_96><loc_154><loc_95><loc_154><loc_94><loc_154><loc_93><loc_154><loc_92><loc_154><loc_91><loc_154><loc_90><loc_154><loc_89><loc_154><loc_88><loc_154><loc_87><loc_154><loc_86><loc_154><loc_85><loc_154><loc_84><loc_154><loc_83><loc_154><loc_82><loc_154><loc_81><loc_154><loc_80><loc_154><loc_79><loc_154><loc_78><loc_154><loc_77><loc_154><loc_76><loc_154><loc_75><loc_154><loc_74><loc_154><loc_73><loc_154><loc_72><loc_154><loc_71><loc_154><loc_70><loc_154><loc_69><loc_154><loc_68><loc_154><loc_67><loc_154><loc_66><loc_154><loc_65><loc_154><loc_64><loc_154><loc_63><loc_154><loc_62><loc_154><loc_61><loc_154><loc_60><loc_154><loc_59><loc_154><loc_58><loc_154><loc_57><loc_154><loc_56><loc_154><loc_55><loc_154><loc_54><loc_154><loc_53><loc_154><loc_52><loc_154><loc_51><loc_154><loc_50><loc_154><loc_49><loc_154><loc_48><loc_154><loc_47><loc_155><loc_46><loc_155><loc_45><loc_155><loc_44></s>
+Offloading model...
+</s><s><s><s><loc_164><loc_96><loc_166><loc_94><loc_170><loc_92><loc_173><loc_92><loc_178><loc_92><loc_183><loc_92><loc_189><loc_92><loc_192><loc_92><loc_194><loc_92><loc_195><loc_92><loc_195><loc_94><loc_194><loc_96><loc_193><loc_98><loc_192><loc_99><loc_191><loc_100><loc_191><loc_102><loc_190><loc_104><loc_189><loc_105><loc_188><loc_106><loc_187><loc_107><loc_186><loc_108><loc_185><loc_109><loc_184><loc_110><loc_183><loc_111><loc_182><loc_112><loc_181><loc_112><loc_179><loc_112><loc_177><loc_112><loc_176><loc_112><loc_175><loc_112><loc_174><loc_112><loc_173><loc_112><loc_172><loc_112><loc_171><loc_111><loc_170><loc_110><loc_169><loc_109><loc_168><loc_108><loc_168><loc_107><loc_168><loc_106><loc_168><loc_105><loc_168><loc_104><loc_168><loc_103><loc_167><loc_102><loc_166><loc_101><loc_165><loc_100><loc_165><loc_99><loc_164><loc_98><loc_164><loc_97><loc_163><loc_96><loc_163><loc_95><loc_163><loc_95><loc_162><loc_94><loc_162><loc_93><loc_162><loc_92><loc_162><loc_92><loc_161><loc_91><loc_161><loc_90><loc_161><loc_89><loc_161><loc_88><loc_161><loc_87><loc_161><loc_87></s>
+Offloading model...
+!!! Exception during processing !!! No module named 'yacs'
+Traceback (most recent call last):
+  File "C:\ComfyUI\execution.py", line 349, in execute
+    output_data, output_ui, has_subgraph = get_output_data(obj, input_data_all, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb)
+  File "C:\ComfyUI\execution.py", line 224, in get_output_data
+    return_values = _map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb)
+  File "C:\ComfyUI\execution.py", line 196, in _map_node_over_list
+    process_inputs(input_dict, i)
+  File "C:\ComfyUI\execution.py", line 185, in process_inputs
+    results.append(getattr(obj, func)(**inputs))
+  File "C:\ComfyUI\custom_nodes\comfyui_controlnet_aux\node_wrappers\mesh_graphormer.py", line 64, in execute
+    from custom_controlnet_aux.mesh_graphormer import MeshGraphormerDetector
+  File "C:\ComfyUI\custom_nodes\comfyui_controlnet_aux\src\custom_controlnet_aux\mesh_graphormer\__init__.py", line 5, in <module>
+    from custom_controlnet_aux.mesh_graphormer.pipeline import MeshGraphormerMediapipe, args
+  File "C:\ComfyUI\custom_nodes\comfyui_controlnet_aux\src\custom_controlnet_aux\mesh_graphormer\pipeline.py", line 12, in <module>
+    from custom_mesh_graphormer.modeling.hrnet.config import config as hrnet_config
+  File "C:\ComfyUI\custom_nodes\comfyui_controlnet_aux\src\custom_mesh_graphormer\modeling\hrnet\config\__init__.py", line 7, in <module>
+    from .default import _C as config
+  File "C:\ComfyUI\custom_nodes\comfyui_controlnet_aux\src\custom_mesh_graphormer\modeling\hrnet\config\default.py", line 15, in <module>
+    from yacs.config import CfgNode as CN
+ModuleNotFoundError: No module named 'yacs'
+
+Prompt executed in 50.79 seconds
+got prompt
+gguf qtypes: Q4_K (161), F32 (50), Q5_K (7), Q6_K (1)
+CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+clip missing: ['text_projection.weight']
+
+(cf-gpu) C:\ComfyUI>python main.py
+Total VRAM 8192 MB, total RAM 65437 MB
+pytorch version: 2.7.0+cu118
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 NVIDIA GeForce RTX 2070 : native
+Checkpoint files will always be loaded safely.
+Using pytorch attention
+[START] Security scan
+[DONE] Security scan
+## ComfyUI-Manager: installing dependencies done.
+** ComfyUI startup time: 2025-05-22 04:21:19.119
+** Platform: Windows
+** Python version: 3.10.16 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 16:19:12) [MSC v.1929 64 bit (AMD64)]
+** Python executable: C:\Users\rando\miniconda3\envs\cf-gpu\python.exe
+** ComfyUI Path: C:\ComfyUI
+** ComfyUI Base Folder Path: C:\ComfyUI
+** User directory: C:\ComfyUI\user
+** ComfyUI-Manager config path: C:\ComfyUI\user\default\ComfyUI-Manager\config.ini
+** Log path: C:\ComfyUI\user\comfyui.log
+
+Prestartup times for custom nodes:
+   0.0 seconds: C:\ComfyUI\custom_nodes\rgthree-comfy
+   0.0 seconds: C:\ComfyUI\custom_nodes\comfyui-easy-use
+   4.2 seconds: C:\ComfyUI\custom_nodes\ComfyUI-Manager
+   8.5 seconds: C:\ComfyUI\custom_nodes\agilly1989_motorway
+
+Python version: 3.10.16 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 16:19:12) [MSC v.1929 64 bit (AMD64)]
+ComfyUI version: 0.3.34
+ComfyUI frontend version: 1.19.9
+[Prompt Server] web root: C:\Users\rando\miniconda3\envs\cf-gpu\lib\site-packages\comfyui_frontend_package\static
+ComfyUI-GGUF: Partial torch compile only, consider updating pytorch
+### Loading: ComfyUI-Manager (V3.32.3)
+[ComfyUI-Manager] network_mode: public
+### ComfyUI Revision: UNKNOWN (The currently installed ComfyUI is not a Git repository)
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+C:\Users\rando\miniconda3\envs\cf-gpu\lib\site-packages\timm\models\layers\__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Please 'pip install xformers'
+Nvidia APEX normalization not installed, using PyTorch LayerNorm
+------------------------------------------
+Comfyroll Studio v1.76 :  175 Nodes Loaded
+------------------------------------------
+** For changes, please see patch notes at https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/blob/main/Patch_Notes.md
+** For help, please see the wiki at https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/wiki
+------------------------------------------
+Adding C:\ComfyUI\custom_nodes to sys.path
+Could not find efficiency nodes
+[comfyui_controlnet_aux] | INFO -> Using ckpts path: C:\ComfyUI\custom_nodes\comfyui_controlnet_aux\ckpts
+[comfyui_controlnet_aux] | INFO -> Using symlinks: False
+[comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider', 'CoreMLExecutionProvider']
+DWPose: Onnxruntime with acceleration providers detected
+Loaded ControlNetPreprocessors nodes from C:\ComfyUI\custom_nodes\comfyui_controlnet_aux
+Could not find AdvancedControlNet nodes
+Could not find AnimateDiff nodes
+Could not find IPAdapter nodes
+Could not find VideoHelperSuite nodes
+Could not load ImpactPack nodes Could not find ImpactPack nodes
+Module 'diffusers' load failed. If you don't have it installed, do it:
+pip install diffusers
+[ComfyUI-Easy-Use] server: v1.3.0 Loaded
+[ComfyUI-Easy-Use] web root: C:\ComfyUI\custom_nodes\comfyui-easy-use\web_version/v2 Loaded
+### Loading: ComfyUI-Impact-Pack (V8.15.1)
+### Loading: ComfyUI-Impact-Subpack (V1.3.2)
+[Impact Pack] Wildcards loading done.
+[Impact Pack/Subpack] Using folder_paths to determine whitelist path: C:\ComfyUI\user\default\ComfyUI-Impact-Subpack\model-whitelist.txt
+[Impact Pack/Subpack] Ensured whitelist directory exists: C:\ComfyUI\user\default\ComfyUI-Impact-Subpack
+[Impact Pack/Subpack] Loaded 0 model(s) from whitelist: C:\ComfyUI\user\default\ComfyUI-Impact-Subpack\model-whitelist.txt
+[Impact Subpack] ultralytics_bbox: C:\ComfyUI\models\ultralytics\bbox
+[Impact Subpack] ultralytics_segm: C:\ComfyUI\models\ultralytics\segm
+Traceback (most recent call last):
+  File "C:\ComfyUI\nodes.py", line 2131, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\ComfyUI\custom_nodes\comfyui-jakeupgrade\__init__.py", line 4, in <module>
+    from .nodes.jake_upgrade import *
+  File "C:\ComfyUI\custom_nodes\comfyui-jakeupgrade\nodes\jake_upgrade.py", line 5795, in <module>
+    import simpleeval
+ModuleNotFoundError: No module named 'simpleeval'
+
+Cannot import C:\ComfyUI\custom_nodes\comfyui-jakeupgrade module for custom nodes: No module named 'simpleeval'
+Total VRAM 8192 MB, total RAM 65437 MB
+pytorch version: 2.7.0+cu118
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 NVIDIA GeForce RTX 2070 : native
+[C:\ComfyUI\custom_nodes\comfyui_controlnet_aux] | INFO -> Using ckpts path: C:\ComfyUI\custom_nodes\comfyui_controlnet_aux\ckpts
+[C:\ComfyUI\custom_nodes\comfyui_controlnet_aux] | INFO -> Using symlinks: False
+[C:\ComfyUI\custom_nodes\comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider', 'CoreMLExecutionProvider']
+Please 'pip install xformers'
+Nvidia APEX normalization not installed, using PyTorch LayerNorm
+
+[rgthree-comfy] Loaded 47 epic nodes. 🎉
+
+FETCH ComfyRegistry Data: 5/86
+WAS Node Suite: OpenCV Python FFMPEG support is enabled
+WAS Node Suite Warning: `ffmpeg_bin_path` is not set in `C:\ComfyUI\custom_nodes\was-node-suite-comfyui\was_suite_config.json` config file. Will attempt to use system ffmpeg binaries if available.
+WAS Node Suite: Finished. Loaded 220 nodes successfully.
+
+        "Opportunities don't happen. You create them." - Chris Grosser
+
+
+Import times for custom nodes:
+   0.0 seconds: C:\ComfyUI\custom_nodes\websocket_image_save.py
+   0.0 seconds: C:\ComfyUI\custom_nodes\florence_dw
+   0.0 seconds: C:\ComfyUI\custom_nodes\cg-use-everywhere
+   0.0 seconds: C:\ComfyUI\custom_nodes\masquerade-nodes-comfyui
+   0.0 seconds: C:\ComfyUI\custom_nodes\comfyui-florence2
+   0.0 seconds: C:\ComfyUI\custom_nodes\comfyui_ipadapter_plus
+   0.0 seconds: C:\ComfyUI\custom_nodes\comfyui-image-saver
+   0.0 seconds: C:\ComfyUI\custom_nodes\comfy-image-saver
+   0.0 seconds: C:\ComfyUI\custom_nodes\comfyui_essentials
+   0.0 seconds: C:\ComfyUI\custom_nodes\comfyui_ultimatesdupscale
+   0.0 seconds: C:\ComfyUI\custom_nodes\comfyui-impact-subpack
+   0.0 seconds: C:\ComfyUI\custom_nodes\comfyui-custom-scripts
+   0.0 seconds: C:\ComfyUI\custom_nodes\ComfyUI-GGUF
+   0.0 seconds: C:\ComfyUI\custom_nodes\comfyui-tooling-nodes
+   0.0 seconds: C:\ComfyUI\custom_nodes\ComfyUI-Manager
+   0.0 seconds: C:\ComfyUI\custom_nodes\comfyui_controlnet_aux
+   0.0 seconds: C:\ComfyUI\custom_nodes\comfyui-kjnodes
+   0.1 seconds (IMPORT FAILED): C:\ComfyUI\custom_nodes\comfyui-jakeupgrade
+   0.1 seconds: C:\ComfyUI\custom_nodes\ComfyUI_Comfyroll_CustomNodes
+   0.1 seconds: C:\ComfyUI\custom_nodes\comfyui-impact-pack
+   0.1 seconds: C:\ComfyUI\custom_nodes\agilly1989_motorway
+   0.1 seconds: C:\ComfyUI\custom_nodes\rgthree-comfy
+   0.1 seconds: C:\ComfyUI\custom_nodes\comfyui-advancedliveportrait
+   0.2 seconds: C:\ComfyUI\custom_nodes\comfyui_pulid_flux_ll
+   0.2 seconds: C:\ComfyUI\custom_nodes\comfyui-easy-use
+   0.4 seconds: C:\ComfyUI\custom_nodes\comfyui-art-venture
+   1.0 seconds: C:\ComfyUI\custom_nodes\ComfyUI_LayerStyle_Advance
+   1.2 seconds: C:\ComfyUI\custom_nodes\ComfyUI-Florence-2
+   1.6 seconds: C:\ComfyUI\custom_nodes\ComfyUI-PuLID-Flux-Enhanced
+   2.2 seconds: C:\ComfyUI\custom_nodes\was-node-suite-comfyui
+
+********** ERROR ***********
+
+comfyui-workflow-templates is not installed.
+
+Please install the updated requirements.txt file by running:
+C:\Users\rando\miniconda3\envs\cf-gpu\python.exe -m pip install -r C:\ComfyUI\requirements.txt
+
+This error is happening because the ComfyUI frontend is no longer shipped as part of the main repo but as a pip package instead.
+
+If you are on the portable package you can run: update\update_comfyui.bat to solve this problem
+
+********** ERROR ***********
+Starting server
+
+To see the GUI go to: http://127.0.0.1:8188
+FETCH ComfyRegistry Data: 10/86
+FETCH ComfyRegistry Data: 15/86
+FETCH ComfyRegistry Data: 20/86
+FETCH ComfyRegistry Data: 25/86
+FETCH ComfyRegistry Data: 30/86
+FETCH ComfyRegistry Data: 35/86
+FETCH ComfyRegistry Data: 40/86
+FETCH ComfyRegistry Data: 45/86
+FETCH ComfyRegistry Data: 50/86
+FETCH ComfyRegistry Data: 55/86
+FETCH ComfyRegistry Data: 60/86
+FETCH ComfyRegistry Data: 65/86
+FETCH ComfyRegistry Data: 70/86
+FETCH ComfyRegistry Data: 75/86
+FETCH ComfyRegistry Data: 80/86
+FETCH ComfyRegistry Data: 85/86
+FETCH ComfyRegistry Data [DONE]
+[ComfyUI-Manager] default cache updated: https://api.comfy.org/nodes
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json [DONE]
+[ComfyUI-Manager] All startup tasks have been completed.
