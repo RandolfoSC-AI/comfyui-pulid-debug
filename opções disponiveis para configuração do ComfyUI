@@ -1,0 +1,920 @@
+This is the first time you use the new UI. Choose "Menu > Use New Menu > Disabled" to restore the old UI.
+API Nodes
+Show API node pricing badge
+
+Dev Mode
+Enable dev mode options (API save, etc.)
+
+Edit Token Weight
+Ctrl+up/down precision
+0,05
+Locale
+ Language
+Menu
+Use new menu
+Model Library
+What name to display in the model library tree view 
+Automatically load all model folders 
+
+Node
+Show experimental nodes in search 
+
+Show deprecated nodes in search 
+
+Node Search Box
+Number of nodes suggestions 
+5
+Show node frequency in search results 
+
+Show node id name in search results 
+
+Show node category in search results 
+
+Node preview 
+
+ Node search box implementation
+Node Widget
+Widget control mode 
+Textarea widget spellcheck
+
+Queue
+Queue history size 
+64
+Queue Button
+Batch count limit 
+100
+Validation
+Validate node definitions (slow) 
+
+Validate workflows
+
+Window
+Show confirmation when closing window
+
+Workflow
+Persist workflow state and restore on page (re)load
+
+Auto Save
+Auto Save Delay (ms) 
+1.000
+Show confirmation when deleting workflows
+
+Save and restore canvas position and zoom level in workflows
+
+Opened workflows position
+Prompt for filename when saving workflow
+
+Require confirmation when clearing workflow
+
+ Show missing models warning
+
+Show missing nodes warning
+
+Sort node IDs when saving workflow
+
+Canvas
+Show selection toolbox
+
+Low quality rendering zoom threshold 
+0,6
+Maximum FPS 
+0
+Always snap to grid
+
+Snap to grid size 
+10
+Enable fast-zoom shortcut (Ctrl + Shift + Drag)
+
+Show graph canvas menu
+
+Canvas zoom speed
+1,1
+Show canvas info on bottom left corner (fps, etc.)
+
+Context Menu
+Scale node combo widget menus (lists) when zoomed in
+
+Graph
+Link Render Mode
+Group
+Double click group title to edit
+
+Group selected nodes padding
+10
+Link
+Link midpoint markers
+Link Release
+Action on link release (Shift)
+Action on link release (No modifier)
+Node
+Always shrink new nodes 
+
+Enable DOM element clipping (enabling may reduce performance)
+
+Middle-click creates a new Reroute node
+
+Keep all links when deleting nodes 
+
+Snap highlights node 
+
+Auto snap link to node slot 
+
+Enable Tooltips
+
+Tooltip Delay
+500
+Node life cycle badge mode
+Node ID badge mode
+Node source badge mode
+Double click node title to edit
+
+Node Widget
+Float widget rounding decimal places [0 = auto]. 
+0
+Disable default float widget rounding. 
+
+Disable node widget sliders
+
+Preview image format 
+Show width × height below the image preview
+
+Pointer
+ Enable trackpad gestures 
+
+Double click interval (maximum) 
+300
+ Pointer click drift delay 
+150
+ Pointer click drift (maximum distance) 
+6
+Reroute
+Reroute spline offset 
+20
+
+
+Color Palette
+Node
+Node opacity
+1
+Node Widget
+Textarea widget font size
+10
+Sidebar
+Unified sidebar width
+
+Sidebar size
+Sidebar location
+Tree Explorer
+Tree explorer item padding
+2
+
+Camera
+ Initial Camera Type 
+Light
+ Light Adjustment Increment 
+0,5
+ Light Intensity Minimum 
+1
+ Light Intensity Maximum 
+10
+ Initial Light Intensity 
+3
+Scene
+ Initial Background Color 
+282828
+ Initial Preview Visibility 
+
+ Initial Grid Visibility 
+
+Brush Adjustment
+ Lock brush adjustment to dominant axis 
+
+ Brush adjustment speed multiplier 
+1
+New Editor
+ Use new mask editor 
+
+Context Menu
+Use three quick buttons in the context menu
+Enable A~Z sorting of new nodes in the context menu
+
+Enable model preview thumbnails
+
+Enable automatic nesting of subdirectories in the context menu
+
+Hotkeys
+Enable Up/Down/Left/Right to jump to the nearest node
+
+Enable Alt+1~9 to paste node templates into the workflow
+
+Enable Shift+Ctrl+Left/Right to normalize selected nodes 
+
+Enable Shift+Up/Down/Left/Right and Shift+Ctrl+Alt+Left/Right to align selected nodes 
+
+Enable Shift+m to toggle nodes map
+
+Enable Shift+r to unload model and node cache
+
+Enable Shift+g to add the selected nodes to a group 
+
+Nodes
+Enable chaining of get and set points with the parent node
+
+Enable node runtime display
+
+NodesMap
+Enable Group Map 
+
+Show groups only
+
+Enable node ID display
+
+Manage nodes group sorting mode 
+
+
+ProgressPreview
+Show progress preview
+
+PromptConvertButton
+Show prompt convert button
+
+Queue Button
+Show queue button
+
+Batch count list
+1,10
+shortcutKey
+Comment (default: ctrl+/)
+ctrl+/
+
+
+File Handling
+Use a custom file drop handler to load workflows from JPEG and WEBP files 
+
+About
+Version 6.1
+Graphics
+Highlight connected and connectable inputs
+
+Turn animation off when workflow is running
+
+Animate UE links 
+Statically distinguish UE links 
+
+Show links
+Options
+Block workflow validation 
+
+Logging
+Check for loops before submitting 
+
+Connect to bypassed nodes 
+
+Output
+Keep required intermediate files after sucessful execution
+
+Save png of first frame for metadata
+
+Previews
+Mute videos by default
+
+Deadline 
+Minimum preview width 
+0
+Advanced Previews 
+Sampling
+Playback rate override. 
+0
+Display animated previews when sampling
+
+config
+Open rgthree-comfy config
+[rgthree-comfy] configuration / settings
+rgthree-comfy settings
+
+AutoCompleter
+🐍 Text Autocomplete
+🐍 Text Autocomplete	
+Enabled 
+Loras enabled 
+Auto-insert comma 
+Replace _ with space 
+Insert suggestion on:
+Tab
+Enter
+Max suggestions: 
+20
+Manage Custom Words
+Combo++
+🐍 Lora & Checkpoint loader display mode
+ImageFeed
+🐍 Image Feed Display 'SaveImage' Only 
+
+🐍 Image Feed Max Images 
+0
+🐍 Image Feed Deduplication 
+🐍 Image Feed Direction
+🐍 Image Feed Direction:	
+newest first
+🐍 Image Feed Location
+🐍 Image Feed Location:	
+bottom
+LinkRenderMode
+🐍 Link Render Mode
+🐍 Link Render Mode:	
+Spline
+MiddleClickAddDefaultNode
+🐍 Middle click slot to add
+ModelInfo
+🐍 Model Info - Image Preview Max NSFW Level 
+🐍 Model Info - Checkpoint Nodes/Widgets 
+CheckpointLoader.ckpt_name,CheckpointLoaderSimple,CheckpointLoader|pysssss,Efficient Loader,Eff. Loader SDXL
+🐍 Model Info - Lora Nodes/Widgets 
+LoraLoader.lora_name,LoraLoader|pysssss,LoraLoaderModelOnly.lora_name,LoRA Stacker.lora_name.*
+PresetText
+🐍 Preset Text Replacement Regex 
+(?:^|[^\w])(?<replace>@(?<id>[\w-]+))
+ShowImageOnMenu
+🐍 Show Image On Menu
+
+SnapToGrid
+🐍 Display drag-and-drop guides
+🐍 Display drag-and-drop guides	Lines: 
+rgba(255, 0, 0, 0.5)
+Block: 
+rgba(0, 0, 255, 0.5)
+
+UseNumberInputPrompt
+🐍 Use number input on value entry
+
+WidgetDefaults
+🐍 Widget Defaults
+🐍 Widget & Property Defaults:	Manage
+Workflows
+🐍 Default Workflow
+
+
+browserStatus
+KJNodes: 🟢 Stoplight browser status icon 🔴
+
+disablePrefix
+KJNodes: Disable automatic Set_ and Get_ prefix
+
+helpPopup
+KJNodes: Help popups
+
+MiddleClickDefault
+KJNodes: Middle click default node adding
+
+nodeAutoColor
+KJNodes: Automatically set node colors
+
+SetGetMenu
+KJNodes: Make Set/Get -nodes defaults 
+
+
+	
+Keybinding
+Source
+New Blank Workflow
+-	System
+Open Workflow
+Ctrl+o	System
+Load Default Workflow
+-	System
+Save Workflow
+Ctrl+s	System
+Save Workflow As
+-	System
+Export Workflow
+-	System
+Export Workflow (API Format)
+-	System
+Undo
+-	System
+Redo
+-	System
+Clear Workflow
+Backspace	System
+Reset View
+-	System
+Clipspace
+-	System
+Refresh Node Definitions
+r	System
+Interrupt
+Ctrl+Alt+Enter	System
+Clear Pending Tasks
+-	System
+Browse Templates
+-	System
+Zoom In
+Alt+=	System
+Zoom Out
+Alt+-	System
+Fit view to selected nodes
+.	System
+Canvas Toggle Lock
+-	System
+Canvas Toggle Link Visibility
+-	System
+Queue Prompt
+Ctrl+Enter	System
+Queue Prompt (Front)
+Ctrl+Shift+Enter	System
+Queue Selected Output Nodes
+-	System
+Show Settings Dialog
+Ctrl+,	System
+Group Selected Nodes
+Ctrl+g	System
+Next Opened Workflow
+-	System
+Previous Opened Workflow
+-	System
+Mute/Unmute Selected Nodes
+Ctrl+m	System
+Bypass/Unbypass Selected Nodes
+Ctrl+b	System
+Pin/Unpin Selected Nodes
+-	System
+Pin/Unpin Selected Items
+p	System
+Resize Selected Nodes
+-	System
+Collapse/Expand Selected Nodes
+Alt+c	System
+Toggle Theme (Dark/Light)
+-	System
+Toggle Bottom Panel
+-	System
+Toggle Focus Mode
+f	System
+Fit Group To Contents
+-	System
+Open ComfyUI Issues
+-	System
+Open ComfyUI Docs
+-	System
+Open Comfy-Org Discord
+-	System
+Toggle Search Box
+-	System
+Open About ComfyUI
+-	System
+Duplicate Current Workflow
+-	System
+Close Current Workflow
+-	System
+Give Feedback
+-	System
+Contact Support
+-	System
+Open ComfyUI Forum
+-	System
+Delete Selected Items
+-	System
+Custom Nodes Manager
+-	System
+Toggle Progress Dialog
+-	System
+Open Sign In Dialog
+-	System
+Sign Out
+-	System
+Toggle Queue Sidebar
+q	System
+Toggle Node Library Sidebar
+n	System
+Toggle Model Library Sidebar
+m	System
+Toggle Workflows Sidebar
+w	System
+Toggle Logs Bottom Panel
+Ctrl+`	System
+Convert selected nodes to group node
+Alt+g	Comfy.GroupNode
+Ungroup selected group nodes
+Alt+Shift+G	Comfy.GroupNode
+Manage group nodes
+-	Comfy.GroupNode
+Open Mask Editor for Selected Node
+-	Comfy.MaskEditor
+Toggle Nodes Map (Shirt + m) Sidebar
+-	System
+Impact: Refresh Wildcard
+-	Comfy.Impack
+Toggle Manager Menu Visibility
+-	Comfy.ManagerMenu
+Toggle Custom Nodes Manager Visibility
+-	Comfy.ManagerMenu
+
+
+Search Extensions...
+AdvancedControlNet.autosize
+
+AdvancedControlNet.documentation
+
+ArtVenture.TextSwitchCase
+
+ArtVenture.Upload
+
+bizyair.custom.connectionColorByType
+
+bizyair.deprecated.nodes
+
+bizyair.image.to.caption
+
+bizyair.node.info.logger
+
+bizyair.sam.nodes
+
+bizyair.siliconcloud.bizyairsiliconcloudllmapi.api.model_fetch
+
+bizyair.siliconcloud.bizyairsiliconcloudvlmapi.api.model_fetch
+
+bizyair.siliconcloud.share.controlnet.loader
+
+bizyair.siliconcloud.share.dataset.loader.train
+
+bizyair.siliconcloud.share.lora.loader
+
+bizyair.siliconcloud.share.lora.loader.new
+
+bizyair.tool
+
+cg.customnodes.use_everywhere
+
+Comfy.AudioWidget 
+Core
+
+Comfy.Clipspace 
+Core
+
+Comfy.ContextMenuFilter 
+Core
+
+Comfy.CustomNodesManager.WorkflowMetadata
+
+Comfy.D2.customWidget
+
+Comfy.D2.D2_EmptyImageAlpha
+
+Comfy.D2.D2_FolderImageQueue
+
+Comfy.D2.D2_FolderImages
+
+Comfy.D2.D2_GetImageSize
+
+Comfy.D2.D2_GridImage
+
+Comfy.D2.D2_ImageStack
+
+Comfy.D2.D2_LoadImage
+
+Comfy.D2.D2_LoadLora
+
+Comfy.D2.D2_MultiOutput
+
+Comfy.D2.D2_PreviewImage
+
+Comfy.D2.D2_Prompt
+
+Comfy.D2.D2_RefinerStepsTester
+
+Comfy.D2.D2_RegexSwitcher
+
+Comfy.D2.D2_UploadImage
+
+Comfy.D2.D2_XY_Plot
+
+Comfy.D2.D2_XYCheckpointList
+
+Comfy.D2.D2_XYLoraList
+
+Comfy.D2.D2_XYModelList
+
+Comfy.D2.D2_XYStringToPlot
+
+Comfy.DynamicPrompts 
+Core
+
+Comfy.EasyUse.API.SD3
+
+Comfy.EasyUse.ChainNode
+
+Comfy.EasyUse.Components
+
+Comfy.EasyUse.ContextMenu
+
+Comfy.EasyUse.ExtraMenu
+
+Comfy.EasyUse.HotKeys
+
+Comfy.EasyUse.imageChooser
+
+Comfy.EasyUse.SaveImageExtraOutput
+
+Comfy.EasyUse.Suggestions
+
+Comfy.EasyUse.TimeTaken
+
+Comfy.EasyUse.UI
+
+Comfy.EasyUse.Widget
+
+Comfy.EasyUse.XYPlot
+
+Comfy.EditAttention 
+Core
+
+Comfy.Fitsize.PickImageFromBatches
+
+comfy.FloatingButton
+
+Comfy.GroupNode 
+Core
+
+Comfy.GroupOptions 
+Core
+
+Comfy.Impack
+
+Comfy.Impack.Picker
+
+Comfy.Impact.img
+
+Comfy.Impact.SAMEditor
+
+Comfy.Inspire
+
+Comfy.Inspire.img
+
+Comfy.Inspire.LBW
+
+Comfy.Inspire.Prompts
+
+Comfy.Inspire.Regional
+
+Comfy.Load3D 
+Core
+
+Comfy.Load3DAnimation 
+Core
+
+Comfy.Manager.NodeFixer
+
+Comfy.ManagerMenu
+
+Comfy.MaskEditor 
+Core
+
+Comfy.NodeBadge 
+Core
+
+Comfy.NodeTemplates 
+Core
+
+Comfy.NoteNode 
+Core
+
+Comfy.Preview3D 
+Core
+
+Comfy.Preview3DAnimation 
+Core
+
+Comfy.PreviewAny 
+Core
+
+Comfy.RerouteNode 
+Core
+
+Comfy.RgthreeComfy
+
+Comfy.SaveGLB 
+Core
+
+Comfy.SaveImageExtraOutput 
+Core
+
+Comfy.SimpleTouchSupport 
+Core
+
+Comfy.SlotDefaults 
+Core
+
+Comfy.UploadAudio 
+Core
+
+Comfy.UploadImage 
+Core
+
+Comfy.WebcamCapture 
+Core
+
+Comfy.WidgetInputs 
+Core
+
+ComfyUI-Image-Saver
+
+drltdata.MaskRectArea
+
+drltdata.MaskRectAreaAdvanced
+
+easy bookmark
+
+easy getNode
+
+easy setNode
+
+EasyUse Version
+
+external_tooling_nodes
+
+GetNode
+
+jw782cn
+
+KJNodes.appearance
+
+KJNodes.browserstatus
+KJNodes.FastPreview
+
+KJNodes.HelpPopup
+
+KJNodes.jsnodes
+
+KJNodes.PointEditor
+
+KJNodes.SplineEditor
+
+KJNodesContextmenu
+
+model_bending
+
+pysssss.AutoCompleter
+
+pysssss.Binding
+
+pysssss.Combo++
+
+pysssss.ContextMenuHook
+
+pysssss.CustomColors
+
+pysssss.FaviconStatus
+pysssss.GraphArrange
+
+pysssss.ImageFeed
+
+pysssss.KSamplerAdvDenoise
+
+pysssss.LinkRenderMode
+
+pysssss.MathExpression
+
+pysssss.MiddleClickAddDefaultNode
+
+pysssss.ModelInfo
+
+pysssss.NodeFinder
+
+pysssss.PlaySound
+
+pysssss.PresetText
+
+pysssss.QuickNodes
+
+pysssss.Repeater
+
+pysssss.ReroutePrimitive
+
+pysssss.ShowImageOnMenu
+
+pysssss.ShowText
+
+pysssss.SnapToGrid
+pysssss.SnapToGrid.Guide
+
+pysssss.StringFunction
+
+pysssss.SwapResolution
+
+pysssss.SystemNotification
+
+pysssss.UseNumberInputPrompt
+
+pysssss.WidgetDefaults
+
+pysssss.WorkflowImage
+
+pysssss.Workflows
+
+rgthree.AnySwitch
+
+rgthree.Bookmark
+
+rgthree.Bypasser
+
+rgthree.Context
+
+rgthree.ContextMenuAutoNest
+
+rgthree.CopyImageToClipboard
+
+rgthree.DisplayAny
+
+rgthree.DynamicContext
+
+rgthree.DynamicContextSwitch
+
+rgthree.FastActionsButton
+
+rgthree.FastGroupsBypasser
+
+rgthree.FastGroupsMuter
+
+rgthree.GroupHeaderToggles
+
+rgthree.ImageComparer
+
+rgthree.ImageInsetCrop
+
+rgthree.ImageOrLatentSize
+
+rgthree.ImportIndividualNodes
+
+rgthree.Label
+
+rgthree.Muter
+
+rgthree.NodeCollector
+
+rgthree.NodeCombiner
+
+rgthree.NodeModeRepeater
+
+rgthree.NodeModeRepeaterHelper
+
+rgthree.PowerLoraLoader
+
+rgthree.PowerPrimitive
+
+rgthree.PowerPrompt
+
+rgthree.PowerPuter
+
+rgthree.QueueNode
+
+rgthree.RandomUnmuter
+
+rgthree.Reroute
+
+rgthree.Seed
+
+rgthree.TopMenu
+
+SetNode
+
+shinich39.GetMeta
+
+VideoHelperSuite.Core
+
+
+About
+ComfyUI 0.3.39
+ComfyUI_frontend v1.20.7
+Discord
+ComfyOrg
+EasyUse v1.3.0
+ComfyUI-Manager V3.32.3
+rgthree-comfy v1.0.2505222249
+System Info
+OS
+nt
+Python Version
+3.12.10 (tags/v3.12.10:0cc8128, Apr 8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]
+Embedded Python
+true
+Pytorch Version
+2.7.0+cu128
+Arguments
+ComfyUI\main.py --windows-standalone-build --fast fp16_accumulation
+RAM Total
+63.9 GB
+RAM Free
+44.3 GB
+Devices
+Name
+cuda:0 NVIDIA GeForce RTX 2070 : native
+Type
+cuda
+VRAM Total
+8 GB
+VRAM Free
+6.29 GB
+Torch VRAM Total
+696 MB
+Torch VRAM Free
+16.73 MB
