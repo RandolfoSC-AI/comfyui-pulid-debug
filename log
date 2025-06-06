@@ -1,0 +1,317 @@
+C:\ComfyUI_windows_portable>.\python_embeded\python.exe -s ComfyUI\main.py --windows-standalone-build --fast fp16_accumulation
+Total VRAM 8192 MB, total RAM 65437 MB
+pytorch version: 2.7.0+cu128
+xformers version: 0.0.30
+Enabled fp16 accumulation.
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 NVIDIA GeForce RTX 2070 : native
+Checkpoint files will always be loaded safely.
+Using xformers attention
+[BizyAir] Checkout updating, current pip url https://pypi.org/simple
+[BizyAir] bizyengine latest=1.2.14 vs current=1.2.13
+[BizyAir] Update NOW? [y]/n bizyengine in 1 seconds
+[BizyAir] UPDATE bizyengine NOW
+Requirement already satisfied: bizyengine in c:\comfyui_windows_portable\python_embeded\lib\site-packages (1.2.13)
+Collecting bizyengine
+  Downloading bizyengine-1.2.14-py3-none-any.whl.metadata (4.2 kB)
+Requirement already satisfied: requests in c:\comfyui_windows_portable\python_embeded\lib\site-packages (from bizyengine) (2.32.3)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\comfyui_windows_portable\python_embeded\lib\site-packages (from requests->bizyengine) (3.4.2)
+Requirement already satisfied: idna<4,>=2.5 in c:\comfyui_windows_portable\python_embeded\lib\site-packages (from requests->bizyengine) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in c:\comfyui_windows_portable\python_embeded\lib\site-packages (from requests->bizyengine) (1.26.20)
+Requirement already satisfied: certifi>=2017.4.17 in c:\comfyui_windows_portable\python_embeded\lib\site-packages (from requests->bizyengine) (2025.4.26)
+Downloading bizyengine-1.2.14-py3-none-any.whl (122 kB)
+Installing collected packages: bizyengine
+  Attempting uninstall: bizyengine
+    Found existing installation: bizyengine 1.2.13
+    Uninstalling bizyengine-1.2.13:
+      Successfully uninstalled bizyengine-1.2.13
+Successfully installed bizyengine-1.2.14
+[BizyAir] bizyui latest=1.2.10 vs current=1.2.9
+[BizyAir] Update NOW? [y]/n bizyui in 1 seconds
+[BizyAir] UPDATE bizyui NOW
+Requirement already satisfied: bizyui in c:\comfyui_windows_portable\python_embeded\lib\site-packages (1.2.9)
+Collecting bizyui
+  Downloading bizyui-1.2.10-py3-none-any.whl.metadata (938 bytes)
+Downloading bizyui-1.2.10-py3-none-any.whl (1.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 31.7 MB/s eta 0:00:00
+Installing collected packages: bizyui
+  Attempting uninstall: bizyui
+    Found existing installation: bizyui 1.2.9
+    Uninstalling bizyui-1.2.9:
+      Successfully uninstalled bizyui-1.2.9
+Successfully installed bizyui-1.2.10
+[BizyAir] UI location: C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\bizyui\js
+[BizyAir] copy : C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\bizyui\js\apis.js
+[BizyAir] copy : C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\bizyui\js\apply_image_to_node.js
+[BizyAir] copy : C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\bizyui\js\bizyair_frontend.js
+[BizyAir] copy : C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\bizyui\js\bizyair_tools.js
+[BizyAir] copy : C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\bizyui\js\connection_color.js
+[BizyAir] copy : C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\bizyui\js\dataset_apply.js
+[BizyAir] copy : C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\bizyui\js\deprecated.js
+[BizyAir] copy : C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\bizyui\js\image_caption.js
+[BizyAir] copy : C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\bizyui\js\menus.js
+[BizyAir] copy : C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\bizyui\js\model_apply.js
+[BizyAir] copy : C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\bizyui\js\sam_loader.js
+[BizyAir] copy : C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\bizyui\js\share_load_controlnet.js
+[BizyAir] copy : C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\bizyui\js\share_lora_loader.js
+[BizyAir] copy : C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\bizyui\js\siliconcloud_llm_api.js
+[BizyAir] copy : C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\bizyui\js\__init__.py
+[BizyAir] copy : C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\bizyui\js\dialog\sam_edit.js
+[BizyAir] copy : C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\bizyui\js\subassembly\dialog.js
+[BizyAir] copy : C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\bizyui\js\subassembly\styleDialog.js
+[BizyAir] copy : C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\bizyui\js\subassembly\styleMenus.js
+[BizyAir] copy : C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\bizyui\js\subassembly\tools.js
+[START] Security scan
+[DONE] Security scan
+## ComfyUI-Manager: installing dependencies done.
+** ComfyUI startup time: 2025-06-06 18:48:20.472
+** Platform: Windows
+** Python version: 3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]
+** Python executable: C:\ComfyUI_windows_portable\python_embeded\python.exe
+** ComfyUI Path: C:\ComfyUI_windows_portable\ComfyUI
+** ComfyUI Base Folder Path: C:\ComfyUI_windows_portable\ComfyUI
+** User directory: C:\ComfyUI_windows_portable\ComfyUI\user
+** ComfyUI-Manager config path: C:\ComfyUI_windows_portable\ComfyUI\user\default\ComfyUI-Manager\config.ini
+** Log path: C:\ComfyUI_windows_portable\ComfyUI\user\comfyui.log
+
+Prestartup times for custom nodes:
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-easy-use
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\rgthree-comfy
+   5.3 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-Manager
+  13.2 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\bizyair
+  44.8 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\agilly1989_motorway
+
+Python version: 3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]
+ComfyUI version: 0.3.40
+________________________________________________________________________
+WARNING WARNING WARNING WARNING WARNING
+
+Installed frontend version 1.21.6 is lower than the recommended version 1.21.7.
+
+Please install the updated requirements.txt file by running:
+C:\ComfyUI_windows_portable\python_embeded\python.exe -s -m pip install -r C:\ComfyUI_windows_portable\ComfyUI\requirements.txt
+
+This error is happening because the ComfyUI frontend is no longer shipped as part of the main repo but as a pip package instead.
+
+If you are on the portable package you can run: update\update_comfyui.bat to solve this problem
+________________________________________________________________________
+[Prompt Server] web root: C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\comfyui_frontend_package\static
+Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.
+NumExpr defaulting to 16 threads.
+ComfyUI-GGUF: Partial torch compile only, consider updating pytorch
+### Loading: ComfyUI-Impact-Subpack (V1.3.2)
+[Impact Pack/Subpack] Using folder_paths to determine whitelist path: C:\ComfyUI_windows_portable\ComfyUI\user\default\ComfyUI-Impact-Subpack\model-whitelist.txt
+[Impact Pack/Subpack] Ensured whitelist directory exists: C:\ComfyUI_windows_portable\ComfyUI\user\default\ComfyUI-Impact-Subpack
+[Impact Pack/Subpack] Loaded 0 model(s) from whitelist: C:\ComfyUI_windows_portable\ComfyUI\user\default\ComfyUI-Impact-Subpack\model-whitelist.txt
+[Impact Subpack] ultralytics_bbox: C:\ComfyUI_windows_portable\ComfyUI\models\ultralytics\bbox
+[Impact Subpack] ultralytics_segm: C:\ComfyUI_windows_portable\ComfyUI\models\ultralytics\segm
+### Loading: ComfyUI-Manager (V3.32.5)
+[ComfyUI-Manager] network_mode: public
+### ComfyUI Revision: 239 [866f6cda] *DETACHED | Released on '2025-06-04'
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\albumentations\__init__.py:28: UserWarning: A new version of Albumentations is available: '2.0.8' (you have '2.0.7'). Upgrade using: pip install -U albumentations. To disable automatic update checks, set the environment variable NO_ALBUMENTATIONS_UPDATE to 1.
+  check_for_updates()
+FETCH ComfyRegistry Data: 5/88
+C:\ComfyUI_windows_portable\python_embeded\Lib\site-packages\timm\models\layers\__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Nvidia APEX normalization not installed, using PyTorch LayerNorm
+
+[ReActor] - STATUS - Running v0.6.1-b2 in ComfyUI
+Torch version: 2.7.0+cu128
+------------------------------------------
+Comfyroll Studio v1.76 :  175 Nodes Loaded
+------------------------------------------
+** For changes, please see patch notes at https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/blob/main/Patch_Notes.md
+** For help, please see the wiki at https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/wiki
+------------------------------------------
+[BizyAir] BizyAir ComfyUI Plugin: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\bizyair
+Display name '☁️BizyAir CogView4_6B_Pipe' might differ from the native display name.
+Display name '☁️BizyAir SetUnionControlNetType' might differ from the native display name.
+Display name '☁️BizyAir ControlNetInpaintingAliMamaApply' might differ from the native display name.
+Display name '☁️BizyAir DisableNoise' might differ from the native display name.
+Display name '☁️BizyAir VPScheduler' might differ from the native display name.
+Display name '☁️BizyAir SplitSigmas' might differ from the native display name.
+Display name '☁️BizyAir SplitSigmasDenoise' might differ from the native display name.
+Display name '☁️BizyAir FlipSigmas' might differ from the native display name.
+Display name '☁️BizyAir CFGGuider' might differ from the native display name.
+Display name '☁️BizyAir TrainDatasetAdd' might differ from the native display name.
+Display name '☁️BizyAir CLIPTextEncodeFlux' might differ from the native display name.
+Display name '☁️BizyAir FluxGuidance' might differ from the native display name.
+Display name '☁️BizyAir InstructPixToPixConditioning' might differ from the native display name.
+Display name '☁️BizyAir JanusModelLoader' might differ from the native display name.
+Display name '☁️BizyAir JanusImageUnderstanding' might differ from the native display name.
+Display name '☁️BizyAir JanusImageGeneration' might differ from the native display name.
+Display name '☁️BizyAir ModelSamplingSD3' might differ from the native display name.
+Display name '☁️BizyAir ModelSamplingFlux' might differ from the native display name.
+Display name '☁️BizyAir TripleCLIPLoader' might differ from the native display name.
+Display name '☁️BizyAir UltimateSDUpscale' might differ from the native display name.
+Display name '☁️BizyAir Wan_LoraLoader' might differ from the native display name.
+Display name '☁️BizyAir Wan_ImageToVideoPipeline' might differ from the native display name.
+Display name '☁️BizyAir Wan_Model_Loader' might differ from the native display name.
+Display name '☁️BizyAir Wan_T2V_Pipeline' might differ from the native display name.
+Display name '☁️BizyAir LoraLoader_Legacy' might differ from the native display name.
+Display name '☁️BizyAir ControlNetLoader_Legacy' might differ from the native display name.
+Display name '☁️BizyAir SamplerCustomAdvanced' might differ from the native display name.
+Display name '☁️BizyAir BasicGuider' might differ from the native display name.
+Display name '☁️BizyAir BasicScheduler' might differ from the native display name.
+Display name '☁️BizyAir DualCLIPLoader' might differ from the native display name.
+Display name '☁️BizyAir KSamplerSelect' might differ from the native display name.
+Display name '☁️BizyAir RandomNoise' might differ from the native display name.
+Display name '☁️BizyAir InpaintModelConditioning' might differ from the native display name.
+Display name '☁️BizyAir InpaintModelConditioning_v2' might differ from the native display name.
+Display name '☁️BizyAir ConditioningZeroOut' might differ from the native display name.
+Display name '☁️BizyAir ConditioningSetTimestepRange' might differ from the native display name.
+Display name '☁️BizyAir PassParameter' might differ from the native display name.
+
+
+[BizyAir] Model hosting service initialized.
+
+
+Adding C:\ComfyUI_windows_portable\ComfyUI\custom_nodes to sys.path
+Could not find efficiency nodes
+[comfyui_controlnet_aux] | INFO -> Using ckpts path: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_controlnet_aux\ckpts
+[comfyui_controlnet_aux] | INFO -> Using symlinks: False
+[comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider', 'CoreMLExecutionProvider']
+DWPose: Onnxruntime with acceleration providers detected
+Loaded ControlNetPreprocessors nodes from C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_controlnet_aux
+Could not find AdvancedControlNet nodes
+Could not find AnimateDiff nodes
+Loaded IPAdapter nodes from C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI_IPAdapter_plus
+Could not find VideoHelperSuite nodes
+Could not load ImpactPack nodes Could not find ImpactPack nodes
+scikit-learn version 1.6.1 is not supported. Minimum required version: 0.17. Maximum required version: 1.5.1. Disabling scikit-learn conversion API.
+Torch version 2.7.0+cu128 has not been tested with coremltools. You may run into unexpected errors. Torch 2.5.0 is the most recent version that has been tested.
+FETCH ComfyRegistry Data: 10/88
+Failed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLCPUComputeDeviceProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLGPUComputeDeviceProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLNeuralEngineComputeDeviceProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLComputePlanProxy: No module named 'coremltools.libcoremlpython'
+Fail to import BlobReader from libmilstoragepython. No module named 'coremltools.libmilstoragepython'
+Failed to load _MLModelProxy: No module named 'coremltools.libcoremlpython'
+Failed to load _MLModelAssetProxy: No module named 'coremltools.libcoremlpython'
+Fail to import BlobWriter from libmilstoragepython. No module named 'coremltools.libmilstoragepython'
+Traceback (most recent call last):
+  File "C:\ComfyUI_windows_portable\ComfyUI\nodes.py", line 2124, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-coremlsuite_DISABLED\__init__.py", line 6, in <module>
+    from coreml_suite.nodes import (
+  File "C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-coremlsuite_DISABLED\coreml_suite\nodes.py", line 4, in <module>
+    from python_coreml_stable_diffusion.coreml_model import CoreMLModel
+ModuleNotFoundError: No module named 'python_coreml_stable_diffusion'
+
+Cannot import C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-coremlsuite_DISABLED module for custom nodes: No module named 'python_coreml_stable_diffusion'
+[ComfyUI-Easy-Use] server: v1.3.0 Loaded
+[ComfyUI-Easy-Use] web root: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-easy-use\web_version/v2 Loaded
+Total VRAM 8192 MB, total RAM 65437 MB
+pytorch version: 2.7.0+cu128
+xformers version: 0.0.30
+Enabled fp16 accumulation.
+Set vram state to: NORMAL_VRAM
+Device: cuda:0 NVIDIA GeForce RTX 2070 : native
+### Loading: ComfyUI-Impact-Pack (V8.15.3)
+[Impact Pack] Wildcards loading done.
+### Loading: ComfyUI-Inspire-Pack (V1.18)
+----------Jake Upgrade Nodes Loaded----------
+FETCH ComfyRegistry Data: 15/88
+Python version is above 3.10, patching the collections module.
+[C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_controlnet_aux] | INFO -> Using ckpts path: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_controlnet_aux\ckpts
+[C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_controlnet_aux] | INFO -> Using symlinks: False
+[C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider', 'CoreMLExecutionProvider']
+Nvidia APEX normalization not installed, using PyTorch LayerNorm
+
+Initializing ControlAltAI Nodes
+FETCH ComfyRegistry Data: 20/88
+
+[rgthree-comfy] Loaded 47 extraordinary nodes. 🎉
+
+WAS Node Suite: OpenCV Python FFMPEG support is enabled
+WAS Node Suite Warning: `ffmpeg_bin_path` is not set in `C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\was-node-suite-comfyui\was_suite_config.json` config file. Will attempt to use system ffmpeg binaries if available.
+WAS Node Suite: Finished. Loaded 220 nodes successfully.
+
+        "The only limit to our realization of tomorrow will be our doubts of today." - Franklin D. Roosevelt
+
+
+Import times for custom nodes:
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\websocket_image_save.py
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\florence_dw
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-LatentGC_Aggressive
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\masquerade-nodes-comfyui
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\cg-use-everywhere
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-post-processing-nodes
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-fitsize
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-get-meta
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\infiniteyou
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\Tripo-API-ZHO
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI_IPAdapter_plus
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\havocscall_custom_nodes
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-tooling-nodes
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_essentials
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-image-saver
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-advancedliveportrait
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-AutoCropFaces
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_patches_ll
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfy-image-saver
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_ultimatesdupscale
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_controlnet_aux
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-frame-interpolation
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-kjnodes
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-portrait-master
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-custom-scripts
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\d2-nodes-comfyui
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-GGUF
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\controlaltai-nodes
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_caption_this
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-advanced-controlnet
+   0.0 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-ic-light
+   0.1 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\x-flux-comfyui
+   0.1 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-jakeupgrade
+   0.1 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-fal-api-flux
+   0.1 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI_Comfyroll_CustomNodes
+   0.1 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-inspire-pack
+   0.1 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-videohelpersuite
+   0.1 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_birefnet_ll
+   0.1 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_pulid_flux_ll
+   0.2 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-impact-pack
+   0.2 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-florence2
+   0.2 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\rgthree-comfy
+   0.2 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-easy-use
+   0.3 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-Impact-Subpack
+   0.4 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\bringing-old-photos-back-to-life
+   0.4 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\agilly1989_motorway
+   0.4 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui_layerstyle
+   0.4 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-Model-Bending
+   0.5 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-art-venture
+   0.5 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-Manager
+   0.5 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-ReActor
+   0.9 seconds (IMPORT FAILED): C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-coremlsuite_DISABLED
+   1.2 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-diffusers
+   1.3 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\was-node-suite-comfyui
+   1.3 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\bizyair
+   1.5 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-logicutils
+   1.5 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\djz-nodes
+   1.6 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\comfyui-mvadapter
+   2.7 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-Image-Filters
+   4.1 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-Florence-2
+   5.5 seconds: C:\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-PuLID-Flux-Enhanced
+
+________________________________________________________________________
+WARNING WARNING WARNING WARNING WARNING
+
+Installed frontend version 1.21.6 is lower than the recommended version 1.21.7.
+
+Please install the updated requirements.txt file by running:
+C:\ComfyUI_windows_portable\python_embeded\python.exe -s -m pip install -r C:\ComfyUI_windows_portable\ComfyUI\requirements.txt
+
+This error is happening because the ComfyUI frontend is no longer shipped as part of the main repo but as a pip package instead.
+
+If you are on the portable package you can run: update\update_comfyui.bat to solve this problem
+________________________________________________________________________
+Starting server
